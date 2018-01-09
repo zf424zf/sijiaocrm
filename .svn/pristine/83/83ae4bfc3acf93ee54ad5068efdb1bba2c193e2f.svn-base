@@ -1,0 +1,12 @@
+[ 2017-03-25T04:24:50+08:00 ] 180.153.214.198 /index.php/Mobile/Order/?id%3D15
+ERR: 用户访问信息getWxLogin：{"id=15":""}
+[ 2017-03-25T04:24:50+08:00 ] 180.153.214.198 /index.php?s=/Mobile/Index/index.html
+ERR: 用户访问信息getWxLogin：[]
+[ 2017-03-25T04:24:50+08:00 ] 180.153.214.198 /index.php?s=/Mobile/Index/index.html
+ERR: 1146:Table 'train.train_weixin_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `train_weixin_user`
+ERR: Think\Model:findByOpenid方法不存在！
+
+[ 2017-03-25T07:14:18+08:00 ] 140.205.201.42 /install/style.css
+ERR: 无法加载控制器:Style.css
+

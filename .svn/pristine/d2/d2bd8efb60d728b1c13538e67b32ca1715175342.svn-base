@@ -1,0 +1,8 @@
+[ 2017-04-14T13:49:11+08:00 ] 127.0.0.1 /index.php/Mobile/Schedule/schedulelist/openid/or-Ynw-Q-EwyOpZgmMTdgHFbcaCo
+ERR: 1062:Duplicate entry 'or-Ynw-Q-EwyOpZgmMTdgHFbcaCo' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `train_user` (`openid`) VALUES ('or-Ynw-Q-EwyOpZgmMTdgHFbcaCo')
+
+[ 2017-04-14T13:49:23+08:00 ] 127.0.0.1 /index.php/Mobile/Schedule/schedulelist/openid/or-Ynw-Q-EwyOpZgmMTdgHFbcaCo
+ERR: 1062:Duplicate entry 'or-Ynw-Q-EwyOpZgmMTdgHFbcaCo' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `train_user` (`openid`) VALUES ('or-Ynw-Q-EwyOpZgmMTdgHFbcaCo')
+

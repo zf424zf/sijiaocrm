@@ -1,0 +1,188 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>添加课程</h2>
+    </div>
+    <form action="{:U(Course/indexAdd)}" method="post" class="form-horizontal">
+       <div class="form-item">
+            <label class="item-label">课程类型（暑期班、平时班） </label>
+            <div class="controls">
+            <label class="input-large">
+             <input type="text" name="classtype" class="text input-large" value="" />
+            </label>				
+      </div>
+            <input type="hidden" name="id" value="{$schedule.id}">
+       <div class="form-item">
+           <label class="item-label">课程名称 </label>
+           <div class="controls">
+               <label class="input-large">
+                   <input type="text" name="title" class="text input-large" value="" />
+               </label>
+           </div>
+       </div>
+           <div class="form-item">
+               <label class="item-label">开始日期 (格式：2017.06.08)</label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="startdate" class="text input-large" value="" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">结束日期 (格式：2017.06.08)</label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="enddate" class="text input-large" value="" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">上课周期 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="weekinfo" class="text input-large" value="" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">学费 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="amount" class="text input-large" value="" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">续班价格 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="amount_follow" class="text input-large" value="" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">课次 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="nums" class="text input-large" value="" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">课时 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="hours" class="text input-large" value="" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">培训开始时间段</label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="hour_s" class="text input-large" value="" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">培训结束时间段</label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="hour_e" class="text input-large" value="" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">每班最少人数 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="num_min" class="text input-large" value="0" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">每班最多人数 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="num_max" class="text input-large" value="0" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">预留人数 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="reserve" class="text input-large" value="0" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">授课内容 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="content" class="text input-large" value=""/>
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">招生对象 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="students" class="text input-large" value=""/>
+                   </label>
+               </div>
+           </div>
+           <div class="">
+               <label class="item-label">报名须知 </label>
+               <div class="controls">
+                       <textarea type="text"  rows='3' cols='55'name="mark"></textarea>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">班级数 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="classnum" class="text input-large" value="" />
+                   </label>
+               </div>
+           </div>
+        <if condition="0 neq $schedule.addtime">>
+           <div class="form-item">
+               <label class="item-label">添加时间 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="addtime" class="text input-large" value="{$schedule.addtime|date='Y-m-d H:i:s',###}" disabled />
+                   </label></div>
+           </div>
+        </if>
+
+      <div class="form-item">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+<link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+<php>if(C('COLOR_STYLE')=='blue_color') echo '<link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">';</php>
+<link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script type="text/javascript">
+  //导航高亮
+   highlight_subnav('{:U('Course/index')}');
+$(function(){
+    $('.time').datetimepicker({
+        format: 'yyyy-mm-dd',
+        language:"zh-CN",
+        minView:2,
+        autoclose:true
+    });
+    showTab();
+
+});
+</script>
+</block>
+

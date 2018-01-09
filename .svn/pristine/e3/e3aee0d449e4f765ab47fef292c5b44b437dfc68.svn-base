@@ -1,0 +1,54 @@
+<extend name="Base/common"/>
+
+<block name="body">
+    <div class="schedule_mark" style="position: fixed; top: 0px; width: 100%;"><a href="{:U('/Mobile/Schedule/notice')}" style="color: red; font-weight: bold;">报名须知&nbsp;&nbsp;</a></div>
+    <div class="classtype" style="margin-top: 41px;">
+        <ul>
+            <volist name="classtype" id="vo">
+                <li id="classtype_{$vo.id}" <if condition="$i eq 1"> class="on" </if>>{$vo.classtype}</li>
+            </volist>
+        </ul>
+    </div>
+    <div class="my-schedule" style="margin-top: 41px;">
+        <volist name="data" id="vvo">
+        <ul id="schedule_{$key}" <if condition="$i gt 1"> style="display:none;" </if>>
+            <volist name="vvo" id="vo">
+            <li>
+                <div class="schedule_img"><img src="__PUBLIC__/Mobile/img/youyong.png"></div>
+                <div class="schedule_detail">
+                    <div><span class="schedule_title">{$vo.title}</span><span class="schedule_num">（剩余{$vo.count}个名额）</span></div>
+                    <div>课次：{$vo.nums}次课&nbsp;&nbsp;</div>
+                    <div>开课：{$vo.startdate}</div>
+                    <div>招生：{$vo.students}</div>
+                    <div>备注：{$vo.mark}</div>
+                    <div class="schedule_amount">
+                        <div style="float: left;">
+                        <if condition="$vo.type eq 1">
+                            首次￥{$vo.amount}&nbsp;&nbsp;续班￥{$vo.amount_follow}
+                            <else/>
+                            ￥{$vo.amount}<br/>
+                        </if>
+                        </div>
+                        <a href="{:U('/Mobile/Schedule/scheduledetail/id/'.$vo['id'])}"><div class="schedule_sel">选择时间段</div></a>
+                    </div>
+                </div>
+            </li>
+            </volist>
+        </ul>
+        </volist>
+    </div>
+    <script>
+        $(function(){
+            $(".classtype ul li").on("touchstart",function(){
+                $(".classtype ul li").removeClass('on');
+                $(this).attr('class','on');
+
+                var id = $(this).attr("id");
+                var ids = id.split('_');
+                var id = ids[1];
+                $(".my-schedule ul").hide();
+                $("#schedule_"+id).show();
+            });
+        })
+    </script>
+</block>

@@ -1,0 +1,22 @@
+<extend name="Base/common"/>
+
+<block name="body">
+    <div style="padding: 10px; line-height: 30px; ">
+
+    </div>
+    <div style="padding: 10px; line-height: 30px; ">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以下为本培训协议，请学员或监护人认真阅读：<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、缴费前请认真检查报名表上的金额、培训时间、培训种类和课程时间是否正确，并领取培训卡。培训卡一经售出，一律不退换，培训时间不得更改。
+        无故缺课，一律不补。因身体原因要请假，应出示医院病历及病假条，方能请假。<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、为了创造一个良好的培训环境，本游泳馆培训期间，禁止家长入内观看知道、干扰教练正常教学。<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、家长请勿进入更衣室，如年纪小的学员尽量再家里换好泳衣泳裤。<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、学员在参加培训时，必须佩带泳帽、泳镜、泳衣（非肉色），培训前请家长准备齐全。<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、遵守游泳池安全规定，严禁跳水、潜水、奔跑、嬉戏打闹。听从教练员以及引导员安排，遵守上课纪律。培训结束不得在泳池逗留。本游泳馆只负责学员在有用场所内的安全，
+        离开游泳场所则由学员自行负责。<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6、不接受患有癫痫病、伤寒、痢疾、病毒性肝炎、活动期肺结核、传染病、皮肤病、中耳炎、严重脚癣或其它皮肤癣疹、红眼病、化脓性或渗出性皮肤病、严重沙眼、精神病患者报名；<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7、哮喘、先天性心脏病或其他疾病史患者报名时请提前告知。<br/>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8、苏州市市民健身中心拥有最终解释权。<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;咨询电话：<a href="tel:0512-68015303">0512-68015303</a>。<br/><br/>
+    </div>
+</block>

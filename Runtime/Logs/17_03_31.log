@@ -1,0 +1,17 @@
+[ 2017-03-31T11:34:57+08:00 ] 127.0.0.1 /index.php?s=/Mobile/Index/index.html
+ERR: 1146:Table 'train.train_weixin_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `train_weixin_user`
+ERR: Think\Model:findByOpenid方法不存在！
+
+[ 2017-03-31T11:37:18+08:00 ] 127.0.0.1 /index.php?s=/Mobile/Order/createorder.html
+ERR: 新增学生，结果：6,INSERT INTO `train_student` (`number`,`cardnum`,`name`,`sex`,`birthinfo`,`age`,`phone`,`openid`,`nickname`,`headimg`,`mark`,`addtime`,`isdel`) VALUES ('201703311137182232','03313957','康金',0,'2010-1',7,'18652947363','','','','初学',1490931438,0)
+[ 2017-03-31T11:37:18+08:00 ] 127.0.0.1 /index.php?s=/Mobile/Order/createorder.html
+ERR: 新增订单，结果：17,INSERT INTO `train_order` (`number`,`uid`,`sid`,`cid`,`amount`,`realamount`,`type`,`addtime`,`isdel`,`mark`) VALUES ('2017035160',6,1,0,1200,1200,1,1490931438,0,'初学')
+[ 2017-03-31T11:37:19+08:00 ] 127.0.0.1 /index.php/Mobile/Order/confirm/?number=2017035160
+ERR: 1048:Column 'oid' cannot be null
+ [ SQL语句 ] : INSERT INTO `train_wxpay_order` (`oid`,`number`,`status`,`addtime`,`amount`) VALUES (null,'20170331113719075770',0,1490931439,0)
+
+[ 2017-03-31T17:20:41+08:00 ] 127.0.0.1 /index.php/Mobile/Order/confirm/?number=2017035160
+ERR: 1048:Column 'oid' cannot be null
+ [ SQL语句 ] : INSERT INTO `train_wxpay_order` (`oid`,`number`,`status`,`addtime`,`amount`) VALUES (null,'20170331172041334725',0,1490952041,0)
+

@@ -1,0 +1,146 @@
+<extend name="Base/common"/>
+
+<block name="body">
+    <div style="position: relative;">
+        <div class="schedule" style="height: 120px;">
+            <div class="schedule_img"><img src="__PUBLIC__/Mobile/img/youyong.png"></div>
+            <div class="schedule_detail">
+                <div><span class="schedule_title">{$data.title}</span><span class="schedule_num">（{$data.num_min}-{$data.num_max}人）</span></div>
+                <div>{$data.startdate}</div>
+                <div>周{$data.weekinfo}</div>
+                <div>{$data.nums}课时 {$data.content}</div>
+                <div>
+                    上课时段：{$data.hour_s}-{$data.hour_e}
+                </div>
+            </div>
+        </div>
+
+        <div class="userinfo">
+            <ul>
+                <li>学员姓名：<input type="text" name="name" placeholder="请输入学员姓名"></li>
+                <li class="userinfo_sex">
+                    <span>学员性别：</span>
+                    <div class="userinfo_sex_select">
+                        <div class="userinfo_sex_female" id="1">女</div>
+                        <div class="userinfo_sex_male sex_sel" id="0">男</div>
+                    </div>
+                    <input type="hidden" name="sex" id="sex" value="0">
+                </li>
+                <li>出生年月：
+                    <select name="birth_year" id="birth_year">
+                        <volist name="birth_year" id="vo">
+                            <option value="{$vo}">{$vo}</option>
+                        </volist>
+                    </select>&nbsp;年&nbsp;
+                    <select name="birth_month" id="birth_month">
+                        <volist name="birth_month" id="vo">
+                            <option value="{$vo}">{$vo}</option>
+                        </volist>
+                    </select>&nbsp;月
+                </li>
+                <li>联系电话：<input type="text" name="phone" placeholder="请输入联系电话"></li>
+                <li class="userinfo_level"><span>学员水平：</span>
+                    <span><div id="level_1" style="background-color: #24B25C;">√</div>&nbsp;初学</span>
+                    <span><div id="level_2">√</div>&nbsp;提高</span>
+                </li>
+            </ul>
+        </div>
+
+        <input type="hidden" name="mark" id="mark" value="level_1">
+
+        <div class="schedule_confirm_order">
+            <div class="confirm_amount">
+                <span style="float: left; padding-left: 8px;">费用：</span>
+                <span class="confirm_amount_list"><div id="amount_{$data.amount}" style="background-color: #24B25C;">√</div>&nbsp;<span class="confirm_price">￥{$data.amount}</span><span class="confirm_times">首次</span></span>
+                <if condition="$data.amount_follow gt 0">
+                    <span class="confirm_amount_list"><div id="amount_{$data.amount_follow}">√</div>&nbsp;<span class="confirm_price">￥{$data.amount_follow}</span><span class="confirm_times">续班</span></span>
+                </if>
+                <input type="hidden" name="amount" id="amount" value="{$data.amount}">
+            </div>
+            <input type="hidden" name="id" id="id" value="{$data.id}">
+            <div class="confirm_btn"><div>确认报名</div></div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $(".userinfo_sex_select div").on('click', function(){
+                var sex = $("#sex").val();
+                var sel = $(this).attr('id');
+                if(sex != sel){
+                    $("#sex").val(sel);
+                    if(sel == 0){
+                        $(".userinfo_sex_male").attr("class","userinfo_sex_male sex_sel");
+                        $(".userinfo_sex_female").attr("class","userinfo_sex_female unsex_sel");
+                    }else if(sel == 1){
+                        $(".userinfo_sex_female").attr("class","userinfo_sex_female sex_sel");
+                        $(".userinfo_sex_male").attr("class","userinfo_sex_male unsex_sel");
+                    }
+                }
+            });
+
+            $(".userinfo_level div").on('click',function(){
+                $(".userinfo_level div").css("backgroundColor","#F4F4F4");
+                $(this).css("backgroundColor","#24B25C");
+                var id = $(this).attr("id");
+                if(id == "level_1"){
+                    $("#mark").val('初学');
+                }else if(id == "level_2"){
+                    $("#mark").val('提高');
+                }
+            });
+
+            $(".confirm_amount_list div").on('click',function(){
+                $(".confirm_amount_list div").css("backgroundColor","white");
+                $(this).css("backgroundColor","#24B25C");
+                var id = $(this).attr("id");
+                var ids = id.split("_");
+                $("#amount").val(ids[1]);
+            });
+
+            $(".confirm_btn div").on('click',function(){
+                var name = $("input[name='name']").val();
+                if(name == ''){
+                    alert("学员姓名不能为空");
+                    return;
+                }
+                var phone = $("input[name='phone']").val();
+                if(phone == ''){
+                    alert("联系电话不能为空");
+                    return;
+                }else if(!isPhoneNo(phone)){
+                    alert("手机号码输入错误");
+                    return;
+                }
+                var id          = $("#id").val();
+                var birth_year  = $("#birth_year").val();
+                var birth_month = $("#birth_month").val();
+                var birthinfo   = birth_year+"-"+birth_month;
+                var sex         = $("#sex").val();
+                var mark        = $("#mark").val();
+                var amount      = $("#amount").val();
+                var param       = {'id':id,'name':name,'sex':sex,'mark':mark,'birthinfo':birthinfo,'phone':phone,'amount':amount};
+
+                $.ajax({
+                    url:"{:U('/Home/Mobile/createorder')}",
+                    type:'post',
+                    datatype:'josn',
+                    data:param,
+                    success:function(data){
+                        data = eval('('+data+')');
+                        if(data.status == 100){
+                            window.location.href = "/Home/Mobile/orderconfirm/?id="+data['id'];
+                        }else{
+                            alert('订单生成失败，请重新生成。');
+                        }
+                    }
+                });
+            });
+        })
+        // 验证手机号
+        function isPhoneNo(phone) {
+            var pattern = /^1[34578]\d{9}$/;
+            return pattern.test(phone);
+        }
+    </script>
+</block>

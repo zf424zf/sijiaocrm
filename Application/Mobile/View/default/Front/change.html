@@ -1,0 +1,804 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>苏州市市民健身中心报名</title>
+    <link href="/Public/Front/css/ui-base.css" type="text/css" rel="stylesheet">
+    <link href="/Public/Front/css/index.css" type="text/css" rel="stylesheet">
+    <link href="/Public/Front/css/common.css" type="text/css" rel="stylesheet">
+    <link href="/Public/Front/css/default_color.css" type="text/css" rel="stylesheet">
+    <link href="/Public/Front/css/module.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="/Public/Front/js/vendor/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="/Public/Front/js/book.js"></script>
+    <script type="text/javascript" src="/Public/Front/js/autocomplete/jquery.autocomplete.js"></script>
+    <script src="/Public/Front/js/vendor/zepto.min.js"></script>
+    <script src="/Public/Front/js/vendor/mobileResponsive.js"></script>
+    <script src="/Public/Front/js/vendor/touchScroll.js"></script>
+
+    <script type="text/javascript">
+
+
+        var timestamp = Date.parse(new Date())/1000;
+        //关闭弹出层
+        function CloseDiv(show_div)
+        {
+            document.getElementById(show_div).style.display='none';
+            document.getElementById("fade").style.display='none';
+        };
+        //判断优惠码
+        function checkreduce(){
+            var money = document.getElementById("money_d_new").innerHTML;
+            var sale = document.getElementById("sale").value;
+            var paymoney = document.getElementById("paymoney").innerHTML;
+            var realpay_old = document.getElementById("realpay_old").value;
+            var discount = document.getElementById("discount").value;
+            if(discount ==''){
+                document.getElementById("youhui").innerHTML=0;
+                var x_paymoney =parseFloat(money)-parseFloat(sale);
+                document.getElementById("paymoney").innerHTML=x_paymoney;
+                var change_money= parseFloat(realpay_old)-parseFloat(x_paymoney);
+                change_money= parseFloat(change_money).toFixed(2);
+                if(change_money > 0){
+                    $("#imstatus").val(1);
+                    document.getElementById("change_text").innerHTML='需退款';
+                    document.getElementById("change_money").innerHTML=change_money;
+                }else if(change_money == 0){
+                    document.getElementById("change_text").innerHTML='';
+                    document.getElementById("change_money").innerHTML=0;
+                }else {
+                    $("#imstatus").val(2);
+                    var change_now = Math.abs(change_money);
+                    document.getElementById("change_text").innerHTML='需补交';
+                    document.getElementById("change_money").innerHTML=change_now;
+                }
+            }
+            $.ajax({
+                url: '/Mobile/Front/checkreduce',
+                type: 'post',
+                datatype: 'json',
+                data: {code:discount},
+                success: function (data) {
+                    var result = eval("(" + data + ")");
+                    var sale =  $("#sale").val();
+                    var amount_follow =  $("#amount_follow").val();
+                    if(result.status==200){
+                        if(parseFloat(money) > result.reduce){
+                            if(sale>0){
+                                var cjmoney= money-sale-result.reduce;
+                            }else if(amount_follow>0){
+                                var cjmoney= amount_follow-result.reduce;
+                            }else {
+                                var cjmoney= money-result.reduce;
+                            }
+                            document.getElementById("youhui").innerHTML=result.reduce;
+                            var change_money= parseFloat(realpay_old)-cjmoney;
+                            if(change_money > 0){
+                                $("#imstatus").val(1);
+                                document.getElementById("change_text").innerHTML='需退款';
+                                document.getElementById("change_money").innerHTML=change_money;
+                            }else if(change_money == 0){
+                                document.getElementById("change_text").innerHTML='';
+                                document.getElementById("change_money").innerHTML=0;
+                            }else {
+                                $("#imstatus").val(2);
+                                var change_now = Math.abs(change_money);
+                                document.getElementById("change_text").innerHTML='需补交';
+                                document.getElementById("change_money").innerHTML=change_now;
+                            }
+                            document.getElementById("youhui").innerHTML=result.reduce;
+                            document.getElementById("xtype").innerHTML=result.xtype;
+                            document.getElementById("paymoney").innerHTML=cjmoney;
+                            document.getElementById("reduceamount").value=result.reduce;
+                        }
+                    }else {
+                        var x_paymoney =parseFloat(money)-parseFloat(sale);
+                        document.getElementById("paymoney").innerHTML=x_paymoney;
+                        return false;
+                    }
+                }
+            });
+        }
+        //弹出隐藏层
+        function sign(sid,amount,oldsid,uid){
+            var sid =sid;
+            var uid =uid;
+            var amount =amount;
+            var oldsid =oldsid;
+            document.getElementById('MyDiv1').style.display='block';
+            document.getElementById('fade').style.display='block';
+            document.getElementById("sid").value=sid;
+            document.getElementById("uid").value=uid;
+            document.getElementById("oldsid").value=oldsid;
+            document.getElementById("amount").value=amount;
+            document.getElementById("paymoney").innerHTML=amount;
+            $.ajax({
+                url: '/Mobile/Front/oldClass',
+                type: 'post',
+                datatype: 'json',
+                data: {sid:oldsid,uid:uid},
+                success: function (data) {
+                    var result = eval("(" + data + ")");
+                    if(result.status==200){
+                        document.getElementById("classtype_old").innerHTML=result.data.classtype;
+                        document.getElementById("time_d_old").innerHTML=result.data.time_d;
+                        document.getElementById("hour_d_old").innerHTML=result.data.hour_d;
+                        document.getElementById("class_msg_old").innerHTML=result.data.msg;
+                        document.getElementById("num_d_old").innerHTML=result.data.num_d;
+                        document.getElementById("week_d_old").innerHTML=result.data.weekinfo;
+                        document.getElementById("money_d_old").innerHTML=result.data.amount;
+                        document.getElementById("paymoney_old").innerHTML=result.data.amount;
+                        document.getElementById("realpay_old").value=result.data.realamount;
+                        document.getElementById("classtype_old").innerHTML=result.data.classtype;
+                        document.getElementById("num_old").innerHTML=result.data.num;
+                        document.getElementById("students_old").innerHTML=result.data.students;
+                        document.getElementById("nums_old").innerHTML=result.data.nums;
+                        document.getElementById("mark_old").innerHTML=result.data.mark;
+                        document.getElementById("name").innerHTML=result.data.name;
+                        document.getElementById("birthinfo").innerHTML=result.data.birthinfo;
+                        document.getElementById("phone").innerHTML=result.data.phone;
+                    }else {
+                        alert("无此课程信息");
+                        return false;
+                    }
+                }
+            });
+            $.ajax({
+                url: '/Mobile/Front/newClass',
+                type: 'post',
+                datatype: 'json',
+                data: {sid:sid,uid:uid},
+                success: function (data) {
+                    var result = eval("(" + data + ")");
+                    if(result.status==200){
+                        document.getElementById("classtype_new").innerHTML=result.data.classtype;
+                        document.getElementById("time_d_new").innerHTML=result.data.time_d;
+                        document.getElementById("hour_d_new").innerHTML=result.data.hour_d;
+                        document.getElementById("class_msg_new").innerHTML=result.data.msg;
+                        document.getElementById("num_d_new").innerHTML=result.data.num_d;
+                        document.getElementById("week_d_new").innerHTML=result.data.weekinfo;
+                        if(result.data.amount_follow>0 && timestamp < result.data.time){
+                            document.getElementById("money_d_new").innerHTML=result.data.amount_follow;
+                            document.getElementById("money_d_new_text").innerHTML='(续班)';
+                        }else if(result.data.amount_follow>0) {
+                            document.getElementById("money_d_new").innerHTML=result.data.amount_follow;
+                            document.getElementById("money_d_new_text").innerHTML='(续班)';
+                        }else {
+                            document.getElementById("money_d_new").innerHTML=result.data.amount;
+                        }
+                        document.getElementById("classtype_new").innerHTML=result.data.classtype;
+                        document.getElementById("num_new").innerHTML=result.data.num;
+                        document.getElementById("students_new").innerHTML=result.data.students;
+                        document.getElementById("nums_new").innerHTML=result.data.nums;
+                        document.getElementById("mark_new").innerHTML=result.data.mark;
+                    }else {
+                        alert("无此课程信息");
+                        return false;
+                    }
+                }
+            });
+            if (uid !== null || oldsid !== null || sid !== null) {
+                $.ajax({
+                    url: '/Mobile/Front/checkChange',
+                    type: 'post',
+                    datatype: 'json',
+                    data: {oldsid:oldsid,uid:uid,sid:sid},
+                    success: function (data) {
+                        var result = eval("(" + data + ")");
+                        var amount_follow =  result.amount_follow;
+                        var realamount =  result.realamount;
+                        var realpay =  result.realpay;
+                        //var paymoney =   document.getElementById("paymoney").innerHTML;
+                        var money_d =  result.x_amount;
+                        var money_d_old = result.y_amount;
+                        var amount =  result.amount;
+                        if(result.status!=201){
+                            if(result.status==1){
+                                var sale = ((parseFloat(money_d))+(parseFloat(money_d_old))-80)*0.1;
+                                var salemoney =(parseFloat(money_d))-sale;
+                                $("#sale").val(sale);
+                                document.getElementById("paymoney").innerHTML=salemoney;
+                            }else if (result.status==2){
+                                if(amount_follow>0){
+                                    document.getElementById("paymoney").innerHTML=amount_follow;
+                                    var sale = (parseFloat(amount)-parseFloat(amount_follow));
+                                    $("#sale").val(sale);
+                                }else {
+                                    document.getElementById("paymoney").innerHTML=money_d;
+                                }
+                            }else if (result.status==3){
+                                $("#sale").val(amount_follow);
+                                $("#amount_follow").val(amount_follow);
+                            }
+                            var paymoney =   document.getElementById("paymoney").innerHTML;
+
+                            var change_money= parseFloat(realpay)-parseFloat(paymoney);
+                           change_money = parseFloat(change_money).toFixed(2);
+                            if(change_money > 0){
+                                $("#imstatus").val(1);
+                                document.getElementById("change_text").innerHTML='需退款';
+                                document.getElementById("change_money").innerHTML=change_money;
+                            }else if(change_money == 0){
+                                document.getElementById("change_text").innerHTML='';
+                                document.getElementById("change_money").innerHTML=0;
+                            }else {
+                                $("#imstatus").val(2);
+                                var change_now = Math.abs(change_money);
+                                document.getElementById("change_text").innerHTML='需补交';
+                                document.getElementById("change_money").innerHTML=change_now;
+                            }
+                        }else {
+                            //alert(result.msg);
+                            return false;
+                        }
+                    }
+                });
+            }
+        };
+
+
+    </script>
+    <style>
+        .img_fd img{width:22px; height:22px;}
+        .addcart img{width:30px; heigh:30px;}
+        .movecart img{width:30px; heigh:30px;}
+        .class-info{
+            border:1px solid #DDDDDD;
+            margin: 20px 10px ;
+            position: relative;
+            padding: 10px 0;
+        }
+        .stduent-info{
+            margin: 20px 10px ;
+            position: relative;
+            padding: 0px 0;
+        }
+        .class-icon{
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin-top: 50px;
+            margin-left: 15px;
+            font-size: 16px;
+            color: #319967;
+        }
+        .class-info-middle{
+            padding-left: 80px;
+            font-size: 14px;
+        }
+        .info-header{
+            font-size: 16px;
+            color: #319967;
+        }
+        .stu-header{
+            font-size: 16px;
+            color: #319967;
+        }
+        .info-header-sub{
+            font-size: 14px;
+            color: #000000;
+        }
+        .info-right{
+            text-align: right;
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            font-size: 14px;
+        }
+        .money{
+            color: red;
+            font-size: 16px;
+        }
+        .sexclass{
+            background: #f0f0f0;
+            width: 91px!important;
+            border: 1px solid #dddddd;
+        }
+        .sexclass：hover{
+            background-color:#ffffff!important;
+        }
+        .actsex{
+            background-color:#319967!important;
+            border: 1px solid #dedede;
+            color: #ffffff!important;
+        }
+        .border-left{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .border-right{
+            margin-left: -1px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .operate-area a:hover{
+            color: none!important;
+        }
+        .sch-btn{
+            width: 60px;
+            height: 34px;
+            background: #27b25f;
+            display: inline-block;
+            line-height: 34px;
+            text-align: center;
+            font-size: 14px;
+            vertical-align: -1px;
+            color: #fff;
+        }
+        .class-info-middle p{
+            float: none!important;
+        }
+    </style>
+</head>
+<body style="background-color: #f4f4f4;">
+<!--
+<div id="loading" data-lock="1" class="loading">
+    <div class="loading-icon"></div>
+</div>
+-->
+<!-- 预定 begin -->
+<div class="book-area">
+    <!-- 公用头部 begin -->
+    <div class="comm-header clearfix">
+        <span class="time"><label>苏州市市民健身中心</label>&nbsp;&nbsp;&nbsp;&nbsp;{:date('Y-m-d H:i')}</span>
+        <span class="name"><i class="user-avatar-img"></i>{:session('user_auth.username')}<a href="/index.php/Mobile/Front/logout" style="color: #bcbec0; float: right; padding-left: 20px;">退出</a></span>
+    </div>
+    <!-- 公用头部 end -->
+
+</div>
+<!-- 预定 end -->
+
+<!-- 查看详情弹出层 begin -->
+<div id="fade" class="black_overlay"></div>
+<div id="MyDiv" class="konw-off white_content" >
+    <div class="ui-dialog zoomIn am" style="width:600px;">
+        <!-- 头 begin -->
+        <div class="title">课程详情
+            <i class="close-dialog" onclick="CloseDiv('MyDiv')"></i>
+        </div>
+        <!-- 头 end -->
+        <!-- 内容 begin -->
+        <div class="content clearfix" style=" height:auto!important;margin-bottom: 40px;overflow: hidden;">
+            <div class="right-info" style="float: none!important;">
+                <div class="bs-info">
+                    <div class="class-info">
+                        <img class="class-icon" src="../Public/Front/img/yy.png">
+                        <div class="class-info-middle">
+                            <p class="info-header">班级名称：<span id="classtype1"></span>(<span class="info-header-sub" id="num_d1"></span>人班)</p>
+                            <p>课次：<span id="nums1"></span>课次&nbsp;&nbsp;<span id="week_d1"></span>&nbsp;&nbsp;<span id="hour_d1"></span></p>
+                            <p>开课：<span id="time_d1">0</span>&nbsp;&nbsp;剩余名额：<span id="num1">0</span></p>
+                            <p>招生：<span id="students1"></span></p>
+                            <p>备注：<span id="mark1"></span></p>
+                        </div>
+                        <div class="info-right">
+                            <p class="money">￥<span id="money_d1">0</span></p>
+                            <p style="float: right">班级状态：<span id="class_msg1"></span></p>
+                        </div>
+                    </div>
+                    <!-- 已报名学生 begin -->
+                    <div class="aa" style="width: 538px;overflow: auto; margin: 0 10px;height: 160px">
+                        <table style="width: 560px;">
+                            <thead style=" background: rgb(186, 182, 182);color: #000000;">
+                            <td>序号</td>
+                            <td>姓名</td>
+                            <td>性别</td>
+                            <td>年龄</td>
+                            <td>手机号</td>
+                            <td>订单编号</td>
+                            <td>体验劵</td>
+                            <td>操作</td>
+                            </thead>
+                            <tbody class="orderlist">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- 内容 end -->
+    </div>
+</div>
+<!-- 查看详情弹出层 end -->
+
+<!-- 报名弹出层 begin -->
+<div  id="MyDiv1" class="success-off white_sign">
+    <div class="ui-dialog zoomIn am" style="width: 640px;">
+        <!-- 头 begin -->
+        <div class="title">报名信息填写
+            <span style="font-size: 16px;float: right; cursor: pointer;" onclick="CloseDiv('MyDiv1')">×</span>
+        </div>
+        <!-- 头 end -->
+        <!-- 内容 begin -->
+        <div class="content clearfix" style=" height:550px;">
+            <div class="right-info">
+                <div class="bs-info">
+                    <div class="stduent-info">
+                        <p class="stu-header">学员：<span id="name"></span>&nbsp;&nbsp;出生年月：<span id="birthinfo"></span></p>
+                        <p style="font-size: 16px;">联系电话：<span id="phone"></span></p>
+                        <span style="font-size: 16px;">申请原因：</span><input type="" id="reson" value="" >
+                        <span style="font-size: 16px;">优惠码：</span><input type="" id="discount"  onBlur="checkreduce();" value="" >
+                    </div>
+                    <div class="class-info">
+                        <div class="class-icon">原班级</div>
+                        <div class="class-info-middle">
+                            <p class="info-header">班级名称：<span id="classtype_old"></span>(<span class="info-header-sub" id="num_d_old"></span>人班)</p>
+                            <p>课次：<span id="nums_old"></span>课次&nbsp;&nbsp;<span id="week_d_old"></span><span id="hour_d_old"></span></p>
+                            <p>开课：<span id="time_d_old">0</span>&nbsp;&nbsp;剩余名额：<span id="num_old">0</span>&nbsp;&nbsp;</p>
+                            <p>招生：<span id="students_old"></span></p>
+                            <p>备注：<span id="mark_old"></span></p>
+                        </div>
+                        <div class="info-right">
+                            <p class="money">￥<span id="money_d_old">0</span></p>
+                            <p >班级状态：<span id="class_msg_old"></span></p>
+                        </div>
+                    </div>
+                    <div class="class-info">
+                        <div class="class-icon">新班级</div>
+                        <div class="class-info-middle">
+                            <p class="info-header">班级名称：<span id="classtype_new"></span>(<span class="info-header-sub" id="num_d_new"></span>人班)</p>
+                            <p>课次：<span id="nums_new"></span>课次&nbsp;&nbsp;<span id="week_d_new"></span>&nbsp;&nbsp;<span id="hour_d_new"></span></p>
+                            <p>开课：<span id="time_d_new">0</span>&nbsp;&nbsp;剩余名额：<span id="num_new">0</span>&nbsp;&nbsp;</p>
+                            <p>招生：<span id="students_new"></span></p>
+                            <p>备注：<span id="mark_new"></span></p>
+                        </div>
+                        <div class="info-right">
+                            <p class="money">￥<span id="money_d_new">0</span><span id="money_d_new_text"></span></p>
+                            <p >班级状态：<span id="class_msg_new"></span></p>
+                        </div>
+                    </div>
+                    <input type="hidden" value="0" id="amount_follow" >
+                    <input type="hidden" value="0" id="realamount_new" >
+                    <input type="hidden" value="0" id="sale" >
+                    <input type="hidden" value="0" id="xtype" >
+                    <input type="hidden" id="sid" value="">
+                    <input type="hidden" id="uid" value="{$uid}">
+                    <input type="hidden" id="oldsid" value="{$oldsid}">
+                    <input type="hidden" value="" id="amount">
+                    <input type="hidden" value="" id="reduceamount">
+                    <input type="hidden" value="" id="imstatus">
+                    <input type="hidden" value="0" id="realpay_old">
+                    <input type="hidden" value="" id="paymoney_old">
+
+                    <p class="changdi" style="font-size: 14px">课程差价：<span id="change_text"></span><span id="change_money"></span>元</p>
+                    <p class="operate-area pay"style="font-size: 0;padding-left: 38px;border: none;">
+                        <a class="sexclass border-left actsex paytype1" >现金</a>
+                        <input type="hidden" value="2" id="paytype" >
+                        <a class="sexclass paytype2">阳光卡</a>
+                        <a class="sexclass border-right paytype3" >工商银行</a>
+                    </p>
+                    <p class="operate-area paysale"
+                       style="font-size: 0;padding-left: 38px;border: none; margin-top: 20px;">
+                        <a class="sexclass border-left actsex paysale1">原价</a>
+                        <a class="sexclass paysale2">9.5折</a>
+                        <input type="hidden" value="1" id="paysale">
+                        <a class="sexclass paysale3">9折</a>
+                        <a class="sexclass paysale4">8.5折</a>
+                        <a class="sexclass paysale5">8折</a>
+                    <p><span style="font-size: 14px;padding-left: 20px;">优惠：￥<span id="youhui">0</span>&nbsp;&nbsp;金额总计：￥<span
+                            id="paymoney"></span></span></p>
+                    </p>
+                    <a class="settle" id="sj" style=" width:100px; margin-left:200px;" onclick="signOrder();">确认转课</a>
+                    </form>
+
+                </div>
+
+            </div>
+            <!-- 内容 end -->
+        </div>
+
+
+        <!-- 内容 11111 -->
+
+    </div>
+</div>
+<!--dalog-->
+
+<div id="order_info_tmp" style="display: none;"></div>
+<!--页面弹出层模板-->
+<div class="search-form headBox">
+    <div class="searchBox"style="font-size: 0">
+        <form action="">
+            <input type="text" name="title" class="search-input" value="{:I('title')}" placeholder="查询编号/班级名称/订单编号" >
+
+            <!--<button><a class="sch-btn" href="javascript:;" id="search" url="{:U('Front/index')}"><font style="color: #fff">查询</font></a></button>-->
+            <a class="sch-btn" href="javascript:;" id="search" url="{:U('Front/change')}">查询</a>
+        </form>
+    </div>
+    <!--<a href="javascript:;" class="enter">班级录入</a>-->
+</div>
+<table>
+    <thead>
+    <td>编号</td>
+    <td>课程类型</td>
+    <td>班级名称</td>
+    <td>总名额</td>
+    <td>预留</td>
+    <td>已报名</td>
+    <td>剩余名额</td>
+    <td>开始日期</td>
+    <td>课程安排</td>
+    <td>开班时间</td>
+    <td>课次</td>
+    <td>课时</td>
+    <td>授课内容</td>
+    <td>开班状态</td>
+    <td>学费</td>
+    <td>转课</td>
+    </thead>
+    <tbody>
+    <volist name="_list" id="vo">
+        <tr>
+            <td>{$vo.id}</td>
+            <td>{$vo.classtype}</td>
+            <td>{$vo.title}</td>
+            <td>{$vo.num_d}</td>
+            <td class="obligate">{$vo.reserve}</td>
+            <td>{$vo.tmp}</td>
+            <td class="surplus">{$vo.num}</td>
+            <td>{$vo.startdate}</td>
+            <td>{$vo.weekinfo}</td>
+            <td>{$vo.hour_s}-{$vo.hour_e}</td>
+            <td>{$vo.nums}</td>
+            <td>{$vo.hours}</td>
+            <td>{$vo.content}</td>
+            <td>{$vo.msg}</td>
+            <td>{$vo.amount}</td>
+            <td><if condition="$vo.num elt 0">
+                <if condition="$vo.iscontinue eq 1">
+                    <a href="javascript:;" onclick="sign('{$vo.id}','{$vo.x_amount}','{$oldsid}','{$uid}')" class="sign">选择课程</a>
+                    <else/>
+                    名额已满
+                </if>
+                <else/>
+                    <a href="javascript:;" onclick="sign('{$vo.id}','{$vo.x_amount}','{$oldsid}','{$uid}')" class="sign">选择课程</a>
+                </if>
+            </td>
+        </tr>
+
+    </volist>
+    </tbody>
+</table>
+<div class="page">{$_page}</div>
+</body>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(document).ready(function(){
+        $("tbody tr:nth-child(even)").css("background","#f2f2f2");
+    });
+    //搜索功能
+    $("#search").click(function(){
+        var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        if(query){
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        }
+    });
+    //回车搜索
+    $(".search-input").keyup(function(e){
+        if(e.keyCode === 13){
+            $("#search").click();
+            return false;
+        }
+    });
+    //按钮样式切换
+    $(".operate-area").on("click",".sexclass",function(e){
+        if($(this).hasClass("actsex")){
+            return;
+        }else{
+            $(this).addClass("actsex").siblings("a").removeClass("actsex");
+        }
+        if($(this).hasClass("sex1")){
+            document.getElementById("sex").value=0;
+            return;
+        }else{
+            document.getElementById("sex").value=1;
+            return;
+        }
+    });
+    //按钮样式切换
+    $(".pay").on("click",".sexclass",function(e){
+        if($(this).hasClass("actsex")){
+            return;
+        }else{
+            $(this).addClass("actsex").siblings("a").removeClass("actsex");
+        }
+    });
+    $('.paytype1').on('click',function(){
+        $('#paytype').val(2);
+    });
+    $('.paytype2').on('click',function(){
+        $('#paytype').val(3);
+    });
+    $('.paytype3').on('click',function(){
+        $('#paytype').val(4);
+    });
+
+    //按钮样式切换
+    $(".paysale").on("click", ".sexclass", function (e) {
+        if ($(this).hasClass("actsex")) {
+            return;
+        } else {
+            $(this).addClass("actsex").siblings("a").removeClass("actsex");
+        }
+    });
+    $('.paysale1').on('click', function () {
+        $('#paysale').val(1);
+        var sid = $('#sid').val();
+        var oldsid = $('#oldsid').val();
+        var uid = $('#uid').val();
+        var amount = $('#money_d_new').html();
+        var discount = $('#discount').val();
+        var  money_d =$('#money_d_new').html();
+        document.getElementById("youhui").innerHTML=0;
+        document.getElementById("change_text").innerHTML='';
+        document.getElementById("change_money").innerHTML=0;
+        $('#paymoney').html(money_d);
+       sign(sid,amount,oldsid,uid);
+        if(discount !=''){
+            checkreduce();
+        }
+    });
+    $('.paysale2').on('click', function () {
+        $('#paysale').val(2);
+        $('#sale').val(0);
+        var money_d =$("#money_d_new").html();
+        var paymoney = money_d*0.95;
+        var youhui = money_d*0.05;
+        $('#paymoney').html(paymoney);
+        $('#youhui').html(youhui);
+        var realpay= $('#realpay_old').val();
+        var change_money= parseFloat(realpay)-parseFloat(paymoney);
+        change_money = parseFloat(change_money).toFixed(2);
+        if(change_money > 0){
+            $("#imstatus").val(1);
+            document.getElementById("change_text").innerHTML='需退款';
+            document.getElementById("change_money").innerHTML=change_money;
+        }else if(change_money == 0){
+            document.getElementById("change_text").innerHTML='';
+            document.getElementById("change_money").innerHTML=0;
+        }else {
+            $("#imstatus").val(2);
+            var change_now = Math.abs(change_money);
+            document.getElementById("change_text").innerHTML='需补交';
+            document.getElementById("change_money").innerHTML=change_now;
+        }
+    });
+    $('.paysale3').on('click', function () {
+        $('#paysale').val(3);
+        $('#sale').val(0);
+        var money_d =$("#money_d_new").html();
+        var paymoney = money_d*0.9;
+        var youhui = money_d*0.1;
+        $('#paymoney').html(paymoney);
+        $('#youhui').html(youhui);
+        var realpay= $('#realpay_old').val();
+        var change_money= parseFloat(realpay)-parseFloat(paymoney);
+        change_money = parseFloat(change_money).toFixed(2);
+        if(change_money > 0){
+            $("#imstatus").val(1);
+            document.getElementById("change_text").innerHTML='需退款';
+            document.getElementById("change_money").innerHTML=change_money;
+        }else if(change_money == 0){
+            document.getElementById("change_text").innerHTML='';
+            document.getElementById("change_money").innerHTML=0;
+        }else {
+            $("#imstatus").val(2);
+            var change_now = Math.abs(change_money);
+            document.getElementById("change_text").innerHTML='需补交';
+            document.getElementById("change_money").innerHTML=change_now;
+        }
+    });
+    $('.paysale4').on('click', function () {
+        $('#paysale').val(4);
+        $('#sale').val(0);
+        var money_d =$("#money_d_new").html();
+        var paymoney = money_d*0.85;
+        var youhui = money_d*0.15;
+        $('#paymoney').html(paymoney);
+        $('#youhui').html(youhui);
+        var realpay= $('#realpay_old').val();
+        var change_money= parseFloat(realpay)-parseFloat(paymoney);
+        change_money = parseFloat(change_money).toFixed(2);
+        if(change_money > 0){
+            $("#imstatus").val(1);
+            document.getElementById("change_text").innerHTML='需退款';
+            document.getElementById("change_money").innerHTML=change_money;
+        }else if(change_money == 0){
+            document.getElementById("change_text").innerHTML='';
+            document.getElementById("change_money").innerHTML=0;
+        }else {
+            $("#imstatus").val(2);
+            var change_now = Math.abs(change_money);
+            document.getElementById("change_text").innerHTML='需补交';
+            document.getElementById("change_money").innerHTML=change_now;
+        }
+    });
+    $('.paysale5').on('click', function () {
+        $('#paysale').val(5);
+        $('#sale').val(0);
+        var money_d =$("#money_d_new").html();
+        var paymoney = money_d*0.8;
+        var youhui = money_d*0.2;
+        $('#paymoney').html(paymoney);
+        $('#youhui').html(youhui);
+        var realpay= $('#realpay_old').val();
+        var change_money= parseFloat(realpay)-parseFloat(paymoney);
+        change_money = parseFloat(change_money).toFixed(2);
+        if(change_money > 0){
+            $("#imstatus").val(1);
+            document.getElementById("change_text").innerHTML='需退款';
+            document.getElementById("change_money").innerHTML=change_money;
+        }else if(change_money == 0){
+            document.getElementById("change_text").innerHTML='';
+            document.getElementById("change_money").innerHTML=0;
+        }else {
+            $("#imstatus").val(2);
+            var change_now = Math.abs(change_money);
+            document.getElementById("change_text").innerHTML='需补交';
+            document.getElementById("change_money").innerHTML=change_now;
+        }
+    });
+    //报名订单确认
+    function signOrder(){
+        var sid = document.getElementById("sid").value;
+        var oldsid = document.getElementById("oldsid").value;
+        var uid = document.getElementById("uid").value;
+        var amount = document.getElementById("money_d_new").value;
+        var reson = document.getElementById("reson").value;
+        var amount_follow = document.getElementById("amount_follow").value;
+        var paytype =  $("#paytype").val();
+        var paysale = $("#paysale").val();
+        var sale =  $("#sale").val();
+        var discount =  $("#discount").val();
+        var xtype =  $("#xtype").val();
+        var imstatus =  $("#imstatus").val();
+        var paymoney = document.getElementById("paymoney").innerHTM;
+        var change_money = document.getElementById("change_money").innerHTML;
+        if(sid == '' || sid == '--'){
+            alert('未获取当前报名信息，请重试');
+            return;
+        }
+        $.ajax({
+            url:'/Mobile/Front/changeOrder',
+            type:'post',
+            datatype:'json',
+            data:{
+                oldsid:oldsid,
+                reson:reson,
+                uid:uid,
+                sid:sid,
+                imstatus:imstatus,
+                change_money:change_money,
+                paymoney:paymoney,
+                xtype:xtype,
+                paytype:paytype,
+                sale:sale,
+                discount:discount,
+                amount:amount,
+                amount_follow:amount_follow,
+                paysale:paysale
+            },
+            success:function(data){
+//                console.log(data);
+                var result = eval("("+data+")");
+                if(result.status == 200){
+                    alert(result.msg);
+                    window.location.href ="/Mobile/Front/index";
+                }else{
+                    alert(result.msg);
+                }
+            }
+        });
+    }
+</script>
+</html>

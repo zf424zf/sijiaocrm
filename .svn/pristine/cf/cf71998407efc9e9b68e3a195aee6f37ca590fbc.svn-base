@@ -1,0 +1,139 @@
+
+
+/*index 主列表单*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    width: 98%;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+}
+table .obligate{
+    color: #53bbe6;
+}
+table .surplus{
+    color: #f1655b;
+    text-decoration:none;
+}
+table a{
+    color: #000;
+}
+table a{
+    color: #000;
+}
+table .sign{
+    color: #fff;
+    background: #27b25f;
+    padding: 0.15em 0.5em;
+    text-decoration: none;
+}
+table td{
+    padding: 0.5em 0.5em;
+    border-bottom: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+}
+table thead{
+    color: #fff;
+    background: #404042;
+}
+table tbody{
+    font-size: 13px;
+}
+.headBox{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 50px;
+}
+.searchBox{
+    width: 1400px;
+    margin: 0 auto;
+}
+.searchBox input{
+    width: 309px;
+    border: 2px solid #27b25f;
+    outline:none;
+    height: 30px;
+    padding: 0 1em;
+}
+.searchBox button{
+    color:#fff;
+    width: 60px;
+    display: block;
+    float: right;
+    height:34px;
+    background:#27b25f;
+    border: none;
+    outline:none;
+    font-size:16px;
+    cursor:pointer;
+}
+.enter{
+    color:#fff;
+    width: 80px;
+    float:right;
+    text-align: center;
+    text-decoration:none;
+    background: #27b25f;
+    padding: 0.3em 0.4em;
+    margin-top: -30px;
+    margin-right: 200px;
+    font-size: 14px;
+}
+/*index 弹出框*/
+.FormTable {
+    margin: 0 auto;
+    width: 580px;
+    font-size: 14px;
+}
+.FormTable table {
+    background: #FFF;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    width: 100%;
+}
+.FormTable td {
+    padding: 5px;
+}
+.FormTable input[type="text"],.FormTable input[type="number"] ,.FormTable input[type="date"] {
+    padding: 0 0.5em;
+    height: 30px;
+    border:1px solid #DDD;
+    font-size: 14px;
+    outline:none;
+}
+.FormTable input[type="text"]:focus,.FormTable input[type="number"]:focus ,.FormTable input[type="date"]:focus {
+    border-color : #999;
+}
+.FormBtn {
+    text-align: center;
+    margin-top: 1em;
+}
+.FormBtn button {
+    border: 1px solid #2fac60;
+    margin: 0;
+    height: 34px;
+    padding: 0 1.5em;
+    font-size: 14px;
+    cursor:pointer;
+    background-color : #2fac60;
+    outline:none;
+    color:#FFF;
+}
+.FormBtn button:hover {
+    background-color : #37c06f;
+}
+.search-selects{
+    width: 300px;
+    float: left;
+    margin-right: 10px;
+}
+.search-select{
+    height: 35px;
+    margin-left: 5px;
+}

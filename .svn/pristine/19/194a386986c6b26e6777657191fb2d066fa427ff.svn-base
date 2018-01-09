@@ -1,0 +1,12 @@
+<extend name="Base/common"/>
+
+<block name="body">
+    <div class="payfor-success">
+        <img src="__PUBLIC__/Mobile/img/success-icon.png">
+        <p class="txt">成功支付学费{$amount} 1040元</p>
+        <p class="txt">请前往体育馆前台领取<br/><span style="font-weight: bold; color: red; font-size: 18px;">体验券</span><br/>
+            <a href="http://mp.weixin.qq.com/s?__biz=MzI3NDE3MjA3OQ==&mid=2247483673&idx=1&sn=57b806f2bde6c86d7585177f16a44154&chksm=eb1950d9dc6ed9cfc64a3ed95d74bb85d2de8f26d831c159b78648e8003c75a295dd73aba337&mpshare=1&scene=23&srcid=0428lIJxDpLRx0Cer87Ipf3B#rd
+" style="text-decoration: none; color:#45a869;">点击查看</a> </p>
+        <a class="green-btn" href="{:U('/Mobile/Order/orderlist')}">查看订单</a>
+    </div>
+</block>

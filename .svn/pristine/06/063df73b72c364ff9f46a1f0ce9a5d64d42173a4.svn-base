@@ -1,0 +1,26 @@
+<extend name="Base/common"/>
+
+<block name="body">
+    <div class="my-schedule">
+        <volist name="data" id="vo">
+            <div class="schedule">
+                <a href="{:U('/Home/Mobile/scheduledetail/id/'.$vo['id'])}">
+                <div class="schedule_img"><img src="__PUBLIC__/Mobile/img/youyong.png"></div>
+                <div class="schedule_detail">
+                    <div><span class="schedule_title">{$vo.title}</span><span class="schedule_num">（{$vo.num_min}-{$vo.num_max}人）</span></div>
+                    <div>{$vo.startdate}</div>
+                    <div>周{$vo.weekinfo}</div>
+                    <div>{$vo.nums}课时 {$vo.content}</div>
+                </div>
+                <div class="schedule_amount">
+                    <if condition="$vo.type eq 1">
+                        首次￥{$vo.amount}<br/>续班￥{$vo.amount_follow}
+                    <else/>
+                        ￥{$vo.amount}<br/>
+                    </if>
+                </div>
+                </a>
+            </div>
+        </volist>
+    </div>
+</block>

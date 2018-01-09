@@ -1,0 +1,140 @@
+[ 2017-09-13T09:08:38+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=
+ERR: writeRequest:{"title":{"type":""},"content":[],"file":[]}
+[ 2017-09-13T09:08:38+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=
+ERR: writeRequestResult:{"title":{"type":""},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"4\",\"realamount\":\"1440\",\"status\":\"0\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u589e\\u808cMAX\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/1c35b368c64f7bc65d3bf2bc644dc211.jpg\"},{\"id\":\"3\",\"realamount\":\"1440\",\"status\":\"0\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u51cf\\u8102\\u5851\\u5f62\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/7b033c35bdaeff8654ea0930a1ab21d4.jpg\"}]}}"}
+[ 2017-09-13T09:08:38+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:08:43+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequest:{"title":{"type":"1"},"content":[],"file":[]}
+[ 2017-09-13T09:08:43+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequestResult:{"title":{"type":"1"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"2\",\"realamount\":\"1440\",\"status\":\"1\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"},{\"id\":\"1\",\"realamount\":\"1440\",\"status\":\"4\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"}]}}"}
+[ 2017-09-13T09:08:43+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:09:07+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequest:{"title":{"type":"1"},"content":[],"file":[]}
+[ 2017-09-13T09:09:07+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequestResult:{"title":{"type":"1"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"2\",\"realamount\":\"1440\",\"status\":\"1\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"},{\"id\":\"1\",\"realamount\":\"1440\",\"status\":\"4\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"}]}}"}
+[ 2017-09-13T09:09:07+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:11:01+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequest:{"title":{"type":"1"},"content":[],"file":[]}
+[ 2017-09-13T09:11:01+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequestResult:{"title":{"type":"1"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"2\",\"realamount\":\"1440\",\"status\":\"1\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"},{\"id\":\"1\",\"realamount\":\"1440\",\"status\":\"4\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"}]}}"}
+[ 2017-09-13T09:11:01+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:11:09+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequest:{"title":{"type":"1"},"content":[],"file":[]}
+[ 2017-09-13T09:11:09+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequestResult:{"title":{"type":"1"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"2\",\"realamount\":\"1440\",\"status\":\"1\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"},{\"id\":\"1\",\"realamount\":\"1440\",\"status\":\"4\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"}]}}"}
+[ 2017-09-13T09:11:09+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:11:48+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequest:{"title":{"type":"1"},"content":[],"file":[]}
+[ 2017-09-13T09:11:48+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequestResult:{"title":{"type":"1"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"2\",\"realamount\":\"1440\",\"status\":\"1\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"},{\"id\":\"1\",\"realamount\":\"1440\",\"status\":\"4\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"}]}}"}
+[ 2017-09-13T09:11:48+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:11:57+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequest:{"title":{"type":"1"},"content":[],"file":[]}
+[ 2017-09-13T09:11:57+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequestResult:{"title":{"type":"1"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"2\",\"realamount\":\"1440\",\"status\":\"1\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"},{\"id\":\"1\",\"realamount\":\"1440\",\"status\":\"4\",\"totalhours\":\"8\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"}]}}"}
+[ 2017-09-13T09:11:57+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:14:55+08:00 ] 192.168.3.7 /Mobile/Api/getuserorder
+ERR: writeRequest:{"title":[],"content":[],"file":[]}
+[ 2017-09-13T09:14:55+08:00 ] 192.168.3.7 /Mobile/Api/getuserorder
+ERR: writeRequestResult:{"title":[],"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"4\",\"realamount\":\"1440\",\"status\":\"0\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23:35\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u589e\\u808cMAX\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/1c35b368c64f7bc65d3bf2bc644dc211.jpg\"},{\"id\":\"3\",\"realamount\":\"1440\",\"status\":\"0\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23:35\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u51cf\\u8102\\u5851\\u5f62\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/7b033c35bdaeff8654ea0930a1ab21d4.jpg\"}]}}"}
+[ 2017-09-13T09:14:55+08:00 ] 192.168.3.7 /Mobile/Api/getuserorder
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:18:22+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequest:{"title":{"type":"1"},"content":[],"file":[]}
+[ 2017-09-13T09:18:22+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequestResult:{"title":{"type":"1"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"2\",\"realamount\":\"1440\",\"status\":\"1\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"},{\"id\":\"1\",\"realamount\":\"1440\",\"status\":\"4\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"}]}}"}
+[ 2017-09-13T09:18:22+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:18:30+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequest:{"title":{"type":"1"},"content":[],"file":[]}
+[ 2017-09-13T09:18:30+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequestResult:{"title":{"type":"1"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"2\",\"realamount\":\"1440\",\"status\":\"1\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"},{\"id\":\"1\",\"realamount\":\"1440\",\"status\":\"4\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"}]}}"}
+[ 2017-09-13T09:18:30+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:20:03+08:00 ] 192.168.3.7 /Mobile/Api/getuserorder
+ERR: writeRequest:{"title":[],"content":[],"file":[]}
+[ 2017-09-13T09:20:03+08:00 ] 192.168.3.7 /Mobile/Api/getuserorder
+ERR: writeRequestResult:{"title":[],"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"4\",\"realamount\":\"1440\",\"status\":\"0\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"price\":\"180\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u589e\\u808cMAX\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/1c35b368c64f7bc65d3bf2bc644dc211.jpg\"},{\"id\":\"3\",\"realamount\":\"1440\",\"status\":\"0\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"price\":\"180\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u51cf\\u8102\\u5851\\u5f62\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/7b033c35bdaeff8654ea0930a1ab21d4.jpg\"}]}}"}
+[ 2017-09-13T09:20:03+08:00 ] 192.168.3.7 /Mobile/Api/getuserorder
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:21:45+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequest:{"title":{"type":"1"},"content":[],"file":[]}
+[ 2017-09-13T09:21:45+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequestResult:{"title":{"type":"1"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"2\",\"realamount\":\"1440\",\"status\":\"1\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"price\":\"19\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"},{\"id\":\"1\",\"realamount\":\"1440\",\"status\":\"4\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"price\":\"19\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"}]}}"}
+[ 2017-09-13T09:21:45+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:22:27+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequest:{"title":{"type":"1"},"content":[],"file":[]}
+[ 2017-09-13T09:22:27+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequestResult:{"title":{"type":"1"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"2\",\"realamount\":\"1440\",\"status\":\"1\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"price\":\"19\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"},{\"id\":\"1\",\"realamount\":\"1440\",\"status\":\"4\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"price\":\"19\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"}]}}"}
+[ 2017-09-13T09:22:27+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-13T09:22:50+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequest:{"title":{"type":"1"},"content":[],"file":[]}
+[ 2017-09-13T09:22:50+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: writeRequestResult:{"title":{"type":"1"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u83b7\\u53d6\\u6210\\u529f\",\"data\":[{\"id\":\"2\",\"realamount\":\"1440\",\"status\":\"1\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"price\":\"19\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"},{\"id\":\"1\",\"realamount\":\"1440\",\"status\":\"4\",\"totalhours\":\"8\",\"addtime\":\"2017-09-05 18:23\",\"sporthall\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"price\":\"19\",\"coach\":\"\\u738b\\u67d0\\u67d0\",\"phone\":\"18652947363\",\"course\":\"\\u4f53\\u9a8c\\u8bfe\",\"courseimg\":\"http:\\\/\\\/192.168.3.7:803\\\/uploads\\\/course\\\/5cc549e945a9c54d85f0cbed49438883.jpg\"}]}}"}
+[ 2017-09-13T09:22:50+08:00 ] 192.168.3.9 /mobile/Api/getuserorder?type=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+

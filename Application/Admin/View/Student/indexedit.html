@@ -1,0 +1,135 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>编辑课程</h2>
+    </div>
+    <form action="{:U(Student/indexEdit)}" method="post" class="form-horizontal">
+       <div class="form-item">
+            <label class="item-label">学生姓名 </label>
+            <div class="controls">
+            <label class="input-large">
+             <input type="text" name="name" class="text input-large" value="{$student.name}" />
+            </label>
+      </div>
+           <div class="form-item">
+               <label class="item-label">学号 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="number" class="text input-large" value="{$student.number}" disabled/>
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">卡号 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="cardnum" class="text input-large" value="{$student.cardnum}" disabled/>
+                   </label>
+               </div>
+           </div>
+            <input type="hidden" name="id" value="{$student.id}">
+           <div class="form-item">
+               <label class="item-label">性别<span class="check-tips"></span></label>
+               <div class="controls">
+                   <select name='sex' >
+                       <option value="0" <if condition="0 eq $student['sex']">selected</if>>男</option>
+                       <option value="1" <if condition="1 eq $student['sex']">selected</if>>女</option>
+                   </select>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">出生年月 (格式：2017-8)</label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="birthinfo" class="text input-large" value="{$student.birthinfo}" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">年龄 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="age" class="text input-large" value="{$student.age}" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">联系电话 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="phone" class="text input-large" value="{$student.phone}" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">备注 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="mark" class="text input-large" value="{$student.mark}" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">家长姓名 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="parents" class="text input-large" value="{$student.parents}" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">学校名称 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="school" class="text input-large" value="{$student.school}" />
+                   </label>
+               </div>
+           </div>
+           <div class="form-item">
+               <label class="item-label">身份证号 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="idcard" class="text input-large" value="{$student.idcard}" />
+                   </label>
+               </div>
+           </div>
+        <if condition="0 neq $student.addtime">>
+           <div class="form-item">
+               <label class="item-label">添加时间 </label>
+               <div class="controls">
+                   <label class="input-large">
+                       <input type="text" name="addtime" class="text input-large" value="{$student.addtime|date='Y-m-d H:i:s',###}" disabled />
+                   </label></div>
+           </div>
+        </if>
+
+      <div class="form-item">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+<link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+<php>if(C('COLOR_STYLE')=='blue_color') echo '<link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">';</php>
+<link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script type="text/javascript">
+  //导航高亮
+   highlight_subnav('{:U('Student/index')}');
+$(function(){
+    $('.time').datetimepicker({
+        format: 'yyyy-mm-dd',
+        language:"zh-CN",
+        minView:2,
+        autoclose:true
+    });
+    showTab();
+
+});
+</script>
+</block>
+

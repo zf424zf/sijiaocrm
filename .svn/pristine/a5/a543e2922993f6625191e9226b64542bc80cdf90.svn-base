@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<include file="Public/headbook"/>
+</head>
+<body data-design-width="750">
+	<!-- 主体 -->
+	<include file="Public/body"/>
+	<!-- /主体 -->
+</body>
+</html>

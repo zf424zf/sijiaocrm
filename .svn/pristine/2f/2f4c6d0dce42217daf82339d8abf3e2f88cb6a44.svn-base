@@ -1,0 +1,77 @@
+<extend name="Base/common"/>
+
+<block name="body">
+    <div style="position: relative;">
+        <div class="schedule_mark"><a href="#">报名须知</a></div>
+        <div class="schedule">
+            <div class="schedule_img"><img src="__PUBLIC__/Mobile/img/youyong.png"></div>
+            <div class="schedule_detail">
+                <div><span class="schedule_title">{$data.title}</span><span class="schedule_num">（{$data.num_min}-{$data.num_max}人）</span></div>
+                <div>{$data.startdate}</div>
+                <div>周{$data.weekinfo}</div>
+                <div>{$data.nums}课时 {$data.content}</div>
+            </div>
+            <div class="schedule_amount">
+                <if condition="$data.type eq 1">
+                    首次￥{$data.amount}<br/>续班￥{$data.amount_follow}
+                    <else/>
+                    ￥{$data.amount}<br/>
+                </if>
+            </div>
+        </div>
+        <div class="schedule_select">选择时间段：</div>
+        <div class="schedule_times">
+            <ul>
+                <volist name="datelist" id="vo">
+                <li id="{$vo.id}">
+                    <span class="schedule_hidden_num">{$vo.num}</span>
+                    <span class="schedule_li_times">{$vo.hour_s}-{$vo.hour_e}</span>
+                    <if condition="$vo.num eq 0">
+                        已满
+                    <else/>
+                        剩余名额：<span class="schedule_li_nums">{$vo.num}</span>
+                    </if>
+                    <div <if condition="$vo.num eq 0">style="border-color:#949599;"</if>>√</div>
+                </li>
+                </volist>
+            </ul>
+        </div>
+        <input type="hidden" name="sel_id" id="sel_id" value="">
+
+        <div class="schedule_order">
+            <div>报&nbsp;&nbsp;名</div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $(".schedule_times ul li").on("click",function(){
+                var num = $(this).find(".schedule_hidden_num").html();
+                if(num == 0){
+                    return false;
+                }
+                var sel_id = $("#sel_id").val();
+                var id = $(this).attr('id');
+
+                $(".schedule_times ul li").find(".schedule_li_times").css({'color':'#58595B'});
+                $(".schedule_times ul li").find("div").css({'backgroundColor':'white'});
+                $("#sel_id").val('');
+
+                if(sel_id == '' || sel_id != id){
+                    $("#sel_id").val(id);
+                    $(this).find(".schedule_li_times").css({'color':'#24B25C'});
+                    $(this).find("div").css({'backgroundColor':'#24B25C'});
+                }
+            })
+
+            $(".schedule_order div").on("click",function(){
+                var sel_id = $("#sel_id").val();
+                if(sel_id > 0){
+                    window.location.href = "/Home/Mobile/scheduleconfirm/id/" + sel_id;
+                }else{
+                    alert('请选择具体时间段');
+                }
+            })
+        })
+    </script>
+</block>

@@ -1,0 +1,4 @@
+[ 2017-12-25T09:09:19+08:00 ] 127.0.0.1 /mobile/Api/getcoachcourselog?type=0&date=2017-10
+ERR: writeRequest:{"title":{"type":"0","date":"2017-10"},"content":[],"file":[]}
+[ 2017-12-25T09:09:19+08:00 ] 127.0.0.1 /mobile/Api/getcoachcourselog?type=0&date=2017-10
+ERR: writeRequestResult:{"title":{"type":"0","date":"2017-10"},"content":"{\"response\":{\"code\":\"109\",\"msg\":\"\\u7528\\u6237\\u672a\\u767b\\u5f55\"}}"}

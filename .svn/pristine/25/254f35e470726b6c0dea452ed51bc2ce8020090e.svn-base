@@ -1,0 +1,980 @@
+[ 2017-03-30T09:54:32+08:00 ] 49.65.115.71 /Mobile/Order/success/number/201703241453165989
+ERR: 用户访问信息getWxLogin：{"number":"201703241453165989"}
+[ 2017-03-30T09:55:08+08:00 ] 49.65.115.71 /Mobile/WeiXin/getJsSign?url=http%3A%2F%2Ftrain.24parking.com.cn%2FMobile%2FOrder%2Fconfirm%2F%3Fid%3D15%26openid%3Dor-Ynw-Q-EwyOpZgmMTdgHFbcaCo&_=1490838908585
+ERR: 用户访问信息getWxLogin：{"url":"http:\/\/train.24parking.com.cn\/Mobile\/Order\/confirm\/?id=15&openid=or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","_":"1490838908585"}
+[ 2017-03-30T10:21:22+08:00 ] 49.65.115.71 /Mobile/WeiXin/getJsSign?url=http%3A%2F%2Ftrain.24parking.com.cn%2FMobile%2FOrder%2Fconfirm%2F%3Fid%3D15%26openid%3Dor-Ynw-Q-EwyOpZgmMTdgHFbcaCo&_=1490840483254
+ERR: 用户访问信息getWxLogin：{"url":"http:\/\/train.24parking.com.cn\/Mobile\/Order\/confirm\/?id=15&openid=or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","_":"1490840483254"}
+[ 2017-03-30T10:21:31+08:00 ] 49.65.115.71 /Mobile/Schedule/schedulelist
+ERR: 用户访问信息getWxLogin：[]
+[ 2017-03-30T10:21:39+08:00 ] 49.65.115.71 /Mobile/Order/confirm/?id=15&openid=or-Ynw-Q-EwyOpZgmMTdgHFbcaCo
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330102139464681","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"h0cii8dbo5c50w514hh1rwbfseepr84p","sign":"C0936A53F637CEDDBE5977DB623FEDBB"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[0v9qt98AhuvKqmqR]]><\/nonce_str>\n<sign><![CDATA[3D3A1163A045C64A17735D2E8AA86F84]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx201703301021397c8a8362480255056751]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"0v9qt98AhuvKqmqR","sign":"3D3A1163A045C64A17735D2E8AA86F84","result_code":"SUCCESS","prepay_id":"wx201703301021397c8a8362480255056751","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T10:21:39+08:00 ] 49.65.115.71 /Mobile/Order/confirm/?id=15&openid=or-Ynw-Q-EwyOpZgmMTdgHFbcaCo
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"0v9qt98AhuvKqmqR","sign":"3D3A1163A045C64A17735D2E8AA86F84","result_code":"SUCCESS","prepay_id":"wx201703301021397c8a8362480255056751","trade_type":"JSAPI"}
+[ 2017-03-30T10:21:40+08:00 ] 49.65.115.71 /Mobile/Order/confirm/?id=15&openid=or-Ynw-Q-EwyOpZgmMTdgHFbcaCo
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330102140466846","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"794vsmwhd9m9eiqxb0gop934idxz6k4j","sign":"D8BE0AD3878F4474DC376EDFF58CD9EC"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[6j276IyV6sqsyk8C]]><\/nonce_str>\n<sign><![CDATA[FE82795BBFDE74EABA4DC5BEE4832F87]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330102140fdc955bc9c0670045159]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"6j276IyV6sqsyk8C","sign":"FE82795BBFDE74EABA4DC5BEE4832F87","result_code":"SUCCESS","prepay_id":"wx20170330102140fdc955bc9c0670045159","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T10:21:40+08:00 ] 49.65.115.71 /Mobile/Order/confirm/?id=15&openid=or-Ynw-Q-EwyOpZgmMTdgHFbcaCo
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"6j276IyV6sqsyk8C","sign":"FE82795BBFDE74EABA4DC5BEE4832F87","result_code":"SUCCESS","prepay_id":"wx20170330102140fdc955bc9c0670045159","trade_type":"JSAPI"}
+[ 2017-03-30T13:19:23+08:00 ] 101.226.33.227 /Mobile/Order/confirm/?id%3D15%26openid%3Dor-Ynw-Q-EwyOpZgmMTdgHFbcaCo%26_%3D1490840483254
+ERR: 用户访问信息getWxLogin：{"id=15&openid=or-Ynw-Q-EwyOpZgmMTdgHFbcaCo&_=1490840483254":""}
+[ 2017-03-30T13:19:23+08:00 ] 101.226.33.227 /Mobile/Order/confirm/?id%3D15%26openid%3Dor-Ynw-Q-EwyOpZgmMTdgHFbcaCo%26_%3D1490840483254
+ERR: 1048:Column 'amount' cannot be null
+ [ SQL语句 ] : INSERT INTO `train_wxpay_order` (`oid`,`number`,`status`,`addtime`,`amount`) VALUES (0,'20170330131923436396',0,1490851163,null)
+
+[ 2017-03-30T14:14:20+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Schedule/scheduledetail/id/9.html
+ERR: 用户访问信息getWxLogin：{"id":"9"}
+[ 2017-03-30T14:14:21+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Schedule/scheduledetail/id/9.html
+ERR: 1054:Unknown column 'classnum' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`hour_s`,`hour_e`,`num_min`,`num_max`,`reserve`,`classnum` FROM `train_schedule` WHERE ( `title` = '启蒙班续班' ) AND ( `startdate` = '2017.08.04' ) AND ( `enddate` = '2017.08.17' ) AND ( `isdel` = 0 ) 
+
+[ 2017-03-30T14:14:25+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Schedule/scheduledetail/id/9.html
+ERR: 1054:Unknown column 'classnum' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`hour_s`,`hour_e`,`num_min`,`num_max`,`reserve`,`classnum` FROM `train_schedule` WHERE ( `title` = '启蒙班续班' ) AND ( `startdate` = '2017.08.04' ) AND ( `enddate` = '2017.08.17' ) AND ( `isdel` = 0 ) 
+
+[ 2017-03-30T14:14:34+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Schedule/scheduledetail/id/1.html
+ERR: 1054:Unknown column 'classnum' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`hour_s`,`hour_e`,`num_min`,`num_max`,`reserve`,`classnum` FROM `train_schedule` WHERE ( `title` = '启蒙班' ) AND ( `startdate` = '2017.07.04' ) AND ( `enddate` = '2017.07.29' ) AND ( `isdel` = 0 ) 
+
+[ 2017-03-30T14:14:36+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Schedule/scheduledetail/id/5.html
+ERR: 1054:Unknown column 'classnum' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`hour_s`,`hour_e`,`num_min`,`num_max`,`reserve`,`classnum` FROM `train_schedule` WHERE ( `title` = '启蒙班' ) AND ( `startdate` = '2017.07.05' ) AND ( `enddate` = '2017.07.30' ) AND ( `isdel` = 0 ) 
+
+[ 2017-03-30T14:19:44+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Schedule/scheduledetail/id/5.html
+ERR: 1054:Unknown column 'classnum' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`hour_s`,`hour_e`,`num_min`,`num_max`,`reserve`,`classnum` FROM `train_schedule` WHERE ( `title` = '启蒙班' ) AND ( `startdate` = '2017.07.05' ) AND ( `enddate` = '2017.07.30' ) AND ( `isdel` = 0 ) 
+
+[ 2017-03-30T14:19:45+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Schedule/scheduledetail/id/5.html
+ERR: 1054:Unknown column 'classnum' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`hour_s`,`hour_e`,`num_min`,`num_max`,`reserve`,`classnum` FROM `train_schedule` WHERE ( `title` = '启蒙班' ) AND ( `startdate` = '2017.07.05' ) AND ( `enddate` = '2017.07.30' ) AND ( `isdel` = 0 ) 
+
+[ 2017-03-30T14:34:54+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Schedule/scheduledetail/id/1.html
+ERR: 1054:Unknown column 'classnum' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`hour_s`,`hour_e`,`num_min`,`num_max`,`reserve`,`classnum` FROM `train_schedule` WHERE ( `title` = '启蒙班' ) AND ( `startdate` = '2017.07.04' ) AND ( `enddate` = '2017.07.29' ) AND ( `isdel` = 0 ) 
+
+[ 2017-03-30T14:45:32+08:00 ] 49.65.115.71 /Mobile/Order/confirm/?id=15&openid=or-Ynw-Q-EwyOpZgmMTdgHFbcaCo
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330144532222309","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"73al1a2gnb0lctgen681t00hih3p5ck6","sign":"DE67154BB1DE3CF7FD3724FEFC727413"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[oeBeHEfGBxwM8SHW]]><\/nonce_str>\n<sign><![CDATA[4826AFBBD7CFC45822E6A6F1BF71A4E7]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx201703301445322593c2229d0857158323]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"oeBeHEfGBxwM8SHW","sign":"4826AFBBD7CFC45822E6A6F1BF71A4E7","result_code":"SUCCESS","prepay_id":"wx201703301445322593c2229d0857158323","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T14:45:32+08:00 ] 49.65.115.71 /Mobile/Order/confirm/?id=15&openid=or-Ynw-Q-EwyOpZgmMTdgHFbcaCo
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"oeBeHEfGBxwM8SHW","sign":"4826AFBBD7CFC45822E6A6F1BF71A4E7","result_code":"SUCCESS","prepay_id":"wx201703301445322593c2229d0857158323","trade_type":"JSAPI"}
+[ 2017-03-30T14:45:49+08:00 ] 101.226.64.177 /Mobile/Schedule/schedulelist
+ERR: 用户访问信息getWxLogin：[]
+[ 2017-03-30T15:36:44+08:00 ] 101.226.66.177 /Mobile/Schedule/scheduleconfirm/id/1
+ERR: 用户访问信息getWxLogin：{"id":"1"}
+[ 2017-03-30T15:37:45+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/createorder.html
+ERR: 新增学生，结果：13,INSERT INTO `train_student` (`number`,`cardnum`,`name`,`sex`,`birthinfo`,`age`,`phone`,`openid`,`nickname`,`headimg`,`mark`,`addtime`,`isdel`) VALUES ('201703301537451153','03301805','康金',0,'2000-2',17,'18652947363','','','','提高',1490859465,0)
+[ 2017-03-30T15:37:45+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/createorder.html
+ERR: 新增订单，结果：16,INSERT INTO `train_order` (`number`,`uid`,`sid`,`cid`,`amount`,`realamount`,`type`,`addtime`,`isdel`,`mark`) VALUES ('2017034734',13,1,0,1200,1200,1,1490859465,0,'提高')
+[ 2017-03-30T15:37:46+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330153745028448","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"7j2737buy374l94xcyx8v7rk9012yfe6","sign":"BA8CB896C10AD75E5305C69035EB5E3E"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[A7RriQazY7lMEF0A]]><\/nonce_str>\n<sign><![CDATA[40C05F2133A2D80FAAD6031788AF2196]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330153745b2dd9bc2a60213012477]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"A7RriQazY7lMEF0A","sign":"40C05F2133A2D80FAAD6031788AF2196","result_code":"SUCCESS","prepay_id":"wx20170330153745b2dd9bc2a60213012477","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:37:46+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"A7RriQazY7lMEF0A","sign":"40C05F2133A2D80FAAD6031788AF2196","result_code":"SUCCESS","prepay_id":"wx20170330153745b2dd9bc2a60213012477","trade_type":"JSAPI"}
+[ 2017-03-30T15:41:09+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330154109050981","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"vts9wffd8daf1672ctilnynpblp410om","sign":"08B279D9547D5C9DE8E5B347FC29A49A"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[9dNcBcodquAxzRp9]]><\/nonce_str>\n<sign><![CDATA[0FD2FADA20886D2322D3FB112C667E5B]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330154109a7ebfe624b0495647369]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"9dNcBcodquAxzRp9","sign":"0FD2FADA20886D2322D3FB112C667E5B","result_code":"SUCCESS","prepay_id":"wx20170330154109a7ebfe624b0495647369","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:41:09+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"9dNcBcodquAxzRp9","sign":"0FD2FADA20886D2322D3FB112C667E5B","result_code":"SUCCESS","prepay_id":"wx20170330154109a7ebfe624b0495647369","trade_type":"JSAPI"}
+[ 2017-03-30T15:41:20+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330154120129138","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"ebjgobbewd76cvjmzag3jivhtn04b1bg","sign":"9F2B0EFFC3983593DD90C18EA3263274"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[BwmiB4rj0yUl4a6f]]><\/nonce_str>\n<sign><![CDATA[F2629533D5EE00393284A02E2BBFD942]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx2017033015412046c8af9e240252326523]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"BwmiB4rj0yUl4a6f","sign":"F2629533D5EE00393284A02E2BBFD942","result_code":"SUCCESS","prepay_id":"wx2017033015412046c8af9e240252326523","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:41:20+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"BwmiB4rj0yUl4a6f","sign":"F2629533D5EE00393284A02E2BBFD942","result_code":"SUCCESS","prepay_id":"wx2017033015412046c8af9e240252326523","trade_type":"JSAPI"}
+[ 2017-03-30T15:41:41+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330154141058074","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"puos4vk5za1rhcx8s0qd41wzuc3z4x20","sign":"4155B1440DE53FE030B4D12B58F55522"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[kywJOvpZzYmqme5L]]><\/nonce_str>\n<sign><![CDATA[E748879062DE21C4033B4665B2991EFD]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx2017033015414194df9b380e0761853492]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"kywJOvpZzYmqme5L","sign":"E748879062DE21C4033B4665B2991EFD","result_code":"SUCCESS","prepay_id":"wx2017033015414194df9b380e0761853492","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:41:41+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"kywJOvpZzYmqme5L","sign":"E748879062DE21C4033B4665B2991EFD","result_code":"SUCCESS","prepay_id":"wx2017033015414194df9b380e0761853492","trade_type":"JSAPI"}
+[ 2017-03-30T15:41:55+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/checkreduce.html
+ERR: 更新订单优惠信息（新增优惠），结果：1,UPDATE `train_order` SET `reduceamount`=50,`reducecode`='123456',`realamount`=1150 WHERE ( `id` = 16 )
+[ 2017-03-30T15:41:55+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/checkreduce.html
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330154155574228","total_fee":115000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"j24wllwl074xde8ejb0l32g41jcaitv4","sign":"DE7AACA2DD01C0586F6F17DF9B39FC04"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[TNJAvU1H7Iju3Cuu]]><\/nonce_str>\n<sign><![CDATA[481F32590C2467D9383C4C577692C5C5]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330154155b076ef26380239142142]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"TNJAvU1H7Iju3Cuu","sign":"481F32590C2467D9383C4C577692C5C5","result_code":"SUCCESS","prepay_id":"wx20170330154155b076ef26380239142142","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:41:55+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/checkreduce.html
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"TNJAvU1H7Iju3Cuu","sign":"481F32590C2467D9383C4C577692C5C5","result_code":"SUCCESS","prepay_id":"wx20170330154155b076ef26380239142142","trade_type":"JSAPI"}
+[ 2017-03-30T15:42:01+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330154201030726","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"y01jm13x6hyyiqxs0p984cl2c2dwn5ge","sign":"2CFB84162D6B6CA93C8353CF923244D3"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[sGnfN9h8eWoRqPRX]]><\/nonce_str>\n<sign><![CDATA[4C8F32CE1219757765EE97F43824D043]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330154201a4244c8f2d0449468001]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"sGnfN9h8eWoRqPRX","sign":"4C8F32CE1219757765EE97F43824D043","result_code":"SUCCESS","prepay_id":"wx20170330154201a4244c8f2d0449468001","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:42:01+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"sGnfN9h8eWoRqPRX","sign":"4C8F32CE1219757765EE97F43824D043","result_code":"SUCCESS","prepay_id":"wx20170330154201a4244c8f2d0449468001","trade_type":"JSAPI"}
+[ 2017-03-30T15:44:10+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330154410754256","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"bgaqxyqbp2bvse9ry3fqo0xge95ucx0e","sign":"FF349A69FE8BD1FDAE602B4AF6275B56"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[4db7Yo9nSU7RAJm0]]><\/nonce_str>\n<sign><![CDATA[628C25B0C23612E891B7C5CD62F71C95]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx201703301544108821c4da7b0835074763]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"4db7Yo9nSU7RAJm0","sign":"628C25B0C23612E891B7C5CD62F71C95","result_code":"SUCCESS","prepay_id":"wx201703301544108821c4da7b0835074763","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:44:10+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"4db7Yo9nSU7RAJm0","sign":"628C25B0C23612E891B7C5CD62F71C95","result_code":"SUCCESS","prepay_id":"wx201703301544108821c4da7b0835074763","trade_type":"JSAPI"}
+[ 2017-03-30T15:45:47+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330154547592657","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"1fgsfern1goedlm4jk25ko0qcyl3161j","sign":"75A83C735DDF442E2FE083E90A5A0800"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[7fEPHKwgf0X1BAQx]]><\/nonce_str>\n<sign><![CDATA[8FA0DF2C0E60F799EEEEA10E905A49B1]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330154547d51e069e770258951753]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"7fEPHKwgf0X1BAQx","sign":"8FA0DF2C0E60F799EEEEA10E905A49B1","result_code":"SUCCESS","prepay_id":"wx20170330154547d51e069e770258951753","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:45:47+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"7fEPHKwgf0X1BAQx","sign":"8FA0DF2C0E60F799EEEEA10E905A49B1","result_code":"SUCCESS","prepay_id":"wx20170330154547d51e069e770258951753","trade_type":"JSAPI"}
+[ 2017-03-30T15:46:03+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330154603890690","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"u69aix57mim3z47kgtxo4dlmwmfm9tt7","sign":"A681949BC49A4279241C4A1E3025B1A9"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[51HDcVOEeKqnAdYn]]><\/nonce_str>\n<sign><![CDATA[BDA9DEF6F651F02DD4332B3D6F8668C4]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330154603702e0de2da0075866685]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"51HDcVOEeKqnAdYn","sign":"BDA9DEF6F651F02DD4332B3D6F8668C4","result_code":"SUCCESS","prepay_id":"wx20170330154603702e0de2da0075866685","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:46:03+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"51HDcVOEeKqnAdYn","sign":"BDA9DEF6F651F02DD4332B3D6F8668C4","result_code":"SUCCESS","prepay_id":"wx20170330154603702e0de2da0075866685","trade_type":"JSAPI"}
+[ 2017-03-30T15:47:14+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330154714351071","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"mw6e500oni469byfnynnv21km1dir0s7","sign":"2A986C48BB225959C60209ACA548F881"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[sbgu55HFHr61tEga]]><\/nonce_str>\n<sign><![CDATA[9CE4DBEF11A680631D4ED84DD820BE66]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx2017033015471418c6fd76630937087042]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"sbgu55HFHr61tEga","sign":"9CE4DBEF11A680631D4ED84DD820BE66","result_code":"SUCCESS","prepay_id":"wx2017033015471418c6fd76630937087042","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:47:14+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"sbgu55HFHr61tEga","sign":"9CE4DBEF11A680631D4ED84DD820BE66","result_code":"SUCCESS","prepay_id":"wx2017033015471418c6fd76630937087042","trade_type":"JSAPI"}
+[ 2017-03-30T15:49:24+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/checkreduce.html
+ERR: 更新订单优惠信息（取消优惠），结果：1,UPDATE `train_order` SET `reduceamount`=0,`reducecode`='',`realamount`=1200 WHERE ( `id` = 16 )
+[ 2017-03-30T15:49:24+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/checkreduce.html
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330154924349357","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"hjfnzmdca86yfdszylfm6cuisw8zs0xm","sign":"3EE37A6FC8B7B4EE0FD5265BD8A9BB37"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[pOMctXPRZiblvFt5]]><\/nonce_str>\n<sign><![CDATA[E462E1CE47CC602643B536387C9BB20C]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330154924f8b83538780558283665]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"pOMctXPRZiblvFt5","sign":"E462E1CE47CC602643B536387C9BB20C","result_code":"SUCCESS","prepay_id":"wx20170330154924f8b83538780558283665","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:49:24+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/checkreduce.html
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"pOMctXPRZiblvFt5","sign":"E462E1CE47CC602643B536387C9BB20C","result_code":"SUCCESS","prepay_id":"wx20170330154924f8b83538780558283665","trade_type":"JSAPI"}
+[ 2017-03-30T15:50:31+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330155031123005","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"3eax0gd2mkszf197anutlrp8vfe7znej","sign":"89710CCBB902AA572AE9A109313F4863"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[G6vlLs9tdaZePp6T]]><\/nonce_str>\n<sign><![CDATA[4EEFC4D7C5F4619B682CFEA0568046C8]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx201703301550316ee93139110993318400]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"G6vlLs9tdaZePp6T","sign":"4EEFC4D7C5F4619B682CFEA0568046C8","result_code":"SUCCESS","prepay_id":"wx201703301550316ee93139110993318400","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:50:31+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"G6vlLs9tdaZePp6T","sign":"4EEFC4D7C5F4619B682CFEA0568046C8","result_code":"SUCCESS","prepay_id":"wx201703301550316ee93139110993318400","trade_type":"JSAPI"}
+[ 2017-03-30T15:50:51+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/checkreduce.html
+ERR: 更新订单优惠信息（取消优惠），结果：1,UPDATE `train_order` SET `reduceamount`=0,`reducecode`='',`realamount`=1200 WHERE ( `id` = 16 )
+[ 2017-03-30T15:50:51+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/checkreduce.html
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330155051323717","total_fee":120000,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"ryvuj8tlf961nwwyv49zpt7nzr4pvsyr","sign":"B24422E1282A7A8AD8130AD787AD44B3"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[mrKPdpK49aTMkdmh]]><\/nonce_str>\n<sign><![CDATA[3E8246D2BDCE52BE6847C27FEC933C96]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx2017033015505160e39bd4e20955354323]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"mrKPdpK49aTMkdmh","sign":"3E8246D2BDCE52BE6847C27FEC933C96","result_code":"SUCCESS","prepay_id":"wx2017033015505160e39bd4e20955354323","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:50:51+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/checkreduce.html
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"mrKPdpK49aTMkdmh","sign":"3E8246D2BDCE52BE6847C27FEC933C96","result_code":"SUCCESS","prepay_id":"wx2017033015505160e39bd4e20955354323","trade_type":"JSAPI"}
+[ 2017-03-30T15:57:01+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330155701948340","total_fee":1,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"9gzh0rny2wre6cx83o0sxsf2zbcqeofs","sign":"D92979DE42E11F2B5B3204DCD2DBDBDF"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[Rxay2ef95HgjsI9m]]><\/nonce_str>\n<sign><![CDATA[834054489D4504156A96C7A4F8F40977]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx2017033015570149ef04d2f60781590364]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"Rxay2ef95HgjsI9m","sign":"834054489D4504156A96C7A4F8F40977","result_code":"SUCCESS","prepay_id":"wx2017033015570149ef04d2f60781590364","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:57:01+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"Rxay2ef95HgjsI9m","sign":"834054489D4504156A96C7A4F8F40977","result_code":"SUCCESS","prepay_id":"wx2017033015570149ef04d2f60781590364","trade_type":"JSAPI"}
+[ 2017-03-30T15:57:09+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330155709245272","total_fee":1,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"hbrf93b69xzqwk0ncb65pq9dic1so4up","sign":"E8D841A47421F0C6A0E3550FB0D068B1"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[gfKrWqOzQM1cLaCu]]><\/nonce_str>\n<sign><![CDATA[B44AC634B9DE5CBF65623251999F7513]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx2017033015570935568bd9270337372267]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"gfKrWqOzQM1cLaCu","sign":"B44AC634B9DE5CBF65623251999F7513","result_code":"SUCCESS","prepay_id":"wx2017033015570935568bd9270337372267","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:57:09+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"gfKrWqOzQM1cLaCu","sign":"B44AC634B9DE5CBF65623251999F7513","result_code":"SUCCESS","prepay_id":"wx2017033015570935568bd9270337372267","trade_type":"JSAPI"}
+[ 2017-03-30T15:57:12+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330155712970852","total_fee":1,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"uf3gvdm6t5qeck27x6akf5yw2hyghaez","sign":"C199E3ACE8C24219DBE6B905FDB3224D"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[DWWLelWZmIqnROhO]]><\/nonce_str>\n<sign><![CDATA[F70A171CCF6E9AC0BCA26237B4D042D0]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330155712f8e731e9350854435267]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"DWWLelWZmIqnROhO","sign":"F70A171CCF6E9AC0BCA26237B4D042D0","result_code":"SUCCESS","prepay_id":"wx20170330155712f8e731e9350854435267","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:57:12+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"DWWLelWZmIqnROhO","sign":"F70A171CCF6E9AC0BCA26237B4D042D0","result_code":"SUCCESS","prepay_id":"wx20170330155712f8e731e9350854435267","trade_type":"JSAPI"}
+[ 2017-03-30T15:58:09+08:00 ] 175.155.24.117 /index.php/Mobile/Order/confirm/?id=16
+ERR: 用户访问信息getWxLogin：{"id":"16"}
+[ 2017-03-30T15:58:41+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/checkreduce.html
+ERR: 更新订单优惠信息（新增优惠），结果：1,UPDATE `train_order` SET `reduceamount`=1199.9,`reducecode`='123456',`realamount`=0.099999999999909 WHERE ( `id` = 16 )
+[ 2017-03-30T15:58:41+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/checkreduce.html
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330155841801772","total_fee":10,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"4qrbqrx25dbkzc4buxypi2do0zjevkj1","sign":"F1077E9375738E4D5E681404EBDE804E"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[I5r40Nz7KIKr1YqU]]><\/nonce_str>\n<sign><![CDATA[50F9C434AAF0C27F961D6BAAF9671237]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330155841fd4dada3be0312583683]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"I5r40Nz7KIKr1YqU","sign":"50F9C434AAF0C27F961D6BAAF9671237","result_code":"SUCCESS","prepay_id":"wx20170330155841fd4dada3be0312583683","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T15:58:41+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/checkreduce.html
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"I5r40Nz7KIKr1YqU","sign":"50F9C434AAF0C27F961D6BAAF9671237","result_code":"SUCCESS","prepay_id":"wx20170330155841fd4dada3be0312583683","trade_type":"JSAPI"}
+[ 2017-03-30T16:00:54+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330160053666660","total_fee":1,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"ikisbncy8j13loy2ev8iw7od0cchnsyn","sign":"E70BA56FB547EAEA318FF293D8EA8C9C"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[elbPkWDYdSiCi09M]]><\/nonce_str>\n<sign><![CDATA[22869A51F65E6F9038B7B6C139C41E3D]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330160053115d1c237c0307876245]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"elbPkWDYdSiCi09M","sign":"22869A51F65E6F9038B7B6C139C41E3D","result_code":"SUCCESS","prepay_id":"wx20170330160053115d1c237c0307876245","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T16:00:54+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"elbPkWDYdSiCi09M","sign":"22869A51F65E6F9038B7B6C139C41E3D","result_code":"SUCCESS","prepay_id":"wx20170330160053115d1c237c0307876245","trade_type":"JSAPI"}
+[ 2017-03-30T16:01:05+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:01:05+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:01:05+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:01:05+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ikisbncy8j13loy2ev8iw7od0cchnsyn]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160053666660]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[21B9A782A2448F4624C7CD78BD9F0279]]></sign>
+<time_end><![CDATA[20170330160105]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305182893759]]></transaction_id>
+</xml>
+[ 2017-03-30T16:01:05+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160053666660,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160053666660' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T16:01:17+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:01:17+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:01:17+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:01:17+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ikisbncy8j13loy2ev8iw7od0cchnsyn]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160053666660]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[21B9A782A2448F4624C7CD78BD9F0279]]></sign>
+<time_end><![CDATA[20170330160105]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305182893759]]></transaction_id>
+</xml>
+[ 2017-03-30T16:01:17+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160053666660,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160053666660' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T16:01:34+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:01:34+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:01:34+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:01:34+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ikisbncy8j13loy2ev8iw7od0cchnsyn]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160053666660]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[21B9A782A2448F4624C7CD78BD9F0279]]></sign>
+<time_end><![CDATA[20170330160105]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305182893759]]></transaction_id>
+</xml>
+[ 2017-03-30T16:01:34+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160053666660,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160053666660' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T16:02:07+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:02:07+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:02:07+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:02:07+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ikisbncy8j13loy2ev8iw7od0cchnsyn]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160053666660]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[21B9A782A2448F4624C7CD78BD9F0279]]></sign>
+<time_end><![CDATA[20170330160105]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305182893759]]></transaction_id>
+</xml>
+[ 2017-03-30T16:02:07+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160053666660,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160053666660' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T16:03:12+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330160312462603","total_fee":1,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"s4of4l5asv15z81rkvqzuvo708w62zag","sign":"1D22DA18992AA7D94AD4D7B448BDCB09"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[epyOE67g66qe4eM8]]><\/nonce_str>\n<sign><![CDATA[B54B46B6BC0CD66EEF3FB69345A84F6C]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx2017033016031295505ad0d80337435716]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"epyOE67g66qe4eM8","sign":"B54B46B6BC0CD66EEF3FB69345A84F6C","result_code":"SUCCESS","prepay_id":"wx2017033016031295505ad0d80337435716","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T16:03:12+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"epyOE67g66qe4eM8","sign":"B54B46B6BC0CD66EEF3FB69345A84F6C","result_code":"SUCCESS","prepay_id":"wx2017033016031295505ad0d80337435716","trade_type":"JSAPI"}
+[ 2017-03-30T16:03:26+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:03:26+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:03:26+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:03:26+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[s4of4l5asv15z81rkvqzuvo708w62zag]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160312462603]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[B74B93D0300C971554BAB238FF5126D2]]></sign>
+<time_end><![CDATA[20170330160325]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305179570652]]></transaction_id>
+</xml>
+[ 2017-03-30T16:03:26+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功，支付订单号：20170330160312462603,SQL:UPDATE `train_order` SET `status`=1,`paytime`=1490861006,`paytype`='微信支付' WHERE ( id = 16 )
+[ 2017-03-30T16:03:42+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:03:42+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:03:42+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:03:42+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[s4of4l5asv15z81rkvqzuvo708w62zag]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160312462603]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[B74B93D0300C971554BAB238FF5126D2]]></sign>
+<time_end><![CDATA[20170330160325]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305179570652]]></transaction_id>
+</xml>
+[ 2017-03-30T16:03:42+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功，支付订单号：20170330160312462603,SQL:UPDATE `train_order` SET `status`=1,`paytime`=1490861022,`paytype`='微信支付' WHERE ( id = 16 )
+[ 2017-03-30T16:03:59+08:00 ] 140.207.54.73 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:03:59+08:00 ] 140.207.54.73 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:03:59+08:00 ] 140.207.54.73 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:03:59+08:00 ] 140.207.54.73 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[s4of4l5asv15z81rkvqzuvo708w62zag]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160312462603]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[B74B93D0300C971554BAB238FF5126D2]]></sign>
+<time_end><![CDATA[20170330160325]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305179570652]]></transaction_id>
+</xml>
+[ 2017-03-30T16:03:59+08:00 ] 140.207.54.73 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功，支付订单号：20170330160312462603,SQL:UPDATE `train_order` SET `status`=1,`paytime`=1490861039,`paytype`='微信支付' WHERE ( id = 16 )
+[ 2017-03-30T16:04:30+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:04:30+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:04:30+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:04:30+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[s4of4l5asv15z81rkvqzuvo708w62zag]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160312462603]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[B74B93D0300C971554BAB238FF5126D2]]></sign>
+<time_end><![CDATA[20170330160325]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305179570652]]></transaction_id>
+</xml>
+[ 2017-03-30T16:04:30+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功，支付订单号：20170330160312462603,SQL:UPDATE `train_order` SET `status`=1,`paytime`=1490861070,`paytype`='微信支付' WHERE ( id = 16 )
+[ 2017-03-30T16:04:51+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330160451564030","total_fee":1,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"ltfqd4o21124ercqss60lde7j3z47ku5","sign":"38B121A5BF7FBD8A0F9D338A1B886D52"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[q1WLques6reHsLSF]]><\/nonce_str>\n<sign><![CDATA[68BB686E97D589AE7934F586E381D39F]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx201703301604513b482ea2760723755298]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"q1WLques6reHsLSF","sign":"68BB686E97D589AE7934F586E381D39F","result_code":"SUCCESS","prepay_id":"wx201703301604513b482ea2760723755298","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T16:04:51+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"q1WLques6reHsLSF","sign":"68BB686E97D589AE7934F586E381D39F","result_code":"SUCCESS","prepay_id":"wx201703301604513b482ea2760723755298","trade_type":"JSAPI"}
+[ 2017-03-30T16:05:10+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:05:10+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:05:10+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:05:10+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ikisbncy8j13loy2ev8iw7od0cchnsyn]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160053666660]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[21B9A782A2448F4624C7CD78BD9F0279]]></sign>
+<time_end><![CDATA[20170330160105]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305182893759]]></transaction_id>
+</xml>
+[ 2017-03-30T16:05:10+08:00 ] 140.207.54.75 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160053666660,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160053666660' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T16:07:33+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:07:33+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:07:33+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:07:33+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[s4of4l5asv15z81rkvqzuvo708w62zag]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160312462603]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[B74B93D0300C971554BAB238FF5126D2]]></sign>
+<time_end><![CDATA[20170330160325]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305179570652]]></transaction_id>
+</xml>
+[ 2017-03-30T16:07:33+08:00 ] 140.207.54.74 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功，支付订单号：20170330160312462603,SQL:UPDATE `train_order` SET `status`=1,`paytime`=1490861253,`paytype`='微信支付' WHERE ( id = 16 )
+[ 2017-03-30T16:10:01+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330161000377273","total_fee":1,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"4se8vvnn7b238bzyf7kktt0fnvj4h73j","sign":"D387AB28B2FE3D607252DF5875F0D9EE"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[L9DQC727vs0veaom]]><\/nonce_str>\n<sign><![CDATA[D7747D3533D1E951184900EE865A1FBF]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx201703301610006aa11d09fa0386054929]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"L9DQC727vs0veaom","sign":"D7747D3533D1E951184900EE865A1FBF","result_code":"SUCCESS","prepay_id":"wx201703301610006aa11d09fa0386054929","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T16:10:01+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"L9DQC727vs0veaom","sign":"D7747D3533D1E951184900EE865A1FBF","result_code":"SUCCESS","prepay_id":"wx201703301610006aa11d09fa0386054929","trade_type":"JSAPI"}
+[ 2017-03-30T16:10:04+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330161004614439","total_fee":1,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"joss2g6j92jxo014w8nt2h1czpc8f0ml","sign":"1FC8975649E8347707FDBC8DCC6B3E6B"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[LOSxw16uqEr9IuPU]]><\/nonce_str>\n<sign><![CDATA[DBE8F372CF119C68F1BAE64E1B4A2035]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330161004763360bffa0483991567]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"LOSxw16uqEr9IuPU","sign":"DBE8F372CF119C68F1BAE64E1B4A2035","result_code":"SUCCESS","prepay_id":"wx20170330161004763360bffa0483991567","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T16:10:04+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"LOSxw16uqEr9IuPU","sign":"DBE8F372CF119C68F1BAE64E1B4A2035","result_code":"SUCCESS","prepay_id":"wx20170330161004763360bffa0483991567","trade_type":"JSAPI"}
+[ 2017-03-30T16:14:48+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330161448932026","total_fee":1,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"zzlm7p9eum4n8yorx1nwz5786hgde406","sign":"C15E93783A57AD05B0E200752F90A190"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[mQc4nycZ8P552AUk]]><\/nonce_str>\n<sign><![CDATA[ADB2E1E7E004DE839BAAC5B47FD8CE1E]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx20170330161448bf515636a20648467794]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"mQc4nycZ8P552AUk","sign":"ADB2E1E7E004DE839BAAC5B47FD8CE1E","result_code":"SUCCESS","prepay_id":"wx20170330161448bf515636a20648467794","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T16:14:48+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"mQc4nycZ8P552AUk","sign":"ADB2E1E7E004DE839BAAC5B47FD8CE1E","result_code":"SUCCESS","prepay_id":"wx20170330161448bf515636a20648467794","trade_type":"JSAPI"}
+[ 2017-03-30T16:14:55+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330161455066164","total_fee":1,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"m2mnf4jhlrktkkwhq1z3u662b35mi247","sign":"A1973271F8FA4B551A20EA4488A45D71"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[FEQjRBaN5q57CEEp]]><\/nonce_str>\n<sign><![CDATA[44A66D48459E88EDC37FB8A925565228]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx201703301614554ad5f5b8250143369398]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"FEQjRBaN5q57CEEp","sign":"44A66D48459E88EDC37FB8A925565228","result_code":"SUCCESS","prepay_id":"wx201703301614554ad5f5b8250143369398","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T16:14:55+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"FEQjRBaN5q57CEEp","sign":"44A66D48459E88EDC37FB8A925565228","result_code":"SUCCESS","prepay_id":"wx201703301614554ad5f5b8250143369398","trade_type":"JSAPI"}
+[ 2017-03-30T16:14:57+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330161457667140","total_fee":1,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"ynd7ijff4aoozuq3io8d8cx2dginr187","sign":"DF73705F2D44F263083E9EE0EADE7824"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[GFeE3ABKI0TuxJJh]]><\/nonce_str>\n<sign><![CDATA[EBEF5C1B4FC1ACD61FF70D672701D032]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx201703301614573e6144c1610576436094]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"GFeE3ABKI0TuxJJh","sign":"EBEF5C1B4FC1ACD61FF70D672701D032","result_code":"SUCCESS","prepay_id":"wx201703301614573e6144c1610576436094","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T16:14:57+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"GFeE3ABKI0TuxJJh","sign":"EBEF5C1B4FC1ACD61FF70D672701D032","result_code":"SUCCESS","prepay_id":"wx201703301614573e6144c1610576436094","trade_type":"JSAPI"}
+[ 2017-03-30T16:15:14+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:15:14+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:15:14+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:15:14+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ynd7ijff4aoozuq3io8d8cx2dginr187]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330161457667140]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BA6A7D0C25E99C8302DC4B8FADADD0A4]]></sign>
+<time_end><![CDATA[20170330161514]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305181335593]]></transaction_id>
+</xml>
+[ 2017-03-30T16:15:14+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功，支付订单号：20170330161457667140,SQL:UPDATE `train_order` SET `status`=1,`paytime`=1490861714,`paytype`='微信支付' WHERE ( id = 16 )
+[ 2017-03-30T16:15:26+08:00 ] 101.226.103.61 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:15:26+08:00 ] 101.226.103.61 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:15:26+08:00 ] 101.226.103.61 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:15:26+08:00 ] 101.226.103.61 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ynd7ijff4aoozuq3io8d8cx2dginr187]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330161457667140]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BA6A7D0C25E99C8302DC4B8FADADD0A4]]></sign>
+<time_end><![CDATA[20170330161514]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305181335593]]></transaction_id>
+</xml>
+[ 2017-03-30T16:15:26+08:00 ] 101.226.103.61 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330161457667140,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330161457667140' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T16:15:38+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Userinfo/login.html
+ERR: 1146:Table 'train.train_weixin_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `train_weixin_user`
+ERR: Think\Model:findByOpenid方法不存在！
+
+[ 2017-03-30T16:15:42+08:00 ] 58.251.80.57 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:15:42+08:00 ] 58.251.80.57 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:15:42+08:00 ] 58.251.80.57 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:15:42+08:00 ] 58.251.80.57 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ynd7ijff4aoozuq3io8d8cx2dginr187]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330161457667140]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BA6A7D0C25E99C8302DC4B8FADADD0A4]]></sign>
+<time_end><![CDATA[20170330161514]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305181335593]]></transaction_id>
+</xml>
+[ 2017-03-30T16:15:42+08:00 ] 58.251.80.57 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330161457667140,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330161457667140' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T16:16:15+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:16:15+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:16:15+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:16:15+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ynd7ijff4aoozuq3io8d8cx2dginr187]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330161457667140]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BA6A7D0C25E99C8302DC4B8FADADD0A4]]></sign>
+<time_end><![CDATA[20170330161514]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305181335593]]></transaction_id>
+</xml>
+[ 2017-03-30T16:16:15+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330161457667140,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330161457667140' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T16:18:41+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Userinfo/login.html
+ERR: 1146:Table 'train.train_weixin_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `train_weixin_user`
+ERR: Think\Model:findByOpenid方法不存在！
+
+[ 2017-03-30T16:19:17+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:19:17+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:19:17+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:19:17+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ynd7ijff4aoozuq3io8d8cx2dginr187]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330161457667140]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BA6A7D0C25E99C8302DC4B8FADADD0A4]]></sign>
+<time_end><![CDATA[20170330161514]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305181335593]]></transaction_id>
+</xml>
+[ 2017-03-30T16:19:17+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330161457667140,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330161457667140' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T16:35:11+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:35:11+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:35:11+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:35:11+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ikisbncy8j13loy2ev8iw7od0cchnsyn]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160053666660]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[21B9A782A2448F4624C7CD78BD9F0279]]></sign>
+<time_end><![CDATA[20170330160105]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305182893759]]></transaction_id>
+</xml>
+[ 2017-03-30T16:35:11+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160053666660,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160053666660' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T16:37:35+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:37:35+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:37:35+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:37:35+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[s4of4l5asv15z81rkvqzuvo708w62zag]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160312462603]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[B74B93D0300C971554BAB238FF5126D2]]></sign>
+<time_end><![CDATA[20170330160325]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305179570652]]></transaction_id>
+</xml>
+[ 2017-03-30T16:37:35+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功，支付订单号：20170330160312462603,SQL:UPDATE `train_order` SET `status`=1,`paytime`=1490863055,`paytype`='微信支付' WHERE ( id = 16 )
+[ 2017-03-30T16:49:18+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T16:49:18+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:49:18+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T16:49:18+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ynd7ijff4aoozuq3io8d8cx2dginr187]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330161457667140]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BA6A7D0C25E99C8302DC4B8FADADD0A4]]></sign>
+<time_end><![CDATA[20170330161514]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305181335593]]></transaction_id>
+</xml>
+[ 2017-03-30T16:49:18+08:00 ] 140.207.54.76 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330161457667140,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330161457667140' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T17:05:14+08:00 ] 101.226.103.62 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T17:05:14+08:00 ] 101.226.103.62 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T17:05:14+08:00 ] 101.226.103.62 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T17:05:14+08:00 ] 101.226.103.62 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ikisbncy8j13loy2ev8iw7od0cchnsyn]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160053666660]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[21B9A782A2448F4624C7CD78BD9F0279]]></sign>
+<time_end><![CDATA[20170330160105]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305182893759]]></transaction_id>
+</xml>
+[ 2017-03-30T17:05:14+08:00 ] 101.226.103.62 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160053666660,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160053666660' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T17:07:36+08:00 ] 101.226.103.61 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T17:07:36+08:00 ] 101.226.103.61 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T17:07:36+08:00 ] 101.226.103.61 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T17:07:36+08:00 ] 101.226.103.61 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[s4of4l5asv15z81rkvqzuvo708w62zag]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160312462603]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[B74B93D0300C971554BAB238FF5126D2]]></sign>
+<time_end><![CDATA[20170330160325]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305179570652]]></transaction_id>
+</xml>
+[ 2017-03-30T17:07:36+08:00 ] 101.226.103.61 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160312462603,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160312462603' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T17:18:34+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 用户访问信息getWxLogin：{"id":"16"}
+[ 2017-03-30T17:18:34+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=16
+ERR: 用户访问信息getWxLogin：{"id":"16"}
+[ 2017-03-30T17:18:35+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/orderlist.html
+ERR: 用户访问信息getWxLogin：[]
+[ 2017-03-30T17:18:35+08:00 ] 49.65.115.71 /index.php?s=/Mobile/Order/orderlist.html
+ERR: 用户访问信息getWxLogin：[]
+[ 2017-03-30T17:19:19+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T17:19:19+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T17:19:19+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T17:19:19+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ynd7ijff4aoozuq3io8d8cx2dginr187]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330161457667140]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BA6A7D0C25E99C8302DC4B8FADADD0A4]]></sign>
+<time_end><![CDATA[20170330161514]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305181335593]]></transaction_id>
+</xml>
+[ 2017-03-30T17:19:19+08:00 ] 58.251.80.50 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330161457667140,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330161457667140' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T17:19:51+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=17
+ERR: 微信订单支付生成条件:{"parameters":{"openid":"or-Ynw-Q-EwyOpZgmMTdgHFbcaCo","body":"\u82cf\u5dde\u5e02\u5e02\u6c11\u5065\u8eab\u4e2d\u5fc3\u6e38\u6cf3\u57f9\u8bad\u73ed\u62a5\u540d\u8d39\u7528","out_trade_no":"20170330171950577708","total_fee":1,"notify_url":"http:\/\/train.24parking.com.cn\/index.php\/Mobile\/WxPay\/notify","trade_type":"JSAPI","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","spbill_create_ip":"49.65.115.71","nonce_str":"fr565r4kuwzi4cgprpmqm7cefxalt8mc","sign":"64484E4776A65CBED053F106654C3AF9"},"response":"<xml><return_code><![CDATA[SUCCESS]]><\/return_code>\n<return_msg><![CDATA[OK]]><\/return_msg>\n<appid><![CDATA[wxc516d0be0aadfd29]]><\/appid>\n<mch_id><![CDATA[1319260101]]><\/mch_id>\n<nonce_str><![CDATA[D3fqqmra5J4CuZIO]]><\/nonce_str>\n<sign><![CDATA[5D207D58657D85D1F18B40F9BB142F3C]]><\/sign>\n<result_code><![CDATA[SUCCESS]]><\/result_code>\n<prepay_id><![CDATA[wx2017033017195140c30079b50765656610]]><\/prepay_id>\n<trade_type><![CDATA[JSAPI]]><\/trade_type>\n<\/xml>","result":{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"D3fqqmra5J4CuZIO","sign":"5D207D58657D85D1F18B40F9BB142F3C","result_code":"SUCCESS","prepay_id":"wx2017033017195140c30079b50765656610","trade_type":"JSAPI"},"url":"https:\/\/api.mch.weixin.qq.com\/pay\/unifiedorder","curl_timeout":30}
+[ 2017-03-30T17:19:51+08:00 ] 49.65.115.71 /index.php/Mobile/Order/confirm/?id=17
+ERR: 微信订单支付生成结果:{"return_code":"SUCCESS","return_msg":"OK","appid":"wxc516d0be0aadfd29","mch_id":"1319260101","nonce_str":"D3fqqmra5J4CuZIO","sign":"5D207D58657D85D1F18B40F9BB142F3C","result_code":"SUCCESS","prepay_id":"wx2017033017195140c30079b50765656610","trade_type":"JSAPI"}
+[ 2017-03-30T17:20:00+08:00 ] 101.226.125.104 /index.php/Mobile/Order/confirm/?id=17
+ERR: 用户访问信息getWxLogin：{"id":"17"}
+[ 2017-03-30T17:35:15+08:00 ] 183.3.234.49 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T17:35:15+08:00 ] 183.3.234.49 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T17:35:15+08:00 ] 183.3.234.49 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T17:35:15+08:00 ] 183.3.234.49 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ikisbncy8j13loy2ev8iw7od0cchnsyn]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160053666660]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[21B9A782A2448F4624C7CD78BD9F0279]]></sign>
+<time_end><![CDATA[20170330160105]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305182893759]]></transaction_id>
+</xml>
+[ 2017-03-30T17:35:15+08:00 ] 183.3.234.49 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160053666660,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160053666660' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T17:37:37+08:00 ] 183.3.234.49 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T17:37:37+08:00 ] 183.3.234.49 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T17:37:37+08:00 ] 183.3.234.49 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T17:37:37+08:00 ] 183.3.234.49 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[s4of4l5asv15z81rkvqzuvo708w62zag]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160312462603]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[B74B93D0300C971554BAB238FF5126D2]]></sign>
+<time_end><![CDATA[20170330160325]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305179570652]]></transaction_id>
+</xml>
+[ 2017-03-30T17:37:37+08:00 ] 183.3.234.49 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160312462603,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160312462603' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T17:49:20+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T17:49:20+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T17:49:20+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T17:49:20+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ynd7ijff4aoozuq3io8d8cx2dginr187]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330161457667140]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BA6A7D0C25E99C8302DC4B8FADADD0A4]]></sign>
+<time_end><![CDATA[20170330161514]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305181335593]]></transaction_id>
+</xml>
+[ 2017-03-30T17:49:20+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330161457667140,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330161457667140' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T18:05:17+08:00 ] 58.251.80.59 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T18:05:17+08:00 ] 58.251.80.59 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T18:05:17+08:00 ] 58.251.80.59 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T18:05:17+08:00 ] 58.251.80.59 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ikisbncy8j13loy2ev8iw7od0cchnsyn]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160053666660]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[21B9A782A2448F4624C7CD78BD9F0279]]></sign>
+<time_end><![CDATA[20170330160105]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305182893759]]></transaction_id>
+</xml>
+[ 2017-03-30T18:05:17+08:00 ] 58.251.80.59 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160053666660,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160053666660' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T18:06:53+08:00 ] 101.226.69.246 /index.php/Mobile/Order/confirm/?id=17
+ERR: 用户访问信息getWxLogin：{"id":"17"}
+[ 2017-03-30T18:07:39+08:00 ] 58.251.80.56 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T18:07:39+08:00 ] 58.251.80.56 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T18:07:39+08:00 ] 58.251.80.56 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T18:07:39+08:00 ] 58.251.80.56 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[s4of4l5asv15z81rkvqzuvo708w62zag]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160312462603]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[B74B93D0300C971554BAB238FF5126D2]]></sign>
+<time_end><![CDATA[20170330160325]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305179570652]]></transaction_id>
+</xml>
+[ 2017-03-30T18:07:39+08:00 ] 58.251.80.56 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160312462603,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160312462603' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T18:19:21+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T18:19:21+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T18:19:21+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T18:19:21+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ynd7ijff4aoozuq3io8d8cx2dginr187]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330161457667140]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BA6A7D0C25E99C8302DC4B8FADADD0A4]]></sign>
+<time_end><![CDATA[20170330161514]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305181335593]]></transaction_id>
+</xml>
+[ 2017-03-30T18:19:21+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330161457667140,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330161457667140' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T19:05:19+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T19:05:19+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T19:05:19+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T19:05:19+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ikisbncy8j13loy2ev8iw7od0cchnsyn]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160053666660]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[21B9A782A2448F4624C7CD78BD9F0279]]></sign>
+<time_end><![CDATA[20170330160105]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305182893759]]></transaction_id>
+</xml>
+[ 2017-03-30T19:05:19+08:00 ] 58.251.80.53 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160053666660,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160053666660' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T19:07:41+08:00 ] 58.251.80.47 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T19:07:41+08:00 ] 58.251.80.47 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T19:07:41+08:00 ] 58.251.80.47 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T19:07:41+08:00 ] 58.251.80.47 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[s4of4l5asv15z81rkvqzuvo708w62zag]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330160312462603]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[B74B93D0300C971554BAB238FF5126D2]]></sign>
+<time_end><![CDATA[20170330160325]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305179570652]]></transaction_id>
+</xml>
+[ 2017-03-30T19:07:41+08:00 ] 58.251.80.47 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330160312462603,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330160312462603' ) AND ( `status` = 0 ) LIMIT 1  
+[ 2017-03-30T19:19:23+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: 微信支付成功后返回响应如下：
+[ 2017-03-30T19:19:23+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T19:19:23+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: a:0:{}
+[ 2017-03-30T19:19:23+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: 微信返回值<xml><appid><![CDATA[wxc516d0be0aadfd29]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1319260101]]></mch_id>
+<nonce_str><![CDATA[ynd7ijff4aoozuq3io8d8cx2dginr187]]></nonce_str>
+<openid><![CDATA[or-Ynw-Q-EwyOpZgmMTdgHFbcaCo]]></openid>
+<out_trade_no><![CDATA[20170330161457667140]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BA6A7D0C25E99C8302DC4B8FADADD0A4]]></sign>
+<time_end><![CDATA[20170330161514]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4001152001201703305181335593]]></transaction_id>
+</xml>
+[ 2017-03-30T19:19:23+08:00 ] 101.226.103.69 /index.php/Mobile/WxPay/notify
+ERR: 微信支付失败，支付订单号：20170330161457667140,订单不存在或金额错误，需退款，SQL:SELECT * FROM `train_wxpay_order` WHERE ( `number` = '20170330161457667140' ) AND ( `status` = 0 ) LIMIT 1  

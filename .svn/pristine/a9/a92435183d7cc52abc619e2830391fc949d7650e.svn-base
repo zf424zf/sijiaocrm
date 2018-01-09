@@ -1,0 +1,720 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>苏州市市民健身中心报名</title>
+    <link href="/Public/Front/css/ui-base.css" type="text/css" rel="stylesheet">
+    <link href="/Public/Front/css/index.css" type="text/css" rel="stylesheet">
+    <link href="/Public/Front/css/common.css" type="text/css" rel="stylesheet">
+    <link href="/Public/Front/css/default_color.css" type="text/css" rel="stylesheet">
+    <link href="/Public/Front/css/module.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="/Public/Front/js/vendor/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="/Public/Front/js/book.js"></script>
+    <script type="text/javascript" src="/Public/Front/js/autocomplete/jquery.autocomplete.js"></script>
+    <script src="/Public/Front/js/vendor/zepto.min.js"></script>
+    <script src="/Public/Front/js/vendor/mobileResponsive.js"></script>
+    <script src="/Public/Front/js/vendor/touchScroll.js"></script>
+
+    <script type="text/javascript">
+        var timestamp = Date.parse(new Date())/1000;
+        //弹出隐藏层
+        function findmsg(stuid){
+            document.getElementById('MyDiv').style.display='block';
+            document.getElementById('fade').style.display='block';
+
+            document.getElementById('MyDiv').style.display='block';
+            document.getElementById('fade').style.display='block';
+            var param = {sid:stuid};
+            $.ajax({
+                url: '/Mobile/Front/getOrderByAjax',
+                type: 'post',
+                datatype: 'json',
+                data: param,
+                success: function (data) {
+                    //console.log(data[0]['m'][0].age);
+                    $(".orderlist").html('');//初始
+                    var str='';
+                    if(data){
+                        $.each(data,function (key,value) {
+                            str += "<tr>";
+                            $.each(value['m'],function (k,v) {
+                                str +="<td>"+v.id+"</td>";
+                                str +="<td>"+v.name+"</td>";
+                                str +="<td>"+v.sex+"</td>";
+                                str +="<td>"+v.birthinfo+"</td>";
+                                str +="<td>"+v.phone+"</td>";
+                                str +="<td>"+value.number+"</td>";
+                                if(value.isget == 1){
+                                    str +="<td>已领取</td>";
+                                }else {
+                                    str +="<td id='loaded"+v.id+"'><a href='javascript:checklive(\""+v.id+"\",\""+stuid+"\")'>领取</a></td>";
+                                }
+                                str +="<td><a href='javascript:checkChange(\""+v.id+"\",\""+stuid+"\")'>转课</a></td>";
+                            });
+                            str += "</tr>";
+                        });
+                    }
+                    $(".orderlist").html('');
+                    $(".orderlist").html(str);
+                }
+            });
+            //获取课程信息
+            $.ajax({
+                url: '/Mobile/Front/msgSchedule',
+                type: 'post',
+                datatype: 'json',
+                data: param,
+                success: function (data) {
+                    var result = eval("(" + data + ")");
+                    if(result.status==200){
+                        document.getElementById("classtype1").innerHTML=result.data.classtype;
+                        document.getElementById("time_d1").innerHTML=result.data.time_d;
+                        document.getElementById("hour_d1").innerHTML=result.data.hour_d;
+                        document.getElementById("class_msg1").innerHTML=result.data.msg;
+                        document.getElementById("num_d1").innerHTML=result.data.num_d;
+                        document.getElementById("week_d1").innerHTML=result.data.weekinfo;
+                        if(result.data.amount_follow>0 && timestamp>result.time){
+                            document.getElementById("money_d1").innerHTML=result.data.amount_follow;
+                            document.getElementById("money_d1_text").innerHTML="(续班)";
+                        }else {
+                            document.getElementById("money_d1").innerHTML=result.data.amount;
+                        }
+                        document.getElementById("num1").innerHTML=result.data.num;
+                        document.getElementById("students1").innerHTML=result.data.students;
+                        document.getElementById("nums1").innerHTML=result.data.nums;
+                        document.getElementById("mark1").innerHTML=result.data.mark;
+                    }else {
+                        alert("无此课程信息");
+                        return false;
+                    }
+                }
+            });
+
+        };
+
+        //关闭弹出层
+        function CloseDiv(show_div)
+        {
+            document.getElementById(show_div).style.display='none';
+            document.getElementById("fade").style.display='none';
+        };
+        //判断优惠政策
+        function checksale(){
+            var phone = $("#phone").val();
+            var name = $("#name").val();
+            var sid = $("#sid").val();
+            if (phone !='' &&  name != '' && sid != '') {
+                $.ajax({
+                    url: '/Mobile/Front/checksale',
+                    type: 'post',
+                    datatype: 'json',
+                    data: {phone:phone,name:name,sid:sid},
+                    success: function (data) {
+                        var result = eval("(" + data + ")");
+                        var amount_follow =  result.amount_follow;
+                        var realamount =  result.realamount;
+                        var paymoney =  $("#paymoney").val();
+                        var money_d =  document.getElementById("money_d").innerHTML;
+                        if(result.status==200){
+                            if(amount_follow !=0){
+                                $("#paymoney").val(amount_follow);
+                                $("#amount_follow").val(amount_follow);
+                                //alert(result.msg);
+                            }else if(realamount !=0){
+                                var sale = ((parseInt(money_d))+(parseInt(realamount))-80)*0.1;
+                                var salemoney =(parseInt(money_d))-sale;
+                                $("#sale").val(sale);
+                                document.getElementById("paymoney").innerHTML=salemoney;
+                                // alert(result.msg);
+                            }else {
+                                $("#sale").val(0);
+                                $("#amount_follow").val(0);
+                            }
+                        }else {
+                            //alert(result.msg);
+                            return false;
+                        }
+                    }
+                });
+            }else {
+                var youhui = document.getElementById("youhui").innerHTML;
+                var money_d = document.getElementById("money_d").innerHTML;
+                var x_paymoney =parseFloat(money_d)-parseFloat(youhui);
+                document.getElementById("paymoney").innerHTML=x_paymoney;
+            }
+        }
+        //领取体验卷
+        function checklive(uid,sid){
+            var uid= uid;
+            var sid=sid;
+            if (uid !== null || sid !== null) {
+                if(confirm('确定领取优惠券吗？')){
+                    $.ajax({
+                        url: '/Mobile/Front/checkLiveByAjax',
+                        type: 'post',
+                        datatype: 'json',
+                        data: {uid:uid,sid:sid},
+                        success: function (data) {
+                            var result = eval("(" + data + ")");
+                            if(result.status==200){
+                                document.getElementById("loaded"+uid).innerHTML="已领取";
+                               alert(result.msg);
+                            }else {
+                                alert(result.msg);
+                                return false;
+                            }
+                        }
+                    });
+                }
+            }
+        }
+        //判断优惠码
+        function checkreduce(){
+            var discount = document.getElementById("discount").value;
+            var money = document.getElementById("money_d").innerHTML;
+            if(discount == ''){
+                document.getElementById("youhui").innerHTML=0;
+                checksale();
+            }
+            $.ajax({
+                    url: '/Mobile/Front/checkreduce',
+                    type: 'post',
+                    datatype: 'json',
+                    data: {code:discount},
+                    success: function (data) {
+                        var result = eval("(" + data + ")");
+                        var money = document.getElementById("money_d").innerHTML;
+                        var sale =  $("#sale").val();
+                        var xtype =  $("#xtype").val();
+                        var amount_follow =  $("#amount_follow").val();
+                        if(result.status==200){
+                            if(parseInt(money) > result.reduce){
+                                if(sale>0){
+                                    var cjmoney= money-sale-result.reduce;
+                                }else if(amount_follow>0){
+                                    var cjmoney= amount_follow-result.reduce;
+                                }else {
+                                    var cjmoney= money-result.reduce;
+                                }
+                                //alert(result.msg);
+                                document.getElementById("youhui").innerHTML=result.reduce;
+                                document.getElementById("paymoney").innerHTML=cjmoney;
+                                document.getElementById("reduceamount").value=result.reduce;
+                            }
+                        }else {
+                            document.getElementById("paymoney").innerHTML=money;
+                            //alert(result.msg);
+                            return false;
+                        }
+                    }
+                });
+        }
+        //转课弹出隐藏层
+        function checkChange(uid,sid){
+            var sid =sid;
+            var uid =uid;
+            if(sid == '' || uid == ''){
+                return false;
+            }else {
+                window.location.href ="/Mobile/Front/change/sid/"+sid+"/id/"+uid;
+            }
+        };
+        //弹出隐藏层
+        function sign(sid,amount){
+            var sid =sid;
+            var amount =amount;
+            document.getElementById('MyDiv1').style.display='block';
+            document.getElementById('fade').style.display='block';
+            document.getElementById("sid").value=sid;
+            document.getElementById("amount").value=amount;
+            var param    = {sid:sid};
+            $.ajax({
+                url: '/Mobile/Front/msgSchedule',
+                type: 'post',
+                datatype: 'json',
+                data: param,
+                success: function (data) {
+                    var result = eval("(" + data + ")");
+                    if(result.status==200){
+                        document.getElementById("classtype").innerHTML=result.data.classtype;
+                        document.getElementById("time_d").innerHTML=result.data.time_d;
+                        document.getElementById("hour_d").innerHTML=result.data.hour_d;
+                        document.getElementById("class_msg").innerHTML=result.data.msg;
+                        document.getElementById("num_d").innerHTML=result.data.num_d;
+                        document.getElementById("week_d").innerHTML=result.data.weekinfo;
+                        if(result.data.amount_follow >0 && timestamp>result.time){
+                            document.getElementById("money_d").innerHTML=result.data.amount_follow;
+                            document.getElementById("amount_follow").innerHTML=result.data.amount_follow;
+                            document.getElementById("money_d_text").innerHTML="(续班)";
+                        }else {
+                            document.getElementById("money_d").innerHTML=result.data.amount;
+                        }
+                        document.getElementById("paymoney").innerHTML=result.data.amount;
+                        document.getElementById("classtype").innerHTML=result.data.classtype;
+                        document.getElementById("num").innerHTML=result.data.num;
+                        document.getElementById("students").innerHTML=result.data.students;
+                        document.getElementById("nums").innerHTML=result.data.nums;
+                        document.getElementById("mark").innerHTML=result.data.mark;
+                    }else {
+                        alert("无此课程信息");
+                        return false;
+                    }
+                }
+            });
+        };
+
+
+    </script>
+	<style>
+		.img_fd img{width:22px; height:22px;}
+		.addcart img{width:30px; heigh:30px;}
+		.movecart img{width:30px; heigh:30px;}
+        .class-info{
+            border:1px solid #DDDDDD;
+            margin: 20px 10px ;
+            position: relative;
+            padding: 10px 0;
+        }
+        .class-icon{
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .class-info-middle{
+            padding-left: 80px;
+            font-size: 14px;
+        }
+        .info-header{
+            font-size: 16px;
+            color: #319967;
+        }
+        .info-header-sub{
+            font-size: 14px;
+            color: #000000;
+        }
+        .info-right{
+            text-align: right;
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            font-size: 14px;
+        }
+        .money{
+            color: red;
+            font-size: 16px;
+        }
+        .sexclass{
+            background: #f0f0f0;
+            width: 91px!important;
+            border: 1px solid #dddddd;
+        }
+        .birthclass{
+            width: 75px!important;
+            border: 1px solid #dddddd;
+            height: 33px;
+        }
+        .actsex{
+           background-color:#319967!important;
+            border: 1px solid #dedede;
+            color: #ffffff!important;
+        }
+        .border-left{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .border-right{
+            margin-left: -1px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .operate-area a:hover{
+            color: none!important;
+        }
+        .sch-btn{
+            width: 60px;
+            height: 34px;
+            background: #27b25f;
+            display: inline-block;
+            line-height: 34px;
+            text-align: center;
+            font-size: 14px;
+            vertical-align: -1px;
+            color: #fff;
+        }
+        .class-info-middle p{
+            float: none!important;
+        }
+	</style>
+</head>
+<body style="background-color: #f4f4f4;">
+<!--
+<div id="loading" data-lock="1" class="loading">
+    <div class="loading-icon"></div>
+</div>
+-->
+<!-- 预定 begin -->
+<div class="book-area">
+<!-- 公用头部 begin -->
+<div class="comm-header clearfix">
+    <span class="time"><label>苏州市市民健身中心</label>&nbsp;&nbsp;&nbsp;&nbsp;{:date('Y-m-d H:i')}</span>
+    <span class="name"><i class="user-avatar-img"></i>{:session('user_auth.username')}<a href="/index.php/Mobile/Front/logout" style="color: #bcbec0; float: right; padding-left: 20px;">退出</a></span>
+</div>
+<!-- 公用头部 end -->
+
+</div>
+<!-- 预定 end -->
+
+<!-- 查看详情弹出层 begin -->
+<div id="fade" class="black_overlay"></div>
+<div id="MyDiv" class="konw-off white_content" >
+    <div class="ui-dialog zoomIn am" style="width:660px;">
+        <!-- 头 begin -->
+        <div class="title">课程详情
+            <i class="close-dialog" onclick="CloseDiv('MyDiv')"></i>
+        </div>
+        <!-- 头 end -->
+        <!-- 内容 begin -->
+        <div class="content clearfix" style=" height:auto!important;margin-bottom: 40px;overflow: hidden;">
+                <div class="right-info" style="float: none!important; width: 610px;">
+                    <div class="bs-info">
+                            <div class="class-info">
+                                <img class="class-icon" src="/Public/Front/img/yy.png">
+                                <div class="class-info-middle">
+                                    <p class="info-header">班级名称：<span id="classtype1"></span>(<span class="info-header-sub" id="num_d1"></span>人班)</p>
+                                    <p>课次：<span id="nums1"></span>课次&nbsp;&nbsp;<span id="week_d1"></span>&nbsp;&nbsp;<span id="hour_d1"></span></p>
+                                    <p>开课：<span id="time_d1">0</span>&nbsp;&nbsp;剩余名额：<span id="num1">0</span></p>
+                                    <p>招生：<span id="students1"></span></p>
+                                    <p>备注：<span id="mark1"></span></p>
+                                </div>
+                                <div class="info-right">
+                                    <p class="money">￥<span id="money_d1">0</span><span id="money_d1_text"></span></p>
+                                    <p style="float: right">班级状态：<span id="class_msg1"></span></p>
+                                </div>
+                            </div>
+                        <!-- 已报名学生 begin -->
+                       <div class="aa" style="width: 588px;overflow: auto; margin: 0 10px;height: 160px">
+                           <table style="width: 100%;">
+                               <thead style=" background: rgb(186, 182, 182);color: #000000;">
+                               <td>序号</td>
+                               <td>姓名</td>
+                               <td>性别</td>
+                               <td>出生年月</td>
+                               <td>手机号</td>
+                               <td>订单编号</td>
+                               <td>体验券</td>
+                               <td>操作</td>
+                               </thead>
+                               <tbody class="orderlist">
+
+                               </tbody>
+                           </table>
+                       </div>
+
+                    </div>
+
+                </div>
+        </div>
+        <!-- 内容 end -->
+    </div>
+</div>
+<!-- 使用须知弹出层 end -->
+
+<!-- 报名弹出层 begin -->
+<div  id="MyDiv1" class="success-off white_sign">
+    <div class="ui-dialog zoomIn am" style="width: 640px;">
+        <!-- 头 begin -->
+        <div class="title">报名信息填写
+            <span style="font-size: 16px;float: right; cursor: pointer;" onclick="CloseDiv('MyDiv1')">×</span>
+        </div>
+        <!-- 头 end -->
+        <!-- 内容 begin -->
+        <div class="content clearfix" style=" height:550px;">
+            <div class="right-info">
+                <div class="bs-info">
+                    <div class="class-info">
+                        <img class="class-icon" src="/Public/Front/img/yy.png">
+                        <div class="class-info-middle">
+                            <p class="info-header">班级名称：<span id="classtype"></span>(<span class="info-header-sub" id="num_d"></span>人班)</p>
+                            <p>课次：<span id="nums"></span>课次<span id="week_d"></span>&nbsp;&nbsp;<span id="hour_d"></span></p>
+                            <p>开课：<span id="time_d">0</span>&nbsp;&nbsp;剩余名额：<span id="num">0</span>&nbsp;&nbsp;</p>
+                            <p>招生：<span id="students"></span></p>
+                            <p>备注：<span id="mark"></span></p>
+                        </div>
+                        <div class="info-right">
+                            <p class="money">￥<span id="money_d">0</span><span id="money_d_text"></span></p>
+                            <p >班级状态：<span id="class_msg"></span></p>
+                        </div>
+                    </div>
+                    <!-- 学生信息 begin -->
+                    <form action="" class="FormTable">
+                        <table style="width:500px; overflow:auto;font-size: 16px">
+                            <tr>
+                                <td align="right">学生姓名</td>
+                                <td colspan="3"><input type="text" value="" onBlur="checksale();" id="name" name="name" size="20" AUTOCOMPLETE="off"></td>
+                            </tr>
+
+                            <tr>
+                                <td align="right">学校</td>
+                                <td colspan="3"><input type="text" value="" id="school" name="school" size="20" AUTOCOMPLETE="off"></td>
+                            </tr>
+                            <tr>
+                                <td align="right">身份证号</td>
+                                <td colspan="3"><input type="text" value="" id="card" name="card" size="20" AUTOCOMPLETE="off"></td>
+                            </tr>
+                            <tr>
+                                <td align="right">出生年月</td>
+                                <td colspan="3">
+                                    <select class="birthclass" name="birth_year" id="birth_year">
+                                        <volist name="birth_year" id="vo">
+                                            <option value="{$vo}">{$vo}</option>
+                                        </volist>
+                                    </select>&nbsp;年&nbsp;
+                                    <select  class="birthclass" name="birth_month" id="birth_month">
+                                        <volist name="birth_month" id="vo">
+                                            <option value="{$vo}">{$vo}</option>
+                                        </volist>
+                                    </select>&nbsp;月
+                                 </td>
+                            </tr>
+                            <tr>
+                                <td align="right">联系电话</td>
+                                <td colspan="3"><input type="text" value=""  onBlur="checksale();" id="phone" name="phone" size="20" AUTOCOMPLETE="off"></td>
+                            </tr>
+                            <tr>
+                                <td align="right">性别</td>
+                                <td colspan="1" class="operate-area" style="font-size:0;">
+                                    <!--<input type="radio" checked  value="1" name="sex" size="2">-->
+                                    <a class=" sexclass border-left actsex sex1">男</a>
+                                    <input type="hidden" value="0" id="sex" >
+                                    <a class=" sexclass border-right sex2">女</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="right">优惠码</td>
+                                <td colspan="3"><input type="text" value="" onBlur="checkreduce();" id="discount" name="discount" size="20" AUTOCOMPLETE="off"></td>
+                            </tr>
+                        </table>
+                        <input type="hidden" value="0" id="amount_follow" >
+                        <input type="hidden" value="0" id="realamount" >
+                        <input type="hidden" value="0" id="sale" >
+                        <input type="hidden" value="0" id="xtype" >
+                    <!-- 学生信息 end -->
+                        <p class="changdi" style="display: none;">付款方式：</p>
+                        <input type="hidden" id="sid" value="">
+                        <input type="hidden" value="" id="amount">
+                        <input type="hidden" value="" id="reduceamount">
+                        <p class="operate-area pay"style="font-size: 0;padding-left: 38px;border: none; margin-top: 20px;">
+                            <a class="sexclass border-left actsex paytype1" >现金</a>
+                            <input type="hidden" value="2" id="paytype" >
+                            <a class="sexclass paytype2">阳光卡</a>
+                            <a class="sexclass border-right paytype3" >工商银行</a>
+                            <span style="font-size: 14px;padding-left: 20px;">优惠：￥<span id="youhui">0</span>&nbsp;&nbsp;金额总计：￥<span id="paymoney"></span></span>
+                        </p>
+                        <a class="settle" id="sj" style=" width:150px; margin-left:200px; border-radius: 5px;" onclick="signOrder();">确认报名</a>
+                    </form>
+                </div>
+            </div>
+            <!-- 内容 end -->
+        </div>
+    </div>
+</div>
+<!--dalog-->
+
+
+
+<!-- 购票成功弹出层 end -->
+
+
+<input type="hidden" name="uid" id="uid">
+
+
+<div id="order_info_tmp" style="display: none;"></div>
+<!--页面弹出层模板-->
+<div class="search-form headBox" style="margin-bottom: 20px;">
+    <div class="searchBox"style="font-size: 0">
+        <form action="">
+            <input type="text" name="title" class="search-input" style="height: 30px; width: 240px;" value="{:I('title')}" placeholder="查询编号/班级名称/订单编号" >
+
+            <!--<button><a class="sch-btn" href="javascript:;" id="search" url="{:U('Front/index')}"><font style="color: #fff">查询</font></a></button>-->
+             <a class="sch-btn" href="javascript:;" id="search" style="height: 30px; width: 60px; line-height: 30px;" url="{:U('Front/index')}">查询</a>
+         </form>
+     </div>
+     <!--<a href="javascript:;" class="enter">班级录入</a>-->
+ </div>
+<div class="data-table table-striped">
+ <table>
+     <thead>
+     <td>编号</td>
+     <td>课程类型</td>
+     <td>班级名称</td>
+     <td>总名额</td>
+     <td>预留</td>
+     <td>已报名</td>
+     <td>剩余名额</td>
+     <td>开始日期</td>
+     <td>课程安排</td>
+     <td>开班时间</td>
+     <td>课次</td>
+     <td>课时</td>
+     <td>授课内容</td>
+     <td>开班状态</td>
+     <td>学费</td>
+     <td>操作</td>
+     <td>报名</td>
+     </thead>
+     <tbody>
+     <volist name="_list" id="vo">
+     <tr>
+         <td>{$vo.id}</td>
+         <td>{$vo.classtype}</td>
+         <td>{$vo.title}</td>
+         <td>{$vo.num_d}</td>
+         <td class="obligate">{$vo.reserve}</td>
+         <td>{$vo.tmp}</td>
+         <td class="surplus">{$vo.num}</td>
+         <td>{$vo.startdate}</td>
+         <td>{$vo.weekinfo}</td>
+         <td>{$vo.hour_s}-{$vo.hour_e}</td>
+         <td>{$vo.nums}</td>
+         <td>{$vo.hours}</td>
+         <td>{$vo.content}</td>
+         <td>{$vo.msg}</td>
+         <td>{$vo.amount}</td>
+         <td>
+             <a href="javascript:void(0)" onclick="findmsg('{$vo.id}')" >查看详情</a>&nbsp;
+        </td>
+         <td><if condition="$vo.num eq 0">满员<else/><a href="javascript:;" onclick="sign('{$vo.id}','{$vo.x_amount}')" class="sign">报名</a></if></td>
+     </tr>
+
+    </volist>
+    </tbody>
+</table>
+    </div>
+<div class="page" style="margin-top: 20px; margin-bottom: 40px;">{$_page}</div>
+<div style="margin-bottom: 10px;position: relative;bottom: 0px;font-size: 14px;">技术支持：江苏海森堡信息科技有限公司</div>
+</body>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(document).ready(function(){
+        $("tbody tr:nth-child(even)").css("background","#f2f2f2");
+    });
+    //搜索功能
+    $("#search").click(function(){
+        var url = $(this).attr('url');
+        var query  = $('.search-form').find('input').serialize();
+        if(query){
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        }
+    });
+    //回车搜索
+    $(".search-input").keyup(function(e){
+        if(e.keyCode === 13){
+            $("#search").click();
+            return false;
+        }
+    });
+    //按钮样式切换
+    $(".operate-area").on("click",".sexclass",function(e){
+         if($(this).hasClass("actsex")){
+             return;
+         }else{
+             $(this).addClass("actsex").siblings("a").removeClass("actsex");
+         }
+        if($(this).hasClass("sex1")){
+            document.getElementById("sex").value=0;
+            return;
+        }else{
+            document.getElementById("sex").value=1;
+            return;
+        }
+    });
+    //按钮样式切换
+    $(".pay").on("click",".sexclass",function(e){
+        if($(this).hasClass("actsex")){
+            return;
+        }else{
+            $(this).addClass("actsex").siblings("a").removeClass("actsex");
+        }
+    });
+    $('.paytype1').on('click',function(){
+        $('#paytype').val(2);
+    });
+    $('.paytype2').on('click',function(){
+        $('#paytype').val(3);
+    });
+    $('.paytype3').on('click',function(){
+        $('#paytype').val(4);
+    });
+    //报名订单确认
+    function signOrder(){
+        var sid = document.getElementById("sid").value;
+        var sale = document.getElementById("sale").value;
+        var amount = document.getElementById("amount").value;
+        var amount_follow = document.getElementById("amount_follow").value;
+        var name =  $("#name").val();
+        var birthinfo =  $("#birthinfo").val();
+        var sex =  $("#sex").val();
+        var paytype =  $("#paytype").val();
+        var school =  $("#school").val();
+        var card =  $("#card").val();
+        var discount =  $("#discount").val();
+        var phone =  $("#phone").val();
+        var xtype =  $("#xtype").val();
+        var birth_year  = $("#birth_year").val();
+        var birth_month = $("#birth_month").val();
+        var birthinfo   = birth_year+"-"+birth_month;
+        if(name ==''){
+            alert("请填写学生姓名");
+            return false;
+        }
+        if(phone ==''){
+            alert("请填写联系电话");
+            return false;
+        }
+        if(sid == '' || sid == '--'){
+            alert('未获取当前报名信息，请重试');
+            return;
+        }
+        var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+        if(card!=''){
+            if(reg.test(card) === false)
+            {
+                alert("身份证输入不合法");
+                return  false;
+            }
+        }
+
+        if(!(/^1[34578]\d{9}$/.test(phone))){
+            alert("手机号码有误，请重填");
+            return false;
+        }
+        $.ajax({
+            url:'/Mobile/Front/signOrder',
+            type:'post',
+            datatype:'json',
+            data:{name:name,school:school,idcard:card,birthinfo:birthinfo,sid:sid,sex:sex,xtype:xtype,paytype:paytype,sale:sale,discount:discount,phone:phone,amount:amount,amount_follow:amount_follow},
+            success:function(data){
+//                console.log(data);
+                var result = eval("("+data+")");
+                if(result.status == 200){
+                    alert(result.msg);
+                    window.location.reload();
+                }else{
+                    alert(result.msg);
+                }
+            }
+        });
+    }
+</script>
+</html>

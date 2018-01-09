@@ -1,0 +1,85 @@
+<extend name="Base/common"/>
+
+<block name="body">
+    <div style="position: relative;">
+        <div class="schedule">
+            <div class="schedule_img"><img src="__PUBLIC__/Mobile/img/youyong.png"><br/>{$data.classtype}</div>
+            <div class="schedule_detail">
+                <div><span class="schedule_title">{$data.title}</span><span class="schedule_num">（剩余{$data.count}个名额）</span></div>
+                <div>课次：{$data.nums}次课&nbsp;&nbsp;</div>
+                <div>开课：{$data.startdate}</div>
+                <div>招生：{$data.students}</div>
+                <div>备注：{$data.mark}</div>
+            </div>
+        </div>
+        <div class="schedule_select">选择时间段：</div>
+        <div class="schedule_times">
+            <ul>
+                <volist name="datelist" id="vo">
+                <li id="{$vo.id}">
+                    <span class="schedule_hidden_num">{$vo.num}</span>
+                    <span class="schedule_isbook">{$vo.isbook}</span>
+                    <span style="float: left;"><span class="schedule_li_week">{$vo.weekinfo}</span><br/>{$vo.startdate}开班</span>
+                    <span style="float: left; padding-left: 30px;">
+                        <span class="schedule_li_times">{$vo.hour_s}-{$vo.hour_e}</span><br/>
+                        <if condition="$vo.num eq 0">
+                            已满
+                        <else/>
+                            <if condition="$vo.isbook eq 1">
+                                已报名
+                            <else/>
+                                剩余名额：<span class="schedule_li_nums">{$vo.num}</span>
+                            </if>
+                        </if>
+                    </span>
+
+                    <div style="<if condition="$vo.num eq 0 OR $vo.isbook eq 1">border-color:#949599;</if> font-family:'宋体';">√</div>
+                </li>
+                </volist>
+            </ul>
+        </div>
+        <input type="hidden" name="sel_id" id="sel_id" value="">
+
+        <div class="schedule_order">
+            <div>报&nbsp;&nbsp;名</div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $(".schedule_times ul li").on("click",function(){
+                var num = $(this).find(".schedule_hidden_num").html();
+                if(num == 0){
+                    return false;
+                }
+                var isbook = $(this).find(".schedule_isbook").html();
+                if(isbook == 1){
+                    return false;
+                }
+                var sel_id = $("#sel_id").val();
+                var id = $(this).attr('id');
+
+                $(".schedule_times ul li").find(".schedule_li_times").css({'color':'#58595B'});
+                $(".schedule_times ul li").find(".schedule_li_week").css({'color':'#58595B'});
+                $(".schedule_times ul li").find("div").css({'backgroundColor':'white'});
+                $("#sel_id").val('');
+
+                if(sel_id == '' || sel_id != id){
+                    $("#sel_id").val(id);
+                    $(this).find(".schedule_li_times").css({'color':'#24B25C'});
+                    $(this).find(".schedule_li_week").css({'color':'#24B25C'});
+                    $(this).find("div").css({'backgroundColor':'#24B25C'});
+                }
+            })
+
+            $(".schedule_order div").on("touchstart",function(){
+                var sel_id = $("#sel_id").val();
+                if(sel_id > 0){
+                    window.location.href = "/Mobile/Schedule/scheduleconfirm/id/" + sel_id;
+                }else{
+                    alert('请选择具体时间段');
+                }
+            })
+        })
+    </script>
+</block>

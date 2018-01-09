@@ -1,0 +1,38 @@
+<extend name="Base/common"/>
+
+<block name="body">
+    <style>
+        .schedule{float: left; height: auto; width: 100%; padding: 0; padding-top: 8px;}
+    </style>
+    <div style="position: relative;">
+        <ul style="margin: 0; padding: 0;">
+            <volist name="data" id="vo">
+            <li style="list-style: none;">
+                <div class="schedule">
+                    <div class="schedule_img"><img src="__PUBLIC__/Mobile/img/youyong.png"><br/>{$vo.classtype}</div>
+                    <div class="schedule_detail">
+                        <div><span class="schedule_title">{$vo.title}</span><span class="schedule_num" style="display: none;">（<if condition="$vo['num_min'] eq $vo['num_max']">{$vo.num_min}<else/>{$vo.num_min}-{$vo.num_max}</if>人）</span><span style="float: right; color: #EE4236"><span style="color: #949597; font-size: 14px; padding-right: 5px;"><if condition="$vo.type eq 1">续班</if></span>￥{$vo.realamount}</span></div>
+                        <div>编号：<span style="font-weight: bold;">{$vo.number}</span></div>
+                        <div>课次：{$vo.nums}次课&nbsp;&nbsp;{$vo.weekinfo}&nbsp;&nbsp;{$vo.hour_s}-{$vo.hour_e}</div>
+                        <div>开课：{$vo.startdate}</div>
+                        <div>招生：{$vo.students}</div>
+                        <div>备注：{$vo.mark}</div>
+                        <if condition="$vo.status gt 0"><div>体验券：<if condition="$vo.isget eq 0">未领取（请至体育馆前台领取）<else/>已领取</if></div></if>
+                        <div style="border-top: solid 1px #BDBEC0; margin-top: 6px; padding-top: 6px;">
+                            <if condition="$vo.status eq 0">
+                                <div class="order_status_nopay"><a href="/index.php/Mobile/Order/confirm/?number={$vo.number}">去支付</a></div>
+                                <elseif condition="$vo.status eq 1"/>
+                                <div class="order_status_payed">开课中</div>
+                                <elseif condition="$vo.status eq 2"/>
+                                <div class="order_status_payed">待开课</div>
+                            </if>
+                            学生：{$vo.name}&nbsp;&nbsp;<if condition="$vo.sex eq 0">男<else/>女</if>&nbsp;&nbsp;{$vo.birthinfo}<br/>
+                            电话：{$vo.phone}
+                        </div>
+                    </div>
+                </div>
+            </li>
+            </volist>
+        </ul>
+    </div>
+</block>

@@ -1,0 +1,153 @@
+<extend name="Base/common"/>
+
+<block name="body">
+    <div style="position: relative;">
+        <div class="schedule" style="height: 120px;">
+            <div class="schedule_img"><img src="__PUBLIC__/Mobile/img/youyong.png"></div>
+            <div class="schedule_detail">
+                <div><span class="schedule_title">{$data.title}</span><span class="schedule_num">（{$data.num_min}-{$data.num_max}人）</span></div>
+                <div>{$data.startdate}</div>
+                <div>周{$data.weekinfo}</div>
+                <div>{$data.nums}课时 {$data.content}</div>
+                <div>
+                    上课时段：{$data.hour_s}-{$data.hour_e}
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-left: 8px; padding-right: 8px; background-color: white; height: 50px; line-height: 50px; margin-top: 30px;">
+            <span>学费：</span><span style="float: right; color: #EE4236; font-weight: bold;">￥{$data.amount}</span>
+        </div>
+        <!--支付方式 begin-->
+        <div class="payfor-type">
+            <p class="title">支付方式</p>
+            <ul>
+                <li>
+                    <a>
+                        <i class="ipass-icon"></i>
+                        <span>一卡通</span>
+                        <font>(余额0元)</font>
+                        <i class="radio-btn" id="vipcard"></i>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="wechart-icon"></i>
+                        <span>微信支付</span>
+                        <i class="radio-btn on" id="wxpay"></i>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="bank-icon"></i>
+                        <span>银行卡支付</span>
+                        <i class="radio-btn" id="bankcard"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!--支付方式 end-->
+        <div class="schedule_confirm_order">
+            <div class="confirm_amount">
+                <span style="float: left; padding-left: 8px;">合计费用：</span>
+                <span class="confirm_amount_list" style="float: right; padding-right: 8px;"><span class="confirm_price">￥{$data.amount}</span></span>
+            </div>
+            <div class="confirm_btn"><div>确认支付</div></div>
+        </div>
+    </div>
+
+    <input type="hidden" name="number" id="number" value="{$number}">
+    <input type="hidden" name="amount" id="amount" value="{$amount}">
+    <input type="hidden" name="timeStamp" id="timeStamp" value="{$paypost.timeStamp}">
+    <input type="hidden" name="nonceStr" id="nonceStr" value="{$paypost.nonceStr}">
+    <input type="hidden" name="packages" id="packages" value="{$paypost.package}">
+    <input type="hidden" name="paySign" id="paySign" value="{$paypost.paySign}">
+
+    <script type="text/javascript" language="javascript" src="__PUBLIC__/Mobile/js/vendor/zepto.min.js"></script>
+    <script type="text/javascript" language="javascript" src="__PUBLIC__/Mobile/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" language="javascript" src="__PUBLIC__/Mobile/js/pay.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            wxpay();
+            /*确认支付*/
+            $( '#confirm' ).bind( 'touchstart' , function() {
+                if($("#paystatus").val() == 1){
+                    return false;
+                }else{
+                    var timestamp = Date.parse(new Date()) * 0.001;
+                    var timenow   = parseInt($("#ordertime").val());
+
+                    if(timenow + 15 * 60 < timestamp){
+                        alert("您已超时15分钟未支付，请重新预定");
+                        window.history.go(-1);
+                        return false;
+                    }
+                    $("#confirm").html("支付处理中...");
+                    $("#paystatus").val(1);
+                }
+
+                var paytype = $(".payfor-type").find('.on').attr('id');
+                if(paytype == 'vipcard'){
+                    $( '.enter-psw' ).show();
+                }else if(paytype  == 'wxpay'){
+                    /*alert('暂未开通,敬请期待');
+                     $("#confirm").html("确认支付");
+                     $("#paystatus").val(0);
+                     return false;*/
+                    jsApiCall();
+                }else if(paytype  == 'bankcard'){
+                    alert('暂未开通，请使用其他支付方式');
+                    $("#confirm").html("确认支付");
+                    $("#paystatus").val(0);
+                    return false;
+                }
+            });
+
+            /*选择支付方式*/
+            $( '.payfor-type ul li' ).bind( 'touchend' , function() {
+                $( this ).find( '.radio-btn' ).addClass( 'on' );
+                $( this ).siblings().find( '.radio-btn' ).removeClass( 'on' );
+            });
+
+            //输入密码
+            var $input = $(".fake-box input");
+            $("#pwd-input").on("input", function() {
+                var pwd = $(this).val().trim();
+                for (var i = 0, len = pwd.length; i < len; i++) {
+                    $input.eq("" + i + "").val(pwd[i]);
+                }
+                $input.each(function() {
+                    var index = $(this).index();
+                    if (index >= len) {
+                        $(this).val("");
+                    }
+                });
+                if (len == 6) {
+                    var oid    = $("#oid").val();
+                    var number = $("#number").val();
+                    var type   = $("#type").val();
+                    var param  = {pwd:pwd,oid:oid,number:number,type:type};
+                    $.ajax({
+                        url:'{:U("/Mobile/Order/payOrderByAjax")}',
+                        type:'post',
+                        datatype:'json',
+                        data:param,
+                        success:function(data){
+                            var result = eval("("+data+")");
+                            $('.cd-popup').removeClass('is-visible');
+                            if(result.status == 200){
+                                window.location.href = '{:U("/Mobile/Order/success?amount=".$amount."&number=".$number."&type=".$type)}';
+                            }else{
+                                alert(result.msg);
+                                window.location.reload();
+                            }
+                        }
+                    });
+                }
+            });
+
+        });
+    </script>
+</block>

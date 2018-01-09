@@ -1,0 +1,96 @@
+[ 2017-09-04T16:52:30+08:00 ] 192.168.3.5 /mobile/Api/userinfo
+ERR: 用户访问信息getWxLogin：[]
+[ 2017-09-04T16:59:48+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: 用户访问信息getWxLogin：[]
+[ 2017-09-04T17:25:32+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: writeRequest:{"title":[],"content":[]}
+[ 2017-09-04T17:25:32+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: writeRequestResult:{"title":[],"content":{"response":{"code":200,"msg":"\u64cd\u4f5c\u6210\u529f","data":[{"id":"1","name":"\u5317\u4eac\u5e02","parent_id":"0","sort":"0","deep":"1","city":{"id":"36","name":"\u5317\u4eac\u5e02","parent_id":"1","sort":"0","deep":"2"}},{"id":"2","name":"\u5929\u6d25\u5e02","parent_id":"0","sort":"0","deep":"1","city":{"id":"40","name":"\u5929\u6d25\u5e02","parent_id":"2","sort":"0","deep":"2"}},{"id":"3","name":"\u6cb3\u5317\u7701","parent_id":"0","sort":"0","deep":"1","city":{"id":"73","name":"\u77f3\u5bb6\u5e84\u5e02","parent_id":"3","sort":"0","deep":"2"}},{"id":"4","name":"\u5c71\u897f\u7701","parent_id":"0","sort":"0","deep":"1","city":{"id":"84","name":"\u592a\u539f\u5e02","parent_id":"4","sort":"0","deep":"2"}},{"id":"5","name":"\u5185\u8499\u53e4\u81ea\u6cbb\u533a","parent_id":"0","sort":"0","deep":"1","city":{"id":"95","name":"\u547c\u548c\u6d69\u7279\u5e02","parent_id":"5","sort":"0","deep":"2"}}]}}}
+[ 2017-09-04T17:25:42+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: writeRequest:{"title":[],"content":[]}
+[ 2017-09-04T17:25:42+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: writeRequestResult:{"title":[],"content":{"response":{"code":200,"msg":"\u64cd\u4f5c\u6210\u529f","data":[{"id":"1","name":"\u5317\u4eac\u5e02","parent_id":"0","sort":"0","deep":"1","city":{"id":"36","name":"\u5317\u4eac\u5e02","parent_id":"1","sort":"0","deep":"2"}},{"id":"2","name":"\u5929\u6d25\u5e02","parent_id":"0","sort":"0","deep":"1","city":{"id":"40","name":"\u5929\u6d25\u5e02","parent_id":"2","sort":"0","deep":"2"}},{"id":"3","name":"\u6cb3\u5317\u7701","parent_id":"0","sort":"0","deep":"1","city":{"id":"73","name":"\u77f3\u5bb6\u5e84\u5e02","parent_id":"3","sort":"0","deep":"2"}},{"id":"4","name":"\u5c71\u897f\u7701","parent_id":"0","sort":"0","deep":"1","city":{"id":"84","name":"\u592a\u539f\u5e02","parent_id":"4","sort":"0","deep":"2"}},{"id":"5","name":"\u5185\u8499\u53e4\u81ea\u6cbb\u533a","parent_id":"0","sort":"0","deep":"1","city":{"id":"95","name":"\u547c\u548c\u6d69\u7279\u5e02","parent_id":"5","sort":"0","deep":"2"}}]}}}
+[ 2017-09-04T17:26:18+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: writeRequest:{"title":[],"content":[]}
+[ 2017-09-04T17:26:18+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: writeRequestResult:{"title":[],"content":{"response":{"code":200,"msg":"\u64cd\u4f5c\u6210\u529f","data":[{"id":"1","name":"\u5317\u4eac\u5e02","parent_id":"0","sort":"0","deep":"1","city":{"id":"36","name":"\u5317\u4eac\u5e02","parent_id":"1","sort":"0","deep":"2"}},{"id":"2","name":"\u5929\u6d25\u5e02","parent_id":"0","sort":"0","deep":"1","city":{"id":"40","name":"\u5929\u6d25\u5e02","parent_id":"2","sort":"0","deep":"2"}},{"id":"3","name":"\u6cb3\u5317\u7701","parent_id":"0","sort":"0","deep":"1","city":{"id":"73","name":"\u77f3\u5bb6\u5e84\u5e02","parent_id":"3","sort":"0","deep":"2"}},{"id":"4","name":"\u5c71\u897f\u7701","parent_id":"0","sort":"0","deep":"1","city":{"id":"84","name":"\u592a\u539f\u5e02","parent_id":"4","sort":"0","deep":"2"}},{"id":"5","name":"\u5185\u8499\u53e4\u81ea\u6cbb\u533a","parent_id":"0","sort":"0","deep":"1","city":{"id":"95","name":"\u547c\u548c\u6d69\u7279\u5e02","parent_id":"5","sort":"0","deep":"2"}}]}}}
+[ 2017-09-04T17:26:18+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-04T17:26:41+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: writeRequest:{"title":[],"content":[]}
+[ 2017-09-04T17:26:41+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: writeRequestResult:{"title":[],"content":{"response":{"code":200,"msg":"\u64cd\u4f5c\u6210\u529f","data":[{"id":"1","name":"\u5317\u4eac\u5e02","parent_id":"0","sort":"0","deep":"1","city":{"id":"36","name":"\u5317\u4eac\u5e02","parent_id":"1","sort":"0","deep":"2"}},{"id":"2","name":"\u5929\u6d25\u5e02","parent_id":"0","sort":"0","deep":"1","city":{"id":"40","name":"\u5929\u6d25\u5e02","parent_id":"2","sort":"0","deep":"2"}},{"id":"3","name":"\u6cb3\u5317\u7701","parent_id":"0","sort":"0","deep":"1","city":{"id":"73","name":"\u77f3\u5bb6\u5e84\u5e02","parent_id":"3","sort":"0","deep":"2"}},{"id":"4","name":"\u5c71\u897f\u7701","parent_id":"0","sort":"0","deep":"1","city":{"id":"84","name":"\u592a\u539f\u5e02","parent_id":"4","sort":"0","deep":"2"}},{"id":"5","name":"\u5185\u8499\u53e4\u81ea\u6cbb\u533a","parent_id":"0","sort":"0","deep":"1","city":{"id":"95","name":"\u547c\u548c\u6d69\u7279\u5e02","parent_id":"5","sort":"0","deep":"2"}}]}}}
+[ 2017-09-04T17:26:41+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-04T17:27:07+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: writeRequest:{"title":[],"content":[]}
+[ 2017-09-04T17:27:07+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: writeRequestResult:{"title":[],"content":{"response":{"code":200,"msg":"\u64cd\u4f5c\u6210\u529f","data":[{"id":"1","name":"\u5317\u4eac\u5e02","parent_id":"0","sort":"0","deep":"1","city":[{"id":"36","name":"\u5317\u4eac\u5e02","parent_id":"1","sort":"0","deep":"2"}]},{"id":"2","name":"\u5929\u6d25\u5e02","parent_id":"0","sort":"0","deep":"1","city":[{"id":"40","name":"\u5929\u6d25\u5e02","parent_id":"2","sort":"0","deep":"2"}]},{"id":"3","name":"\u6cb3\u5317\u7701","parent_id":"0","sort":"0","deep":"1","city":[{"id":"73","name":"\u77f3\u5bb6\u5e84\u5e02","parent_id":"3","sort":"0","deep":"2"},{"id":"74","name":"\u5510\u5c71\u5e02","parent_id":"3","sort":"0","deep":"2"},{"id":"75","name":"\u79e6\u7687\u5c9b\u5e02","parent_id":"3","sort":"0","deep":"2"},{"id":"76","name":"\u90af\u90f8\u5e02","parent_id":"3","sort":"0","deep":"2"},{"id":"77","name":"\u90a2\u53f0\u5e02","parent_id":"3","sort":"0","deep":"2"},{"id":"78","name":"\u4fdd\u5b9a\u5e02","parent_id":"3","sort":"0","deep":"2"},{"id":"79","name":"\u5f20\u5bb6\u53e3\u5e02","parent_id":"3","sort":"0","deep":"2"},{"id":"80","name":"\u627f\u5fb7\u5e02","parent_id":"3","sort":"0","deep":"2"},{"id":"81","name":"\u8861\u6c34\u5e02","parent_id":"3","sort":"0","deep":"2"},{"id":"82","name":"\u5eca\u574a\u5e02","parent_id":"3","sort":"0","deep":"2"},{"id":"83","name":"\u6ca7\u5dde\u5e02","parent_id":"3","sort":"0","deep":"2"}]},{"id":"4","name":"\u5c71\u897f\u7701","parent_id":"0","sort":"0","deep":"1","city":[{"id":"84","name":"\u592a\u539f\u5e02","parent_id":"4","sort":"0","deep":"2"},{"id":"85","name":"\u5927\u540c\u5e02","parent_id":"4","sort":"0","deep":"2"},{"id":"86","name":"\u9633\u6cc9\u5e02","parent_id":"4","sort":"0","deep":"2"},{"id":"87","name":"\u957f\u6cbb\u5e02","parent_id":"4","sort":"0","deep":"2"},{"id":"88","name":"\u664b\u57ce\u5e02","parent_id":"4","sort":"0","deep":"2"},{"id":"89","name":"\u6714\u5dde\u5e02","parent_id":"4","sort":"0","deep":"2"},{"id":"90","name":"\u664b\u4e2d\u5e02","parent_id":"4","sort":"0","deep":"2"},{"id":"91","name":"\u8fd0\u57ce\u5e02","parent_id":"4","sort":"0","deep":"2"},{"id":"92","name":"\u5ffb\u5dde\u5e02","parent_id":"4","sort":"0","deep":"2"},{"id":"93","name":"\u4e34\u6c7e\u5e02","parent_id":"4","sort":"0","deep":"2"},{"id":"94","name":"\u5415\u6881\u5e02","parent_id":"4","sort":"0","deep":"2"}]},{"id":"5","name":"\u5185\u8499\u53e4\u81ea\u6cbb\u533a","parent_id":"0","sort":"0","deep":"1","city":[{"id":"95","name":"\u547c\u548c\u6d69\u7279\u5e02","parent_id":"5","sort":"0","deep":"2"},{"id":"96","name":"\u5305\u5934\u5e02","parent_id":"5","sort":"0","deep":"2"},{"id":"97","name":"\u4e4c\u6d77\u5e02","parent_id":"5","sort":"0","deep":"2"},{"id":"98","name":"\u8d64\u5cf0\u5e02","parent_id":"5","sort":"0","deep":"2"},{"id":"99","name":"\u901a\u8fbd\u5e02","parent_id":"5","sort":"0","deep":"2"},{"id":"100","name":"\u9102\u5c14\u591a\u65af\u5e02","parent_id":"5","sort":"0","deep":"2"},{"id":"101","name":"\u547c\u4f26\u8d1d\u5c14\u5e02","parent_id":"5","sort":"0","deep":"2"},{"id":"102","name":"\u5df4\u5f66\u6dd6\u5c14\u5e02","parent_id":"5","sort":"0","deep":"2"},{"id":"103","name":"\u4e4c\u5170\u5bdf\u5e03\u5e02","parent_id":"5","sort":"0","deep":"2"},{"id":"104","name":"\u5174\u5b89\u76df","parent_id":"5","sort":"0","deep":"2"},{"id":"105","name":"\u9521\u6797\u90ed\u52d2\u76df","parent_id":"5","sort":"0","deep":"2"},{"id":"106","name":"\u963f\u62c9\u5584\u76df","parent_id":"5","sort":"0","deep":"2"}]}]}}}
+[ 2017-09-04T17:27:07+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-04T17:27:45+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: writeRequest:{"title":[],"content":[]}
+[ 2017-09-04T17:27:45+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: writeRequestResult:{"title":[],"content":{"response":{"code":200,"msg":"\u64cd\u4f5c\u6210\u529f","data":[{"id":"1","name":"\u5317\u4eac\u5e02","city":[{"id":"36","name":"\u5317\u4eac\u5e02"}]},{"id":"2","name":"\u5929\u6d25\u5e02","city":[{"id":"40","name":"\u5929\u6d25\u5e02"}]},{"id":"3","name":"\u6cb3\u5317\u7701","city":[{"id":"73","name":"\u77f3\u5bb6\u5e84\u5e02"},{"id":"74","name":"\u5510\u5c71\u5e02"},{"id":"75","name":"\u79e6\u7687\u5c9b\u5e02"},{"id":"76","name":"\u90af\u90f8\u5e02"},{"id":"77","name":"\u90a2\u53f0\u5e02"},{"id":"78","name":"\u4fdd\u5b9a\u5e02"},{"id":"79","name":"\u5f20\u5bb6\u53e3\u5e02"},{"id":"80","name":"\u627f\u5fb7\u5e02"},{"id":"81","name":"\u8861\u6c34\u5e02"},{"id":"82","name":"\u5eca\u574a\u5e02"},{"id":"83","name":"\u6ca7\u5dde\u5e02"}]},{"id":"4","name":"\u5c71\u897f\u7701","city":[{"id":"84","name":"\u592a\u539f\u5e02"},{"id":"85","name":"\u5927\u540c\u5e02"},{"id":"86","name":"\u9633\u6cc9\u5e02"},{"id":"87","name":"\u957f\u6cbb\u5e02"},{"id":"88","name":"\u664b\u57ce\u5e02"},{"id":"89","name":"\u6714\u5dde\u5e02"},{"id":"90","name":"\u664b\u4e2d\u5e02"},{"id":"91","name":"\u8fd0\u57ce\u5e02"},{"id":"92","name":"\u5ffb\u5dde\u5e02"},{"id":"93","name":"\u4e34\u6c7e\u5e02"},{"id":"94","name":"\u5415\u6881\u5e02"}]},{"id":"5","name":"\u5185\u8499\u53e4\u81ea\u6cbb\u533a","city":[{"id":"95","name":"\u547c\u548c\u6d69\u7279\u5e02"},{"id":"96","name":"\u5305\u5934\u5e02"},{"id":"97","name":"\u4e4c\u6d77\u5e02"},{"id":"98","name":"\u8d64\u5cf0\u5e02"},{"id":"99","name":"\u901a\u8fbd\u5e02"},{"id":"100","name":"\u9102\u5c14\u591a\u65af\u5e02"},{"id":"101","name":"\u547c\u4f26\u8d1d\u5c14\u5e02"},{"id":"102","name":"\u5df4\u5f66\u6dd6\u5c14\u5e02"},{"id":"103","name":"\u4e4c\u5170\u5bdf\u5e03\u5e02"},{"id":"104","name":"\u5174\u5b89\u76df"},{"id":"105","name":"\u9521\u6797\u90ed\u52d2\u76df"},{"id":"106","name":"\u963f\u62c9\u5584\u76df"}]}]}}}
+[ 2017-09-04T17:27:45+08:00 ] 192.168.3.5 /Mobile/Api/getarea
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-04T17:27:55+08:00 ] 192.168.3.5 /Mobile/Api/getsporthall
+ERR: writeRequest:{"title":[],"content":[]}
+[ 2017-09-04T17:27:55+08:00 ] 192.168.3.5 /Mobile/Api/getsporthall
+ERR: writeRequestResult:{"title":[],"content":{"response":{"code":200,"msg":"\u64cd\u4f5c\u6210\u529f","data":[{"id":"2","name":"\u5357\u4eac\u6d77\u68ee\u5821\u5065\u8eab\u4ff1\u4e50\u90e8","logo":"","address":"\u6c5f\u82cf\u7701\u5357\u4eac\u5e02\u5efa\u90ba\u533a\u4e07\u8fbe\u5e7f\u573a","score":"6","imgs":["http:\/\/192.168.3.5:802\/uploads\/sporthall\/091338.93270728_o.jpg","http:\/\/192.168.3.5:802\/uploads\/sporthall\/092119.12245795_o.jpg"]},{"id":"1","name":"\u5357\u4eac\u91d1\u5409\u9e1f\u5065\u8eab\u4e2d\u5fc3","logo":"","address":"\u6c5f\u82cf\u7701\u5357\u4eac\u5e02\u5efa\u90ba\u533a\u5efa\u7b51\u5e08\u516c\u793e","score":"5","imgs":["http:\/\/192.168.3.5:802\/uploads\/sporthall\/091338.93270728_o.jpg","http:\/\/192.168.3.5:802\/uploads\/sporthall\/092119.12245795_o.jpg"]}]}}}
+[ 2017-09-04T17:27:55+08:00 ] 192.168.3.5 /Mobile/Api/getsporthall
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+
+[ 2017-09-04T17:41:03+08:00 ] 192.168.3.5 /Mobile/Api/getsporthalldetail?id=1
+ERR: writeRequest:{"title":{"id":"1"},"content":[]}
+[ 2017-09-04T17:41:03+08:00 ] 192.168.3.5 /Mobile/Api/getsporthalldetail?id=1
+ERR: writeRequestResult:{"title":{"id":"1"},"content":"{\"response\":{\"code\":200,\"msg\":\"\\u64cd\\u4f5c\\u6210\\u529f\",\"data\":{\"sporthall\":{\"id\":\"1\",\"name\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"logo\":\"\",\"address\":\"\\u6c5f\\u82cf\\u7701\\u5357\\u4eac\\u5e02\\u5efa\\u90ba\\u533a\\u5efa\\u7b51\\u5e08\\u516c\\u793e\",\"navurl\":\"http:\\\/\\\/www.baidu.com\",\"score\":\"5\",\"imgs\":[\"http:\\\/\\\/192.168.3.5:802\\\/uploads\\\/sporthall\\\/091338.93270728_o.jpg\",\"http:\\\/\\\/192.168.3.5:802\\\/uploads\\\/sporthall\\\/092119.12245795_o.jpg\"],\"phone\":\"13851190876\"},\"coach\":[{\"id\":\"1\",\"name\":\"\\u738b\\u67d0\\u67d0\",\"headimg\":\"http:\\\/\\\/192.168.3.5:802\\\/uploads\\\/coach\\\/f18tfzaw.jpg\",\"score\":\"6\",\"imgs\":[\"http:\\\/\\\/192.168.3.5:802\\\/uploads\\\/coach\\\/tommgg6f.jpg\",\"http:\\\/\\\/192.168.3.5:802\\\/uploads\\\/coach\\\/ap0frjks.jpg\"],\"phone\":\"18652947363\",\"lowprice\":\"180\",\"label\":[\"\\u4ece\\u4e1a10\\u5e74\",\"\\u9ad8\\u7ea7\\u79c1\\u4eba\\u6559\\u7ec3\"],\"skill\":[\"\\u4ea7\\u540e\\u6062\\u590d\",\"\\u51cf\\u8102\",\"\\u5851\\u6027\",\"\\u589e\\u808c\",\"\\u7fd8\\u81c0\\u7f8e\\u817f\"]}],\"evaluate\":false}}}"}
+[ 2017-09-04T17:41:03+08:00 ] 192.168.3.5 /Mobile/Api/getsporthalldetail?id=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tblevaluate` WHERE ( isdel = 0 and cid in (Array) ) 
+
+[ 2017-09-04T17:41:45+08:00 ] 192.168.3.5 /Mobile/Api/getsporthalldetail?id=1
+ERR: writeRequest:{"title":{"id":"1"},"content":[]}
+[ 2017-09-04T17:41:45+08:00 ] 192.168.3.5 /Mobile/Api/getsporthalldetail?id=1
+ERR: writeRequestResult:{"title":{"id":"1"},"content":"{\"response\":{\"code\":200,\"msg\":\"\\u64cd\\u4f5c\\u6210\\u529f\",\"data\":{\"sporthall\":{\"id\":\"1\",\"name\":\"\\u5357\\u4eac\\u91d1\\u5409\\u9e1f\\u5065\\u8eab\\u4e2d\\u5fc3\",\"logo\":\"\",\"address\":\"\\u6c5f\\u82cf\\u7701\\u5357\\u4eac\\u5e02\\u5efa\\u90ba\\u533a\\u5efa\\u7b51\\u5e08\\u516c\\u793e\",\"navurl\":\"http:\\\/\\\/www.baidu.com\",\"score\":\"5\",\"imgs\":[\"http:\\\/\\\/192.168.3.5:802\\\/uploads\\\/sporthall\\\/091338.93270728_o.jpg\",\"http:\\\/\\\/192.168.3.5:802\\\/uploads\\\/sporthall\\\/092119.12245795_o.jpg\"],\"phone\":\"13851190876\"},\"coach\":[{\"id\":\"1\",\"name\":\"\\u738b\\u67d0\\u67d0\",\"headimg\":\"http:\\\/\\\/192.168.3.5:802\\\/uploads\\\/coach\\\/f18tfzaw.jpg\",\"score\":\"6\",\"imgs\":[\"http:\\\/\\\/192.168.3.5:802\\\/uploads\\\/coach\\\/tommgg6f.jpg\",\"http:\\\/\\\/192.168.3.5:802\\\/uploads\\\/coach\\\/ap0frjks.jpg\"],\"phone\":\"18652947363\",\"lowprice\":\"180\",\"label\":[\"\\u4ece\\u4e1a10\\u5e74\",\"\\u9ad8\\u7ea7\\u79c1\\u4eba\\u6559\\u7ec3\"],\"skill\":[\"\\u4ea7\\u540e\\u6062\\u590d\",\"\\u51cf\\u8102\",\"\\u5851\\u6027\",\"\\u589e\\u808c\",\"\\u7fd8\\u81c0\\u7f8e\\u817f\"]}],\"evaluate\":[]}}}"}
+[ 2017-09-04T17:41:45+08:00 ] 192.168.3.5 /Mobile/Api/getsporthalldetail?id=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `tblevaluate` WHERE ( isdel = 0 and cid in (Array) ) 
+
+[ 2017-09-04T17:56:50+08:00 ] 192.168.3.5 /Mobile/Api/getcoachinfo?id=1
+ERR: writeRequest:{"title":{"id":"1"},"content":[]}
+[ 2017-09-04T17:56:51+08:00 ] 192.168.3.5 /Mobile/Api/getcoachinfo?id=1
+ERR: writeRequestResult:{"title":{"id":"1"},"content":{"response":{"code":200,"msg":"\u64cd\u4f5c\u6210\u529f","data":{"id":"1","name":"\u738b\u67d0\u67d0","headimg":"http:\/\/192.168.3.5:802\/uploads\/coach\/f18tfzaw.jpg","score":"6","description":"\u5584\u4e8e\u5b66\u4e60\u56fd\u5185\u5916\u5148\u8fdb\u7684\u8bad\u7ec3\u7406\u5ff5\uff0c\u5e76\u5c06\u7406\u5ff5\u4e0e\u5b9e\u9645\u6559\u5b66\u76f8\u7ed3\u5408\uff0c\u5e2e\u52a9\u4f1a\u5458\u8fbe\u5230\u8bad\u7ec3\u76ee\u6807\u3002","imgs":["http:\/\/192.168.3.5:802\/uploads\/coach\/tommgg6f.jpg","http:\/\/192.168.3.5:802\/uploads\/coach\/ap0frjks.jpg"],"phone":"18652947363","shids":[{"id":"1","name":"\u5357\u4eac\u91d1\u5409\u9e1f\u5065\u8eab\u4e2d\u5fc3","address":"\u6c5f\u82cf\u7701\u5357\u4eac\u5e02\u5efa\u90ba\u533a\u5efa\u7b51\u5e08\u516c\u793e","navurl":"http:\/\/www.baidu.com"},{"id":"2","name":"\u5357\u4eac\u6d77\u68ee\u5821\u5065\u8eab\u4ff1\u4e50\u90e8","address":"\u6c5f\u82cf\u7701\u5357\u4eac\u5e02\u5efa\u90ba\u533a\u4e07\u8fbe\u5e7f\u573a","navurl":"http:\/\/www.qq.com"}],"lowprice":"180","label":["\u4ece\u4e1a10\u5e74","\u9ad8\u7ea7\u79c1\u4eba\u6559\u7ec3"],"skill":["\u4ea7\u540e\u6062\u590d","\u51cf\u8102","\u5851\u6027","\u589e\u808c","\u7fd8\u81c0\u7f8e\u817f"],"course":[{"id":"1","name":"\u4f53\u9a8c\u8bfe","img":"http:\/\/192.168.3.5:802\/uploads\/course\/5cc549e945a9c54d85f0cbed49438883.jpg","salelimit":"1","price":"19"},{"id":"2","name":"\u51cf\u8102\u5851\u5f62","img":"http:\/\/192.168.3.5:802\/uploads\/course\/7b033c35bdaeff8654ea0930a1ab21d4.jpg","salelimit":"8","price":"180"},{"id":"3","name":"\u589e\u808cMAX","img":"http:\/\/192.168.3.5:802\/uploads\/course\/1c35b368c64f7bc65d3bf2bc644dc211.jpg","salelimit":"8","price":"180"},{"id":"4","name":"\u4ea7\u540e\u6062\u590d","img":"http:\/\/192.168.3.5:802\/uploads\/course\/f5059e5fd85420cac0ab429cbbcced2c.jpg","salelimit":"8","price":"180"}],"evaluate":null}}}}
+[ 2017-09-04T17:56:51+08:00 ] 192.168.3.5 /Mobile/Api/getcoachinfo?id=1
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tblconfig`
+ERR: 1146:Table 'crm.tblconfig' doesn't exist
+ [ SQL语句 ] : SELECT `type`,`name`,`value` FROM `tblconfig` WHERE ( `status` = 1 ) 
+

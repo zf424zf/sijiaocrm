@@ -1,0 +1,185 @@
+html body{background-color: #F4F4F4; margin: 0; padding: 0; font-family: '微软雅黑';}
+.schedule{background-color: white; border-bottom: solid 1px #BDBEC0; height: 150px; padding:8px; font-family: '微软雅黑';}
+.schedule_mark{height: 40px; line-height: 40px; text-align: right; padding-right: 10px; border-bottom: solid 1px #BDBEC0; background-color: #F4F4F4}
+.schedule_mark a{text-decoration: none; color: #404040;}
+.schedule_img{float: left; color: #27B25F; font-weight: bold; padding-left: 10px;}
+.schedule_img img{ width: 30px; height: 30px;}
+.schedule_detail{float: left; padding-left: 10px; color: #58595D; line-height: 24px; width: 80%; padding-bottom: 4px;font-family: '微软雅黑';}
+.schedule_title{color: #27B25F; font-size: 18px; font-weight: bold;}
+.schedule_num{color: #949597; font-size: 14px;}
+.schedule_hidden_num{display: none;}
+.schedule_isbook{display: none;}
+.schedule_detail div{ font-size: 14px;}
+.schedule_amount{color: #EE4236; font-size: 20px; line-height: 30px; height: 30px;}
+.schedule_select{height: 40px; line-height: 46px; padding-left: 10px; font-size: 14px;}
+.schedule_times{background-color: white; margin-bottom: 80px; font-family: '微软雅黑';}
+.schedule_times ul{padding: 0; margin: 0;}
+.schedule_times li{list-style:none; height:54px;line-height: 24px; padding-top: 6px; border-bottom: solid 1px #F4F4F4; padding-left: 8px; padding-right: 8px;}
+.schedule_times li{color:#58595B;}
+.schedule_times .schedule_li_times{margin-right: 40px; color: #58595B;}
+.schedule_times .schedule_li_nums{color: #24B25C}
+.schedule_times li div{float: right; border: solid 1px #24B25C; width: 24px; height: 24px; line-height: 30px; color: white; text-align: center; margin-top: 12px; border-radius: 50%;}
+.scheduel_times .schedule_times_sel .schedule_li_times{margin-right: 40px; color: #24B25C;}
+.schedule_order{height: 58px; background-color: white; border-top: solid 1px #BDBEC0; bottom: 0; position: fixed; width: 100%; padding-top: 12px;}
+.schedule_order div{width: 80%; background-color: #24B25C; color: white; text-align: center; line-height: 44px; height: 44px; margin: 0 auto; border-radius: 5px; font-size: 18px;}
+
+.userinfo{padding-top: 10px; padding-left: 0; padding-bottom: 140px;}
+.userinfo ul{padding: 0; margin: 0;}
+.userinfo li{list-style:none; height:50px;line-height: 50px; border-bottom: solid 1px #F4F4F4; padding-left: 8px; padding-right: 8px; color: #58595D;}
+.userinfo input{height: 30px; width: 200px; font-size: 16px; border: solid 1px #949597;}
+.userinfo select{height: 40px; width: 74px; font-size: 16px; border: solid 1px #949597; color: #58595D;}
+.userinfo ul li span{float: left;}
+.userinfo ul li span div{float: left; margin-left: 30px; border: solid 1px #24B25C; width: 24px; height: 24px; line-height: 30px; color: #F4F4F4; text-align: center; margin-top: 15px; border-radius: 50%;}
+.schedule_confirm_order{height: 108px; background-color: white; border-top: solid 1px #BDBEC0; bottom: 0; position: fixed; width: 100%; padding-top: 12px;}
+.schedule_confirm_order .confirm_amount{width: 100%; float: left; height: 36px;}
+.schedule_confirm_order .confirm_amount span{float: left;}
+.schedule_confirm_order .confirm_amount span div{float: left; margin-left: 10px; border: solid 1px #24B25C; width: 24px; height: 24px; line-height: 30px; color: white; text-align: center; border-radius: 50%;}
+.schedule_confirm_order .confirm_amount .confirm_price{color: #EE4236; padding-top: 3px; font-weight: bold;}
+.schedule_confirm_order .confirm_amount .confirm_times{color: #999999; padding-top: 6px; padding-left: 4px; font-size: 12px;}
+.schedule_confirm_order .confirm_btn{float:left; width: 100%; line-height: 44px; height: 44px; padding-top: 14px; border-top: solid 1px #BDBEC0;}
+.schedule_confirm_order .confirm_btn div{width: 80%; background-color: #24B25C; color: white; text-align: center; line-height: 44px; height: 44px; margin: 0 auto; border-radius: 5px; font-size: 18px;}
+.userinfo_sex span{float: left;}
+.userinfo_sex_select{float: left; padding-top: 12px;}
+.userinfo_sex_female{border-top-right-radius: 5px; border-bottom-right-radius: 5px; width: 70px; line-height: 36px; text-align: center; border:solid 1px #949597; float: right; border-left-width: 0px;}
+.userinfo_sex_male{border-top-left-radius: 5px; border-bottom-left-radius: 5px; width: 70px; line-height: 36px; text-align: center; border:solid 1px #949597; float: right;}
+.sex_sel{background-color: white; color: #27B25F}
+.sex_unsel{background-color: #F4F4F4; color: #27B25F}
+
+.payfor-type .title{
+    color: #808285;
+    padding: 10px 5% 5px 8px;
+}
+.payfor-type ul{padding: 0px;}
+.payfor-type ul li{
+    padding: 0 5%;
+    background-color: #fff;
+    list-style: none;
+}
+.payfor-type ul li a{
+    display: block;
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 1px solid #f5f5f5;
+}
+.payfor-type ul li a .radio-btn{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+}
+.payfor-type ul li a span{
+    color: #414042;
+    margin-left: 3%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.payfor-type ul li a font{
+    color: #939598;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.payfor-type .ipass-icon,.payfor-type .bank-icon{
+    margin: 2.5px 0;
+}
+.ipass-icon,.wechart-icon,.bank-icon,.radio-btn,.radio-btn .on{
+    background: url(../img/common-icon.png) no-repeat;
+    display: inline-block;
+    background-size: 230px auto;
+}
+.ipass-icon{
+    width: 32px;
+    height: 21px;
+    background-size: 200px auto;
+    vertical-align: middle;
+}
+.wechart-icon{
+    width: 32px;
+    height: 26px;
+    background-size: 200px auto;
+    vertical-align: middle;
+    background-position: -33px 0;
+}
+.bank-icon{
+    width: 32px;
+    height: 21px;
+    background-size: 200px auto;
+    vertical-align: middle;
+    background-position: -65px 0;
+}
+.radio-btn{
+    width: 21px;
+    height: 21px;
+    background-position: -84px 0;
+    background-size: 170px auto;
+}
+.radio-btn.on{
+    background-position: -106px 0;
+}
+.close-dialog{
+    width: 17px;
+    height: 17px;
+    background-position: -50px -34px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 20px;
+}
+.ordermaount{padding-left: 8px; padding-right: 8px; background-color: white; height: 50px; line-height: 50px; margin-top: 20px;}
+.reducecode{padding-left: 8px;background-color: white; height: 50px; line-height: 50px; margin-top: 20px;}
+.reducecode input{width: 150px; height: 24px; font-size: 16px; padding-left: 8px;border: solid 1px #949597;}
+.reducecode span{color: #EE4236; font-size: 14px; display: none; float: right; padding-right: 8px;}
+
+.payfor-success{
+    text-align: center;
+}
+.payfor-success img{
+    width: 20%;
+    margin-top: 20%;
+}
+.payfor-success .txt{
+    color: #45a869;
+    font-size: 20px;
+    margin-top: 10%;
+}
+.payfor-success .green-btn{
+    margin-top: 50%;
+}
+.payfor-success .content p{
+    font-size: 16px;
+    color: #6d6e71;
+    margin-top: 5px;
+}
+.payfor-success .content p em{
+    font-size: 1.5rem;
+    color: #45a869;
+    margin-left: 15px;
+}
+/*绿色背景按钮*/
+.green-btn{
+    display: block;
+    width: 90%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    background: #45a869;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.classtype{width: 18%; float: left; position: fixed; top: 0;}
+.classtype ul{margin: 0; padding: 0;}
+.classtype ul li{list-style: none; font-weight: bold; height: 60px; line-height: 60px; text-align: center; color: #45a869; border-left: solid 1px #BDBEC0; border-bottom: solid 1px #BDBEC0;}
+.classtype .on{background-color: white; border-left: solid 5px #45a869;}
+.my-schedule{float: right; width: 82%; border-left: solid 1px #BDBEC0; background-color: white;}
+.my-schedule ul{margin: 0; padding: 0;}
+.my-schedule ul li{list-style: none; width: 100%; float: left; padding-top: 10px; padding-bottom: 6px; border-bottom: solid 1px #BDBEC0;}
+.schedule_sel{float: right; width: 80px; height: 30px; line-height: 30px; text-align: center; background-color: #27B25F; color: white; border-radius: 3px;}
+.sel_startdate{background-color: white; padding-left: 8px; margin-top: 12px; height: 40px; line-height: 40px;}
+.sel_startdate span{color: #27B25F;}
+.order_status_nopay{float: right; margin-top: 8px; color: white; background-color: red; width: 60px; height: 30px; line-height: 30px; text-align: center; border-radius: 3px;}
+.order_status_nopay a{color: white; text-decoration: none;}
+.order_status_payed{float: right; margin-top: 8px; color: #27B25F;width: 60px; height: 30px; line-height: 30px; text-align: center; border-radius: 3px;}

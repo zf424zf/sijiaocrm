@@ -1,0 +1,48 @@
+[ 2017-11-14T11:05:06+08:00 ] 127.0.0.1 /mobile/Api/userlogin?phone=18705191169&pwd=123456
+ERR: writeRequest:{"title":{"phone":"18705191169","pwd":"123456"},"content":[],"file":[]}
+[ 2017-11-14T11:05:06+08:00 ] 127.0.0.1 /mobile/Api/userlogin?phone=18705191169&pwd=123456
+ERR: writeRequestResult:{"title":{"phone":"18705191169","pwd":"123456"},"content":"{\"response\":{\"code\":108,\"msg\":\"\\u5bc6\\u7801\\u9519\\u8bef\"}}"}
+[ 2017-11-14T11:05:21+08:00 ] 127.0.0.1 /mobile/Api/userlogin?phone=18705191169&pwd=sj0203sj
+ERR: writeRequest:{"title":{"phone":"18705191169","pwd":"sj0203sj"},"content":[],"file":[]}
+[ 2017-11-14T11:05:21+08:00 ] 127.0.0.1 /mobile/Api/userlogin?phone=18705191169&pwd=sj0203sj
+ERR: writeRequestResult:{"title":{"phone":"18705191169","pwd":"sj0203sj"},"content":"{\"response\":{\"code\":200,\"msg\":\"\\u767b\\u5f55\\u6210\\u529f\",\"data\":\"noh05laof971596dqsccduhge1\"}}"}
+[ 2017-11-14T11:05:22+08:00 ] 127.0.0.1 /mobile/Api/getuserinfo
+ERR: writeRequest:{"title":[],"content":[],"file":[]}
+[ 2017-11-14T11:05:22+08:00 ] 127.0.0.1 /mobile/Api/getuserinfo
+ERR: writeRequestResult:{"title":[],"content":"{\"response\":{\"code\":200,\"msg\":\"\\u64cd\\u4f5c\\u6210\\u529f\",\"data\":{\"name\":\"\",\"headimg\":\"\",\"balance\":\"0\",\"score\":\"0\",\"phone\":\"18705191169\",\"iscoach\":1,\"cid\":\"MDAwMDAwMDAwMIaLz3Q\",\"discount\":\"0\"}}}"}
+[ 2017-11-14T11:05:28+08:00 ] 127.0.0.1 /mobile/Api/getmycourse?type=1
+ERR: writeRequest:{"title":{"type":"1"},"content":[],"file":[]}
+[ 2017-11-14T11:05:28+08:00 ] 127.0.0.1 /mobile/Api/getmycourse?type=1
+ERR: writeRequestResult:{"title":{"type":"1"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u64cd\\u4f5c\\u6210\\u529f\",\"data\":[null,null,{\"id\":\"63\",\"cid\":\"1\",\"ctitle\":\"\\u4f53\\u9a8c\\u8bfe\",\"coid\":\"19\",\"totalhours\":\"4\",\"currenthours\":\"2\",\"ordertime\":\"2017-11-7 10:30\",\"signtime\":\"0\",\"canceltime\":\"0\",\"status\":\"1\",\"late\":0,\"sporthall\":\"JFL\\u5353\\u8d62\\u5065\\u8eab\\u5de5\\u4f5c\\u5ba4\",\"address\":\"\\u6c5f\\u82cf\\u7701\\u5357\\u4eac\\u5e02\\u5efa\\u90ba\\u533a\\u4e07\\u8fbe\\u5e7f\\u573aF\\u5ea7310\\u5ba4\",\"navurl\":\"\",\"latitude\":\"32.038532\",\"longitude\":\"118.742607\",\"cname\":\"\\u6d4b\\u8bd5\\u6559\\u7ec3\",\"headimg\":\"http:\\\/\\\/crm.24parking.com.cn\\\/uploads\\\/coach_images\\\/19\\\/thumb_15096976304623.jpg\",\"phone\":\"18705191169\",\"price\":\"0.01\",\"is_evaluate\":0},null,null],\"uid\":\"4\"}}"}
+[ 2017-11-14T11:05:30+08:00 ] 127.0.0.1 /mobile/Api/getmycourse?type=2
+ERR: writeRequest:{"title":{"type":"2"},"content":[],"file":[]}
+[ 2017-11-14T11:05:30+08:00 ] 127.0.0.1 /mobile/Api/getmycourse?type=2
+ERR: writeRequestResult:{"title":{"type":"2"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u64cd\\u4f5c\\u6210\\u529f\",\"data\":[{\"id\":\"95\",\"cid\":\"1\",\"ctitle\":\"\\u4f53\\u9a8c\\u8bfe\",\"coid\":\"21\",\"totalhours\":\"1\",\"currenthours\":\"1\",\"ordertime\":\"2017-11-08 16:17\",\"signtime\":\"1510140600\",\"canceltime\":\"0\",\"status\":\"3\",\"late\":0,\"sporthall\":\"\\u6d4b\\u8bd5\\u95e8\\u5e97\",\"address\":\"\\u6c5f\\u82cf\\u7701\\u5357\\u4eac\\u5e02\\u5efa\\u90ba\\u533a\\u68a6\\u90fd\\u5927\\u8857\",\"navurl\":\"\",\"latitude\":\"30.000000\",\"longitude\":\"120.000000\",\"cname\":\"\\u5eb7\\u91d1\",\"headimg\":\"http:\\\/\\\/crm.24parking.com.cn\\\/uploads\\\/coach_images\\\/21\\\/thumb_15099380942316.jpg\",\"phone\":\"18652947363\",\"price\":\"0.01\",\"is_evaluate\":1}],\"uid\":\"4\"}}"}
+[ 2017-11-14T11:05:42+08:00 ] 127.0.0.1 /mobile/Api/getmycourse?type=2&cid=95
+ERR: writeRequest:{"title":{"type":"2","cid":"95"},"content":[],"file":[]}
+[ 2017-11-14T11:05:42+08:00 ] 127.0.0.1 /mobile/Api/getmycourse?type=2&cid=95
+ERR: writeRequestResult:{"title":{"type":"2","cid":"95"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u64cd\\u4f5c\\u6210\\u529f\",\"data\":[{\"id\":\"95\",\"cid\":\"1\",\"ctitle\":\"\\u4f53\\u9a8c\\u8bfe\",\"coid\":\"21\",\"totalhours\":\"1\",\"currenthours\":\"1\",\"ordertime\":\"2017-11-08 16:17\",\"signtime\":\"1510140600\",\"canceltime\":\"0\",\"status\":\"3\",\"late\":0,\"sporthall\":\"\\u6d4b\\u8bd5\\u95e8\\u5e97\",\"address\":\"\\u6c5f\\u82cf\\u7701\\u5357\\u4eac\\u5e02\\u5efa\\u90ba\\u533a\\u68a6\\u90fd\\u5927\\u8857\",\"navurl\":\"\",\"latitude\":\"30.000000\",\"longitude\":\"120.000000\",\"cname\":\"\\u5eb7\\u91d1\",\"headimg\":\"http:\\\/\\\/crm.24parking.com.cn\\\/uploads\\\/coach_images\\\/21\\\/thumb_15099380942316.jpg\",\"phone\":\"18652947363\",\"price\":\"0.01\",\"is_evaluate\":1}],\"uid\":\"4\"}}"}
+[ 2017-11-14T11:05:47+08:00 ] 127.0.0.1 /mobile/Api/uploadimage
+ERR: writeRequest:{"title":[],"content":[],"file":[]}
+[ 2017-11-14T11:05:47+08:00 ] 127.0.0.1 /mobile/Api/uploadimage
+ERR: writeRequestResult:{"title":[],"content":"{\"response\":{\"code\":\"109\",\"msg\":\"\\u7528\\u6237\\u672a\\u767b\\u5f55\"}}"}
+[ 2017-11-14T11:05:47+08:00 ] 127.0.0.1 /mobile/Api/uploadimage
+ERR: writeRequest:{"title":[],"content":[],"file":{"images":{"name":"\u5fae\u4fe1\u56fe\u7247_20171113093420.jpg","type":"image\/jpeg","tmp_name":"C:\\wamp64\\tmp\\phpDA76.tmp","error":0,"size":78882}}}
+[ 2017-11-14T11:05:47+08:00 ] 127.0.0.1 /mobile/Api/uploadimage
+ERR: writeRequestResult:{"title":[],"content":"{\"response\":{\"code\":\"109\",\"msg\":\"\\u7528\\u6237\\u672a\\u767b\\u5f55\"}}"}
+[ 2017-11-14T11:06:10+08:00 ] 127.0.0.1 /mobile/Api/getmycourse?type=2&cid=95
+ERR: writeRequest:{"title":{"type":"2","cid":"95"},"content":[],"file":[]}
+[ 2017-11-14T11:06:10+08:00 ] 127.0.0.1 /mobile/Api/getmycourse?type=2&cid=95
+ERR: writeRequestResult:{"title":{"type":"2","cid":"95"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u64cd\\u4f5c\\u6210\\u529f\",\"data\":[{\"id\":\"95\",\"cid\":\"1\",\"ctitle\":\"\\u4f53\\u9a8c\\u8bfe\",\"coid\":\"21\",\"totalhours\":\"1\",\"currenthours\":\"1\",\"ordertime\":\"2017-11-08 16:17\",\"signtime\":\"1510140600\",\"canceltime\":\"0\",\"status\":\"3\",\"late\":0,\"sporthall\":\"\\u6d4b\\u8bd5\\u95e8\\u5e97\",\"address\":\"\\u6c5f\\u82cf\\u7701\\u5357\\u4eac\\u5e02\\u5efa\\u90ba\\u533a\\u68a6\\u90fd\\u5927\\u8857\",\"navurl\":\"\",\"latitude\":\"30.000000\",\"longitude\":\"120.000000\",\"cname\":\"\\u5eb7\\u91d1\",\"headimg\":\"http:\\\/\\\/crm.24parking.com.cn\\\/uploads\\\/coach_images\\\/21\\\/thumb_15099380942316.jpg\",\"phone\":\"18652947363\",\"price\":\"0.01\",\"is_evaluate\":1}],\"uid\":\"4\"}}"}
+[ 2017-11-14T11:07:19+08:00 ] 127.0.0.1 /mobile/Api/getmycourse?type=2&cid=95
+ERR: writeRequest:{"title":{"type":"2","cid":"95"},"content":[],"file":[]}
+[ 2017-11-14T11:07:19+08:00 ] 127.0.0.1 /mobile/Api/getmycourse?type=2&cid=95
+ERR: writeRequestResult:{"title":{"type":"2","cid":"95"},"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u64cd\\u4f5c\\u6210\\u529f\",\"data\":[{\"id\":\"95\",\"cid\":\"1\",\"ctitle\":\"\\u4f53\\u9a8c\\u8bfe\",\"coid\":\"21\",\"totalhours\":\"1\",\"currenthours\":\"1\",\"ordertime\":\"2017-11-08 16:17\",\"signtime\":\"1510140600\",\"canceltime\":\"0\",\"status\":\"3\",\"late\":0,\"sporthall\":\"\\u6d4b\\u8bd5\\u95e8\\u5e97\",\"address\":\"\\u6c5f\\u82cf\\u7701\\u5357\\u4eac\\u5e02\\u5efa\\u90ba\\u533a\\u68a6\\u90fd\\u5927\\u8857\",\"navurl\":\"\",\"latitude\":\"30.000000\",\"longitude\":\"120.000000\",\"cname\":\"\\u5eb7\\u91d1\",\"headimg\":\"http:\\\/\\\/crm.24parking.com.cn\\\/uploads\\\/coach_images\\\/21\\\/thumb_15099380942316.jpg\",\"phone\":\"18652947363\",\"price\":\"0.01\",\"is_evaluate\":1}],\"uid\":\"4\"}}"}
+[ 2017-11-14T11:07:23+08:00 ] 127.0.0.1 /mobile/Api/uploadimage
+ERR: writeRequest:{"title":[],"content":[],"file":[]}
+[ 2017-11-14T11:07:23+08:00 ] 127.0.0.1 /mobile/Api/uploadimage
+ERR: writeRequestResult:{"title":[],"content":"{\"response\":{\"code\":\"109\",\"msg\":\"\\u7528\\u6237\\u672a\\u767b\\u5f55\"}}"}
+[ 2017-11-14T11:07:23+08:00 ] 127.0.0.1 /mobile/Api/uploadimage
+ERR: writeRequest:{"title":[],"content":{"uid":"4"},"file":{"images":{"name":"\u5fae\u4fe1\u56fe\u7247_20171113093420.jpg","type":"image\/jpeg","tmp_name":"C:\\wamp64\\tmp\\php51C5.tmp","error":0,"size":78882}}}
+[ 2017-11-14T11:07:23+08:00 ] 127.0.0.1 /mobile/Api/uploadimage
+ERR: writeRequestResult:{"title":[],"content":"{\"response\":{\"code\":\"200\",\"msg\":\"\\u56fe\\u7247\\u4e0a\\u4f20\\u6210\\u529f\",\"data\":95}}"}

@@ -1,0 +1,119 @@
+<extend name="Public/base" />
+
+<block name="body">
+     <style>
+     table td{text-align: center;height:30px}    
+     </style>
+
+    <!-- 标题栏 -->
+     <div style="margin-top:10px" id="search_box">
+    开始时间：<input type="text" name="date_s" style="width:150px" class="text input-large time" value="{$default}" placeholder="请选择时间" />&nbsp;&nbsp;&nbsp;&nbsp;
+	结束时间：<input type="text" name="date_e" style="width:150px" class="text input-large time" value="{$default}" placeholder="请选择时间" />&nbsp;&nbsp;&nbsp;&nbsp;
+	<button type="submit" class="btn ticket_search">查询</button>
+    </div>
+        <!--<input type="button" value="缴费单" id="moneyReport" style="float:right;width:50px;margin-bottom:10px;height:30px;margin-right:22%">-->
+        <input type="button" value="课程报名统计表" id="everyReport" style="float:right;width:120px;margin-bottom:20px;height:30px;margin-right:12%">
+    <input type="button" value="学生报名统计表" id="studentReport" style="float:right;width:120px;margin-bottom:20px;height:30px;margin-right:12%">
+	<table width="1080" border="1" align="center" style="margin-top:15px" id="table_box">
+<tbody>
+<tr>
+	 <td colspan="1"  width="100">类别</td>
+	 <td width="50">单价</td>
+	 <td width="50">人数</td>
+	 <td width="50">应收</td> 
+	 <td width="50">优惠</td>
+	 <td width="50">实收</td>
+	<td width="50">差价</td>
+	 <td width="50">微信</td>
+	 <td width="50">现金</td>
+	 <td width="50">阳光卡</td>
+	 <td width="50">工商银行</td>
+    <td width="50">退款</td>
+	<td width="50"></td>
+ </tr>
+<volist name="res.list2" id="vo">
+ <tr>
+	 <td colspan="1">{$vo.title}</td>
+	 <td >{$vo.amount}</td>
+	 <td >{$vo.count}</td>
+	 <td >{$vo.ysamount}</td>
+	 <td>{$vo.reduceamount}</td>
+	 <td>{$vo.realamount}</td>
+	 <td>{$vo.imbalance}</td>
+	 <td>{$vo.weixin}</td>
+	 <td>{$vo.xianjin}</td>
+	 <td>{$vo.yangguang}</td>
+	 <td>{$vo.gongshang}</td>
+     <td>{$vo.refundmoney}</td>
+	 <td><a href='/index.php/Admin/Sport/order?sid={$vo.sid}&date={$default}'>查询</a></td>
+ </tr>
+ </volist>
+<volist name="res.list" id="vo">
+    <tr>
+        <td colspan="1">{$vo.title}(室外)</td>
+        <td >{$vo.amount}</td>
+        <td >{$vo.count}</td>
+        <td >{$vo.ysamount}</td>
+        <td>{$vo.reduceamount}</td>
+        <td>{$vo.realamount}</td>
+        <td>{$vo.imbalance}</td>
+        <td>{$vo.weixin}</td>
+        <td>{$vo.xianjin}</td>
+        <td>{$vo.yangguang}</td>
+        <td>{$vo.gongshang}</td>
+        <td>{$vo.refundmoney}</td>
+        <td><a href='/index.php/Admin/Sport/order?sid={$vo.sid}&date={$default}'>查询</a></td>
+    </tr>
+</volist>
+ <tr style="background:#e0e0e0">
+	 <td colspan="1" width="100">总计</td>
+	 <td width="50"></td>
+	 <td width="50">{$res.allsum.count}</td>
+	 <td width="50">{$res.allsum.ysamount}</td>
+	 <td width="50">{$res.allsum.reduceamount}</td> 
+	 <td width="50">{$res.allsum.realamount}</td>
+	 <td width="50">{$res.allsum.imbalance}</td>
+	 <td width="50">{$res.allsum.weixin}</td>
+	 <td width="50">{$res.allsum.xianjin}</td>
+	 <td width="50">{$res.allsum.yangguang}</td>
+	 <td width="50">{$res.allsum.gongshang}</td>
+     <td width="50">{$res.allsum.refundmoney}</td>
+	 <td width="50"></td>
+ </tr>
+</table>
+
+</block>
+
+<block name="script">
+    <link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+    <php>if(C('COLOR_STYLE')=='blue_color') echo '<link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">';</php>
+    <link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>   
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav('{:U('Report/ticketReport')}');
+        $(function() {
+            $('.time').datetimepicker({
+                format: 'yyyy-mm-dd',
+                language: "zh-CN",
+                minView: 3,
+                startView: 2,
+                autoclose: true
+            });
+            showTab();
+        });
+        var date_s = $('input[name=date_s]').val();
+        var date_e = $('input[name=date_e]').val();
+       $(document).on('click', '#studentReport', function() {
+           window.location.href = '/Admin/Excel/studentReport?start=' + date_s+'&end='+date_e;
+      });
+      
+       $(document).on('click', '#everyReport', function() {
+        window.location.href = '/Admin/Excel/everySales?start=' + date_s+'&end='+date_e;
+
+      });
+    </script>
+ <script src="__JS__/report.js"></script>
+
+</block>
